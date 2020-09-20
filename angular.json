@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-horta"
+    }
+  },
+  "defaultProject": "angular-horta",
+  "cli": {
+    "analytics": "ea2d6942-a611-4d47-b812-e498c1dd4df6"
+  }
 }
