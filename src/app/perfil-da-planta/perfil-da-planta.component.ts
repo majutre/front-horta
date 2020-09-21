@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Planta } from '../plantas/plantas.model';
+
 @Component({
   selector: 'app-perfil-da-planta',
   templateUrl: '../paginas.html',
@@ -7,7 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PerfilDaPlantaComponent implements OnInit {
 
-  nomePlanta: string = 'Cenoura'
+  planta: Planta = new Planta('Cenoura', 'É laranja', 'url');
+  title = this.planta.nome;
 
   constructor() { }
 
@@ -15,5 +18,4 @@ export class PerfilDaPlantaComponent implements OnInit {
   }
 
 
-  title = this.nomePlanta;
 }

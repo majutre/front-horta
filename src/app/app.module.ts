@@ -21,6 +21,7 @@ import { SobreComponent } from './sobre/sobre.component';
 import { TermosComponent } from './termos/termos.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { MinhasPlantasComponent } from './plantas/minhas-plantas/minhas-plantas.component';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { FooterComponent } from './footer/footer.component';
     SobreComponent,
     TermosComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    MinhasPlantasComponent
   ],
   imports: [
     BrowserModule
