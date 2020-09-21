@@ -19,6 +19,8 @@ import { PragasComponent } from './pragas/pragas.component';
 import { PrivacidadeComponent } from './privacidade/privacidade.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { TermosComponent } from './termos/termos.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -40,7 +42,9 @@ import { TermosComponent } from './termos/termos.component';
     PragasComponent,
     PrivacidadeComponent,
     SobreComponent,
-    TermosComponent
+    TermosComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule
