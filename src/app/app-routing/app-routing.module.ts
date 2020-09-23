@@ -28,7 +28,6 @@ const routes: Routes = [
   { path: 'marca', component: MarcaComponent},
   { path: 'termos', component: TermosComponent},
   { path: 'privacidade', component: PrivacidadeComponent},
-  
 
 ]
 
