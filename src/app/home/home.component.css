@@ -1,21 +1,122 @@
- .home-body {
+.home-body {
   background-image: url("../../assets/images/arnaldo-aldana-home.jpg");
   
   /* Full height */
-  height: 100%;
+  height: 100vh;
 
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: center;
 }
 
 .home-subtitle {
-  position: absolute;
-  left: 40%;
-  top: 65%;
-  font-family: Anton;
+  position: relative;
+  margin: 445px auto;
+  font-family: var(--main-font-family);
   font-size: 25px;
   color: transparent;
   animation: color 0.5s ease forwards 4.5s;
 }
+/* ----------| MEDIA QUERIES |---------- */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .home-subtitle {
+    margin: 475px auto;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .home-subtitle {
+    margin: 500px auto;
+    font-size: 30px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .home-subtitle {
+    margin: 500px auto;
+    font-size: 40px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .home-subtitle {
+    margin: 500px auto;
+  }
+}
+
+/* ----------| ANIMAÇÃO |---------- */
+
+#logotipo {
+  position: absolute;
+  left: 10%;
+  top: 35%;
+  width: 80%;
+  animation: fill 0.5s ease forwards 4s;
+}
+
+#logotipo path:nth-child(1) {
+  stroke-dasharray: 1187.39990234375px;
+  stroke-dashoffset: 1187.39990234375px;
+  animation: line-anim 3s ease forwards 0.5s;
+}
+
+#logotipo path:nth-child(2) {
+  stroke-dasharray: 1038.6124267578125px;
+  stroke-dashoffset: 1038.6124267578125px;
+  animation: line-anim 3s ease forwards 0.8s;
+}
+
+#logotipo path:nth-child(3) {
+  stroke-dasharray: 1125.2177734375px;
+  stroke-dashoffset: 1125.2177734375px;
+  animation: line-anim 3s ease forwards 1.1s;
+}
+
+#logotipo path:nth-child(4) {
+  stroke-dasharray: 741px;
+  stroke-dashoffset: 741px;
+  animation: line-anim 3s ease forwards 1.4s;
+}
+
+#logotipo path:nth-child(5) {
+  stroke-dasharray: 1107.779296875px;
+  stroke-dashoffset: 1107.779296875px;
+  animation: line-anim 3s ease forwards 1.7s;
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+
+  to {
+    fill: var(--first-accent-color);
+  }
+
+}
+
+@keyframes color {
+  from {
+    color: transparent;
+  }
+
+  to {
+    color: var(--main-txt-color);
+  }
+
+}
+

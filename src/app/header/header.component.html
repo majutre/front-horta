@@ -1,36 +1,35 @@
- <nav class="navbar navbar-expand-lg container navbar-dark bg-dark mb-4">
+<nav>
 
-   <a class="navbar-brand navbar-brand navbar-brand_name" href="#">
-     <img src="./assets/images/logo-horta.svg" class="img-fluid navbar-logo" alt="Horta logotipo">
-     HORTA
-   </a>
-   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-     <span class="navbar-toggler-icon"></span>
-   </button>
+  <input type="checkbox" id="hamburger">
+  <div class="nav-logo">
+    <img src="./assets/images/logo-horta.svg" alt="Logotipo">
+    <div class="nav-name">HORTA</div>
+  </div>
+  
+  <div class="burger">
+    <label for="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
 
-   <div class="collapse navbar-collapse my-lg-0" id="navbarSupportedContent">
-     <ul class="nav navbar-nav ml-auto bg-dark">
-       <li class="nav-item">
-         <a class="nav-link" routerLink="/">Home<span class="sr-only">(current)</span></a>
-       </li>
-       <li class="nav-item">
-         <a class="nav-link" routerLink="/plantas" routerLinkActive="selected">Plantas</a>
-       </li>
-       <li class="nav-item">
-         <a class="nav-link" routerLink="/pragas">Pragas</a>
-       </li>
-       <li class="nav-item">
-         <a class="nav-link" routerLink="/inscreva-se">Inscreva-se</a>
-       </li>
-       <li class="nav-item button">
-         <a type="button" class="btn btn-success navbar-btn-enter" routerLink="/login">Entrar</a>
-       </li>
-       <li class="nav-item">
-         <a class="nav-link" routerLink="#">
-           <img src="./assets/images/lupa.svg" alt="">
-         </a>
-       </li>
-     </ul>
-   </div>
- </nav>
+  <ul class="nav-links">
+    <li>
+      <a routerLink="/">Home<span class="sr-only">(current)</span></a>
+    </li>
+    <li>
+      <a routerLink="/plantas">Plantas</a>
+    </li>
+    <li>
+      <a routerLink="/pragas">Pragas</a>
+    </li>
+    <li>
+      <a routerLink="/inscreva-se">Inscreva-se</a>
+    </li>
+    <li>
+      <a routerLink="/login" class="nav-btn">login</a>
+    </li>
+  </ul>
+
+</nav>
