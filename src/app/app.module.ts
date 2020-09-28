@@ -25,6 +25,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MinhasPlantasComponent } from './plantas/minhas-plantas/minhas-plantas.component';
 import { CarrosselComponent } from './carrossel/carrossel.component';
+import { AreaClienteComponent } from './area-cliente/area-cliente.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { CarrosselComponent } from './carrossel/carrossel.component';
     HeaderComponent,
     FooterComponent,
     MinhasPlantasComponent,
-    CarrosselComponent
+    CarrosselComponent,
+    AreaClienteComponent
   ],
   imports: [
     BrowserModule,
