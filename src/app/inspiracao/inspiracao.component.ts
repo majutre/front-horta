@@ -10,6 +10,7 @@ export class InspiracaoComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  
   }
 
   title = 'Inspiração'

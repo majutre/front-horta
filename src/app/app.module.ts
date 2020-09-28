@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -23,6 +24,7 @@ import { TermosComponent } from './termos/termos.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MinhasPlantasComponent } from './plantas/minhas-plantas/minhas-plantas.component';
+import { CarrosselComponent } from './carrossel/carrossel.component';
 
 @NgModule({
   declarations: [
@@ -46,11 +48,13 @@ import { MinhasPlantasComponent } from './plantas/minhas-plantas/minhas-plantas.
     TermosComponent,
     HeaderComponent,
     FooterComponent,
-    MinhasPlantasComponent
+    MinhasPlantasComponent,
+    CarrosselComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MDBBootstrapModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

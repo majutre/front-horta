@@ -1,3 +1,5 @@
+
+
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -13,6 +15,8 @@ import { SobreComponent } from '../sobre/sobre.component';
 import { MarcaComponent } from '../marca/marca.component';
 import { TermosComponent } from '../termos/termos.component';
 import { PrivacidadeComponent } from '../privacidade/privacidade.component';
+import { PerfilDaPlantaComponent } from './../../../../Cicero/front-horta-master/src/app/perfil-da-planta/perfil-da-planta.component';
+import { CarrosselComponent } from './../carrossel/carrossel.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -28,7 +32,8 @@ const routes: Routes = [
   { path: 'marca', component: MarcaComponent},
   { path: 'termos', component: TermosComponent},
   { path: 'privacidade', component: PrivacidadeComponent},
-
+  { path: 'perfil-da-planta', component: PerfilDaPlantaComponent },
+  { path: 'carrossel', component: CarrosselComponent }
 ]
 
 @NgModule({
