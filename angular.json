@@ -103,7 +103,7 @@
               "src/styles.css"
             ],
             "scripts": [
-              "src/assets/js/carrossel.js"
+             
             ]
           }
         },
