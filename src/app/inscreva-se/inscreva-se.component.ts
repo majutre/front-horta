@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 import { ClienteModel } from '../Clientes/model/cliente-model';
 import { ClienteRepository } from '../Clientes/repository/cliente-repository';
+
 @Component({
   selector: 'inscreva-se',
   templateUrl: './inscreva-se.component.html',
@@ -26,9 +27,9 @@ export class InscrevaSeComponent implements OnInit {
   ngOnInit(): void {
     this.iniciarFormulario();
 
-    this.repository.getAllEstados().subscribe(resposta => {
-      this.estados.push({ label: resposta.nome, value: resposta.id });
-    });
+    // this.repository.getAllEstados().subscribe(resposta => {
+    //   this.estados.push({ label: resposta.nome, value: resposta.id });
+    // });
   }
 
  public iniciarFormulario() {
@@ -37,18 +38,9 @@ export class InscrevaSeComponent implements OnInit {
       id: [null],
       nome: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(150)]],
       sobrenome: ['', Validators.required],
-      telefones: [''],
-      dataNasc: [''],
-      cpf: [''],
-      rg: [''],
+      genero: [''],
       email: [''],
-      cep: [''],
-      logradouro: [''],
-      numero: [''],
-      complemento: [''],
-      bairro: [''],
-      cidade: [''],
-      estado: [''],
+      senha: ['']
     });
 
     // this.formulario.controls.id.setValue('');
@@ -64,31 +56,15 @@ export class InscrevaSeComponent implements OnInit {
   };
 
   salvar() {
-    // const listaTelefones = [];
-    // this.formulario.value.telefones.forEach(element => {
-    //   listaTelefones.push({
-    //     id:null,numero:element,tipo:'casa'
-    //   })
-    // });
+
     const dados = {
 
       id: this.formulario.value.id,
       nome: this.formulario.value.nome,
       sobrenome: this.formulario.value.sobrenome,
-      dataNasc: this.formulario.value.dataNasc,
-      cpf: this.formulario.value.cpf,
-      rg: this.formulario.value.rg,
+      genero: this.formulario.value.genero,
       email: this.formulario.value.email,
-      endereco: {
-        cep: this.formulario.value.cep,
-        logradouro: this.formulario.value.logradouro,
-        numero: this.formulario.value.numero,
-        complemento: this.formulario.value.complemento,
-        bairro: this.formulario.value.bairro,
-        cidade: {
-          id: this.formulario.value.cidade
-        }
-      }
+      senha: this.formulario.value.senha
 
     } as ClienteModel;
 
@@ -107,12 +83,12 @@ export class InscrevaSeComponent implements OnInit {
     this.formulario.reset();
   }
 
-  listarCidades() {
-    this.cidades = [];
-    let id: number = this.formulario.value.estado;
-    this.repository.getAllCidadesByEstado(id).subscribe(resposta => {
-      this.cidades.push({ label: resposta.nome, value: resposta.id });
-    });
-  }
+  // listarCidades() {
+  //   this.cidades = [];
+  //   let id: number = this.formulario.value.estado;
+  //   this.repository.getAllCidadesByEstado(id).subscribe(resposta => {
+  //     this.cidades.push({ label: resposta.nome, value: resposta.id });
+  //   });
+  // }
 }
 

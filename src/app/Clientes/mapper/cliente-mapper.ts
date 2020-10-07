@@ -10,11 +10,9 @@ export class ClienteMapper extends Mapper<ClienteEntity, ClienteModel> {
             id: entity.id,
             nome: entity.nome ? entity.nome : 'Não informado',
             sobrenome: entity.sobrenome,
-            dataNasc: entity.dataNasc,
-            cpf: entity.cpf,
-            rg: entity.rg,
+            genero: entity.genero,
             email: entity.email,
-            endereco: entity.endereco
+            senha: entity.senha
         };
     }
     mapTo(param: ClienteModel): ClienteEntity {
@@ -22,11 +20,9 @@ export class ClienteMapper extends Mapper<ClienteEntity, ClienteModel> {
             id: param.id,
             nome: param.nome,
             sobrenome: param.sobrenome,
-            dataNasc: param.dataNasc,
-            cpf: param.cpf,
-            rg: param.rg,
+            genero: param.genero,
             email: param.email,
-            endereco: param.endereco
+            senha: param.senha
         };
     }
 }
