@@ -1,11 +1,16 @@
-export class Planta {
-    public nome: string;
-    public descricao: string;
-    public imagePath: string;
-
-    constructor(nome: string, desc: string, imagePath: string) {
-        this.nome = nome;
-        this.descricao = desc;
-        this.imagePath = imagePath;
-    }
+export interface Planta {
+    id: number;
+    nome: string;
+    nomec: string,
+    descricao: string,
+    tipo: string,
+    luz: string,
+    temperatura: string,
+    epoca: string,
+    tempo: string,
+    solo: string,
+    irrigacao: string,
+    pestes: string,
+    propagacao: string,
+    imagem: string
 }

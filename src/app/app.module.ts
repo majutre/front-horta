@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing/app-routing.module';
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
@@ -26,8 +25,10 @@ import { TermosComponent } from './termos/termos.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MinhasPlantasComponent } from './plantas/minhas-plantas/minhas-plantas.component';
-import { CarrosselComponent } from './carrossel/carrossel.component';
 import { AreaClienteComponent } from './area-cliente/area-cliente.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { PlantaDetalhesComponent } from './plantas/planta-detalhes/planta-detalhes.component';
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   declarations: [
@@ -52,16 +53,17 @@ import { AreaClienteComponent } from './area-cliente/area-cliente.component';
     HeaderComponent,
     FooterComponent,
     MinhasPlantasComponent,
-    CarrosselComponent,
-    AreaClienteComponent
+    AreaClienteComponent,
+    DashboardComponent,
+    PlantaDetalhesComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule,
-    MDBBootstrapModule.forRoot()
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -13,15 +13,15 @@ import { SobreComponent } from '../sobre/sobre.component';
 import { MarcaComponent } from '../marca/marca.component';
 import { TermosComponent } from '../termos/termos.component';
 import { PrivacidadeComponent } from '../privacidade/privacidade.component';
-import { PerfilDaPlantaComponent } from './../../../../Cicero/front-horta-master/src/app/perfil-da-planta/perfil-da-planta.component';
-import { CarrosselComponent } from './../carrossel/carrossel.component';
+import { PerfilDaPlantaComponent } from '../perfil-da-planta/perfil-da-planta.component';
 import { AreaClienteComponent } from './../area-cliente/area-cliente.component';
+import { DashboardComponent } from '../dashboard/dashboard.component';
+import { PlantaDetalhesComponent } from '../plantas/planta-detalhes/planta-detalhes.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
   { path: 'home', component: HomeComponent},
   { path: 'login', component: LoginComponent},
-  { path: 'plantas', component: PlantasComponent},
   { path: 'pragas', component: PragasComponent},
   { path: 'inscreva-se', component: InscrevaSeComponent},
   { path: 'oqueeh', component: OqueehComponent},
@@ -32,8 +32,10 @@ const routes: Routes = [
   { path: 'termos', component: TermosComponent},
   { path: 'privacidade', component: PrivacidadeComponent},
   { path: 'perfil-da-planta', component: PerfilDaPlantaComponent },
-  { path: 'carrossel', component: CarrosselComponent },
-  { path: 'area-cliente', component: AreaClienteComponent}
+  { path: 'area-cliente', component: AreaClienteComponent},
+  { path: 'dashboard', component: DashboardComponent },
+  { path: 'plantas', component: PlantasComponent} ,
+  { path: 'plantadetalhes/:id', component: PlantaDetalhesComponent }
 ]
 
 @NgModule({

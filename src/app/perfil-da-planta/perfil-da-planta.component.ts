@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-
-
 import { Planta } from '../plantas/plantas.model';
-import { CarrosselComponent } from './../carrossel/carrossel.component';
 
 @Component({
   selector: 'app-perfil-da-planta',
@@ -12,12 +9,13 @@ import { CarrosselComponent } from './../carrossel/carrossel.component';
 })
 export class PerfilDaPlantaComponent implements OnInit {
 
-  planta: Planta = new Planta('Cenoura', 'É laranja', 'url');
-  title = this.planta.nome;
+  planta: Planta;
+  title: 'Perfil da Planta';
 
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 
