@@ -17,6 +17,7 @@ import { PerfilDaPlantaComponent } from '../perfil-da-planta/perfil-da-planta.co
 import { AreaClienteComponent } from './../area-cliente/area-cliente.component';
 import { DashboardComponent } from '../dashboard/dashboard.component';
 import { PlantaDetalhesComponent } from '../plantas/planta-detalhes/planta-detalhes.component';
+import { PageNotFoundComponent } from '../page-not-found/page-not-found.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -35,7 +36,9 @@ const routes: Routes = [
   { path: 'area-cliente', component: AreaClienteComponent},
   { path: 'dashboard', component: DashboardComponent },
   { path: 'plantas', component: PlantasComponent} ,
-  { path: 'plantadetalhes/:id', component: PlantaDetalhesComponent }
+  { path: 'plantadetalhes/:id', component: PlantaDetalhesComponent },
+  { path: 'not-found', component: PageNotFoundComponent},
+  { path: '**', redirectTo: '/not-found' } //esse path deve ser sempre o último
 ]
 
 @NgModule({

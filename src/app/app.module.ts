@@ -29,6 +29,7 @@ import { AreaClienteComponent } from './area-cliente/area-cliente.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PlantaDetalhesComponent } from './plantas/planta-detalhes/planta-detalhes.component';
 import { MessagesComponent } from './messages/messages.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { MessagesComponent } from './messages/messages.component';
     AreaClienteComponent,
     DashboardComponent,
     PlantaDetalhesComponent,
-    MessagesComponent
+    MessagesComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
