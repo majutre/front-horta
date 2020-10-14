@@ -1,48 +1,100 @@
 <div class="content-wraper">
   <h1>{{title}}</h1>
+
   <div class="container-fluid">
+
     <form [formGroup]="formulario" (ngSubmit)="cadastrar()">
       <div class="form-row lg-form">
         <div class="form-group col-md-6">
           <label for="inputNome">Nome</label>
-          <input type="text" class="form-control" id="inputNome" name="nome" formControlName="nome" />
+          <input type="text" 
+            class="form-control" 
+            id="inputNome" 
+            name="nome" 
+            formControlName="nome"
+            [class]="(submitted && formulario.get('nome').errors) ||
+              (formulario.get('nome').errors && formulario.get('nome').dirty) ? 'is-invalid' :
+              formulario.get('nome').dirty ? 'is-valid' : '' "
+          />
+          <div *ngIf="formulario.get('nome').errors?.required" class="invalid-feedback">
+            O campo "Nome" é obrigatório.
+          </div>
+          <div *ngIf="formulario.get('nome').errors?.minlength" class="invalid-feedback">
+            O campo "Nome" deve ter mais que 3 caracteres.
+          </div>
         </div>
+
         <div class="form-group col-md-6">
           <label for="inputSobrenome">Sobrenome</label>
-          <input type="text" class="form-control" id="inputSobrenome" name="sobrenome" formControlName="sobrenome"/>
+          <input 
+            type="text" 
+            class="form-control" 
+            id="inputSobrenome" 
+            name="sobrenome" 
+            formControlName="sobrenome"
+            [class]="(submitted && formulario.get('sobrenome').errors) ||
+              (formulario.get('sobrenome').errors && formulario.get('sobrenome').dirty) ? 'is-invalid' :
+              formulario.get('sobrenome').dirty ? 'is-valid' : '' " 
+          />
+          <div *ngIf="formulario.get('sobrenome').errors?.required" class="invalid-feedback">
+            O campo "Sobrenome" é obrigatório.
+          </div>
+           <div *ngIf="formulario.get('sobrenome').errors?.minlength" class="invalid-feedback">
+            O campo "Sobrenome" deve ter mais que 3 caracteres.
+           </div>
         </div>
+
       </div>
+
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="inputUsuario">Usuário</label>
           <input type="text" class="form-control" id="inputUsuario" name="usuario">
         </div>
+
         <div class="form-group col-md-6">
           <label for="inputEmail">E-mail</label>
-          <input type="email" class="form-control" id="inputEmail" name="email" formControlName="email">
+          <input 
+            type="email" 
+            class="form-control" 
+            id="inputEmail" 
+            name="email" 
+            formControlName="email" 
+            [class]="(submitted && formulario.get('senha').errors) ||
+                (formulario.get('senha').errors && formulario.get('senha').dirty) ? 'is-invalid' :
+                formulario.get('senha').dirty ? 'is-valid' : '' " 
+          />
+          <div *ngIf="formulario.get('senha').errors?.required" class="invalid-feedback">
+            O campo "E-mail" é obrigatório.
+          </div>
         </div>
+
       </div>
+
       <div class="form-row">
         <div class="form-group col-md-4">
           <label for="inputNasc">Data de Nascimento</label>
-          <input type="date" class="form-control" id="inputNasc" name="dataNasc" >
+          <input type="date" class="form-control" id="inputNasc" name="dataNasc">
         </div>
+
         <div class="col-md-4"></div>
+
         <div class="form-group float-right">
-          <label for="genero">Gênero</label><br> 
-          <div class="form-check form-check-inline" >
-            <input class="form-check-input" type="radio" id="inputGeneroF" value="FEMININO" >
+          <label for="genero">Gênero</label><br>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="inputGeneroF" value="FEMININO">
             <label class="form-check-label" for="inputGeneroF">Feminino</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" id="inputGeneroM" value="MASCULINO" >
+            <input class="form-check-input" type="radio" id="inputGeneroM" value="MASCULINO">
             <label class="form-check-label" for="inputGeneroM">Masculino</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" id="inputGeneroO" value="NAOINFORMAR" >
+            <input class="form-check-input" type="radio" id="inputGeneroO" value="NAOINFORMAR">
             <label class="form-check-label" for="inputGeneroO">Não informar</label>
           </div>
         </div>
+
       </div>
       <!-- <div class="form-row">
         <div class="form-group col-md-4">
@@ -61,13 +113,37 @@
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="inputSenha1">Senha</label>
-          <input type="password" class="form-control" id="inputSenha1" name="senha">
+          <input 
+            type="password" 
+            class="form-control" 
+            id="inputSenha1" 
+            name="senha" 
+            [class]="(submitted && formulario.get('senha').errors) ||
+              (formulario.get('senha').errors && formulario.get('senha').dirty) ? 'is-invalid' :
+              formulario.get('senha').dirty ? 'is-valid' : '' "
+          />
+          <div *ngIf="formulario.get('senha').errors?.required" class="invalid-feedback">
+            O campo "Senha" é obrigatório.
+          </div>
+          <div *ngIf="formulario.get('nome').errors?.minlength" class="invalid-feedback">
+            O campo "Senha" deve ter mais que 8 caracteres.
+          </div>
         </div>
+
         <div class="form-group col-md-6">
           <label for="inputSenha2">Confirmar Senha</label>
-          <input type="password" class="form-control" id="inputSenha2">
+          <input
+            type="password" 
+            class="form-control" 
+            id="inputSenha2" 
+          />
+          <!-- <div *ngIf="formulario.get('senha').errors?.required" class="invalid-feedback">
+            Por favor, confirme sua senha.
+          </div> -->
         </div>
+
       </div>
+
       <div class="form-check">
         <input class="form-check-input" type="checkbox" id="gridCheck">
         <label class="form-check-label" for="gridCheck">
@@ -76,7 +152,7 @@
       </div>
 
       <button type="submit" class="btn-type-a">
-         Cadastrar
+        Cadastrar
       </button>
     </form>
   </div>

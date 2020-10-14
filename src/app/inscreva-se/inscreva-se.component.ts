@@ -17,7 +17,7 @@ export class InscrevaSeComponent implements OnInit {
   estados: any[] = [];
   cidades: any[] = [];
   public formulario: FormGroup;
-  operacao: boolean = true;
+  public submitted: boolean = false;
 
   constructor(
     private repository: ClienteRepository,
@@ -37,10 +37,10 @@ export class InscrevaSeComponent implements OnInit {
     this.formulario = this.fb.group({
       id: [null],
       nome: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(150)]],
-      sobrenome: ['', Validators.required],
+      sobrenome: ['', Validators.required, Validators.minLength(3)],
       genero: [''],
-      email: [''],
-      senha: ['']
+      email: ['', Validators.required],
+      senha: ['', Validators.required]
     });
 
     // this.formulario.controls.id.setValue('');
@@ -49,6 +49,7 @@ export class InscrevaSeComponent implements OnInit {
   }
 
   cadastrar() {
+    this.submitted = true;
     if (this.formulario.invalid) {
       return;
     }
@@ -80,6 +81,7 @@ export class InscrevaSeComponent implements OnInit {
   }
 
   limparFormulario() {
+    this.submitted = false;
     this.formulario.reset();
   }
 
