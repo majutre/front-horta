@@ -75,6 +75,7 @@ export class InscrevaSeComponent implements OnInit {
   limparFormulario() {
     this.submitted = false;
     this.formulario.reset();
+    this.iniciarFormulario();
   }
 
 }
