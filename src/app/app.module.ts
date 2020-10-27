@@ -1,5 +1,5 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -11,7 +11,6 @@ import { MinhaContaComponent } from './minha-conta/minha-conta.component';
 import { CadastroCultivoComponent } from './cadastro-cultivo/cadastro-cultivo.component';
 import { DetalhesColheitaComponent } from './detalhes-colheita/detalhes-colheita.component';
 import { InspiracaoComponent } from './inspiracao/inspiracao.component';
-import { LoginComponent } from './login/login.component';
 import { MarcaComponent } from './marca/marca.component';
 import { OqueehComponent } from './oqueeh/oqueeh.component';
 import { PerfilComponent } from './perfil/perfil.component';
@@ -31,6 +30,8 @@ import { PlantaDetalhesComponent } from './plantas/planta-detalhes/planta-detalh
 import { MessagesComponent } from './messages/messages.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
+import { SegurancaModule } from './seguranca/seguranca.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +41,6 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     CadastroCultivoComponent,
     DetalhesColheitaComponent,
     InspiracaoComponent,
-    LoginComponent,
     MarcaComponent,
     OqueehComponent,
     PerfilComponent,
@@ -65,7 +65,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SegurancaModule
   ],
   providers: [],
   bootstrap: [AppComponent]

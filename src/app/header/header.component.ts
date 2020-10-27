@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
+
+import { AuthService } from './../seguranca/auth.service';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  usuario: string = '';
+
+  constructor(public authService: AuthService) {
+    this.usuario = authService.jwtPayload ? authService.jwtPayload.user_name : '';
+  }
 
   ngOnInit(): void {
   }
 
+  onLogout() {
+    this.authService.logout();
+  }
 }

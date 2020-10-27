@@ -1,26 +1,33 @@
 <div class="content-wraper">
-  <h1>{{ title }} </h1>
+  <h1> Login </h1>
 
   <div class="container-fluid cont">
     <div class="container">
-      <form method="post">
+      <form [formGroup]="formulario" (ngSubmit)="onLogin()">
 
         <div class="form-group">
-          <label for="user">Usuário</label>
-          <input type="text" class="form-control" name="usuario">
+          <label for="user">E-mail</label>
+          <input type="text" class="form-control" name="usuario" autofocus formControlName="login">
         </div>
+
         <div class="form-group">
           <label for="password">Senha</label>
-          <input type="password" class="form-control" name="senha">
+          <input type="password" class="form-control" name="senha" formControlName="senha">
         </div>
+
         <div class="d-flex justify-content-end">
-          <a type="submit" class="btn-type-a mt-2" routerLink="/area-cliente">Entrar</a>
+          <button type="submit" class="btn-type-a mt-2">Entrar</button>
         </div>
+
         <hr class="my-4">
+
         <div class="d-flex justify-content-center">
-          <a type="button" class="btn-type-b"><i class="fab fa-google icon-google mx-2"></i>
-            Continuar usando Google</a>
+          <a type="button" class="btn-type-b">
+            <i class="fab fa-google icon-google mx-2"></i>
+            Continuar usando Google
+          </a>
         </div>
+
       </form>
     </div>
   </div>

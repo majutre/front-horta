@@ -18,6 +18,7 @@ import { AreaClienteComponent } from './../area-cliente/area-cliente.component';
 import { DashboardComponent } from '../dashboard/dashboard.component';
 import { PlantaDetalhesComponent } from '../plantas/planta-detalhes/planta-detalhes.component';
 import { PageNotFoundComponent } from '../page-not-found/page-not-found.component';
+import { AuthGuard } from '../seguranca/auth.guard';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -33,12 +34,11 @@ const routes: Routes = [
   { path: 'termos', component: TermosComponent},
   { path: 'privacidade', component: PrivacidadeComponent},
   { path: 'perfil-da-planta', component: PerfilDaPlantaComponent },
-  { path: 'area-cliente', component: AreaClienteComponent},
   { path: 'dashboard', component: DashboardComponent },
   { path: 'plantas', component: PlantasComponent} ,
   { path: 'plantadetalhes/:id', component: PlantaDetalhesComponent },
   { path: 'not-found', component: PageNotFoundComponent},
-  { path: '**', redirectTo: '/not-found' } //esse path deve ser sempre o último
+ // { path: '**', redirectTo: '/not-found' } //esse path deve ser sempre o último
 ]
 
 @NgModule({

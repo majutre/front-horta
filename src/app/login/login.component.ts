@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { AuthService } from '../seguranca/auth.service';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -7,10 +8,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  public formulario: FormGroup;
 
-  ngOnInit(): void {
+  constructor(
+    private authService: AuthService,
+    private fb: FormBuilder
+  ) { }
+
+  ngOnInit() {
+    this.iniciarFormulario();
   }
 
-  title = 'Login'
+  public iniciarFormulario() {
+    this.formulario = this.fb.group({
+      login: ['', [Validators.required, Validators.email]],
+      senha: ['', Validators.required]
+    });
+  }
+
+  onLogin() {
+    if (this.formulario.invalid) {
+      return;
+    }
+    //fazer a chamada
+    const login = this.formulario.value.login;
+    const senha = this.formulario.value.senha;
+
+    this.authService.login(login, senha);
+    console.log('AAA');
+    
+  }
 }
