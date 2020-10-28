@@ -24,17 +24,17 @@
     <li>
       <a routerLink="/pragas" class="nav-itemlink ">Pragas</a>
     </li>
-    <li>
+    <li *ngIf="!isLogged">
       <a routerLink="/inscreva-se" class="nav-itemlink">Inscreva-se</a>
     </li>
-    <li>
+    <li *ngIf="!isLogged">
       <a routerLink="/login" class="nav-btn">login</a>
     </li>
-    <!-- <li *ngIf="!isLogged">
-      <a class="nav-btn" (click)="onLogout()>logout</a>
-    </li> -->
+    <li *ngIf="isLogged">
+      <a class="nav-btn" (click)="onLogout()" style="cursor: pointer;">logout</a>
+    </li>
     <li>
-      <a routerLink="/dashboard" class="nav-itemlink ">Dashboard</a>
+      <a routerLink="/dashboard" class="nav-itemlink" *ngIf="isLogged">Dashboard</a>
     </li>
   </ul>
 

@@ -1,3 +1,4 @@
+import { SpinnerComponent } from './../template/spinner/spinner.component';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
@@ -10,7 +11,7 @@ import { AuthGuard } from './auth.guard';
 
 
 @NgModule({
-  declarations: [LoginComponent],
+  declarations: [LoginComponent, SpinnerComponent],
   imports: [
     CommonModule,
     SegurancaRoutingModule,

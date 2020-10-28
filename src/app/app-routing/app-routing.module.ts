@@ -14,11 +14,9 @@ import { MarcaComponent } from '../marca/marca.component';
 import { TermosComponent } from '../termos/termos.component';
 import { PrivacidadeComponent } from '../privacidade/privacidade.component';
 import { PerfilDaPlantaComponent } from '../perfil-da-planta/perfil-da-planta.component';
-import { AreaClienteComponent } from './../area-cliente/area-cliente.component';
 import { DashboardComponent } from '../dashboard/dashboard.component';
 import { PlantaDetalhesComponent } from '../plantas/planta-detalhes/planta-detalhes.component';
 import { PageNotFoundComponent } from '../page-not-found/page-not-found.component';
-import { AuthGuard } from '../seguranca/auth.guard';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},

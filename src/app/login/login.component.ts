@@ -9,6 +9,7 @@ import { AuthService } from '../seguranca/auth.service';
 export class LoginComponent implements OnInit {
 
   public formulario: FormGroup;
+  isLoading = false;
 
   constructor(
     private authService: AuthService,
@@ -27,15 +28,19 @@ export class LoginComponent implements OnInit {
   }
 
   onLogin() {
+
     if (this.formulario.invalid) {
       return;
     }
+
+    this.isLoading = true;
     //fazer a chamada
     const login = this.formulario.value.login;
     const senha = this.formulario.value.senha;
-
-    this.authService.login(login, senha);
-    console.log('AAA');
     
+    this.authService.login(login, senha);
+    this.formulario.reset();
+
+    this.isLoading = false;
   }
 }

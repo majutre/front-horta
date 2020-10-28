@@ -17,7 +17,7 @@ export class AuthGuard implements CanActivate {
     state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
 
       if (this.auth.isAccessTokenInvalido()) {
-            this.router.navigate(['/area-cliente']); //aqui vem a página pós lig
+            this.router.navigate(['/login']);
             return false;
         }  
 

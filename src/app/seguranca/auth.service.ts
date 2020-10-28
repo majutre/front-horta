@@ -1,13 +1,19 @@
-import { Router } from '@angular/router';
 import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
+import { Subject, pipe } from 'rxjs';
+import { catchError } from 'rxjs/operators';
+
+
 import { AuthRepository } from './auth-repository';
+import { User } from './user.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
 
-  jwtPayload: any; 
+  jwtPayload: any;
+  user = new Subject<User>(); 
 
   constructor(
     public authRepository: AuthRepository, 
@@ -29,13 +35,14 @@ export class AuthService {
           this.armazenarToken(json['access_token']);
           
           console.log('Novo access token criado!' + JSON.stringify(this.jwtPayload));
-          this.router.navigate(['/area-cliente']);
-          console.log
+          this.router.navigate(['/area-cliente']); //aqui vem a página pós login
+          const user = new User(login);
+          this.user.next(user);
         },
         (e) => {
           console.log(e.error.error_description);      
         }
-      );    
+      ); 
   }
 
   private armazenarToken(token: string) {
@@ -53,6 +60,7 @@ export class AuthService {
   }
 
   logout() {
+   
     return this.authRepository
       .postLogout()
       .subscribe(
@@ -109,17 +117,17 @@ export class AuthService {
       );  
   }
 
-  temPermissao(permissao: string) {
-    return this.jwtPayload && this.jwtPayload.authorities.includes(permissao);
-  }
+  // temPermissao(permissao: string) {
+  //   return this.jwtPayload && this.jwtPayload.authorities.includes(permissao);
+  // }
 
-  temQualquerPermissao(roles) {
-    for (const role of roles) {
-      if (this.temPermissao(role)) {
-        return true;
-      }
-    }
-    return false;
-  }
+  // temQualquerPermissao(roles) {
+  //   for (const role of roles) {
+  //     if (this.temPermissao(role)) {
+  //       return true;
+  //     }
+  //   }
+  //   return false;
+  // }
 
 }
