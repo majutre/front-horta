@@ -2,8 +2,6 @@ import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { Subject } from 'rxjs';
 
-
-
 import { AuthRepository } from './auth-repository';
 import { User } from './user.model';
 
@@ -13,7 +11,6 @@ import { User } from './user.model';
 export class AuthService {
 
   jwtPayload: any;
-  user = new Subject<User>(); 
 
   constructor(
     public authRepository: AuthRepository, 
@@ -36,8 +33,7 @@ export class AuthService {
           
           console.log('Novo access token criado!' + JSON.stringify(this.jwtPayload));
           this.router.navigate(['/area-cliente']); //aqui vem a página pós login
-          const user = new User(JSON.stringify(this.jwtPayload));
-          this.user.next(user);
+         
         },
         (e) => {
           console.log(e.error.error_description);      
@@ -45,18 +41,6 @@ export class AuthService {
       ); 
   }
 
-  autoLogin(){
-    const token: string = localStorage.getItem('token')
-
-    if (this.isAccessTokenInvalido()) {
-      return;
-    }
-
-    const loadedUser = new User(JSON.stringify(token));
-
-    this.user.next(loadedUser);
-  
-  }
 
   private armazenarToken(token: string) {
     this.jwtPayload = JSON.parse(atob(token.split('.')[1]));
@@ -79,7 +63,7 @@ export class AuthService {
       .subscribe(
         (resposta) => {
           this.limparAccessToken();
-          this.router.navigate(['/login']);
+          this.router.navigate(['/']);
         },
         (e) => {
           console.log(e.error.error_description);      
@@ -87,13 +71,9 @@ export class AuthService {
       ); 
   }
 
-  // autoLogout(){
-
-  // }
 
   limparAccessToken() {
     this.jwtPayload = null;
-    this.user = null;
     localStorage.removeItem('token');
   }
 
@@ -140,6 +120,7 @@ export class AuthService {
   }
 
   temQualquerPermissao(roles) {
+
     for (const role of roles) {
       if (this.temPermissao(role)) {
         return true;

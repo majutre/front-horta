@@ -1,4 +1,3 @@
-import { SpinnerComponent } from './../template/spinner/spinner.component';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
@@ -8,6 +7,7 @@ import { SegurancaRoutingModule } from './seguranca-routing.module';
 import { LoginComponent } from './../login/login.component';
 import { AuthService } from './auth.service';
 import { AuthGuard } from './auth.guard';
+import { SpinnerComponent } from './../template/spinner/spinner.component';
 
 
 @NgModule({

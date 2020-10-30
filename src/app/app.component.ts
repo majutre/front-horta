@@ -1,4 +1,4 @@
-import { AuthService } from './seguranca/auth.service';
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,9 +9,8 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   title = 'HORTA';
 
-  constructor(private authService: AuthService){}
 
   ngOnInit(){
-    this.authService.autoLogin();
+    
   }
 }

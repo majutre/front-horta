@@ -5,6 +5,7 @@ import { AreaClienteComponent } from './../area-cliente/area-cliente.component';
 import { NaoAutorizadoComponent } from './nao-autorizado.component';
 import { LoginComponent } from './../login/login.component';
 import { DashboardComponent } from '../dashboard/dashboard.component';
+
 import { AuthGuard } from './auth.guard';
 
 const routes: Routes = [

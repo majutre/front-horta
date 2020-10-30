@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
+import { MustMatch } from './validator-senha/must-match.validator';
 import { ClienteModel } from '../Clientes/model/cliente-model';
 import { ClienteRepository } from '../Clientes/repository/cliente-repository';
 
@@ -33,9 +34,14 @@ export class InscrevaSeComponent implements OnInit {
       sobrenome: ['', [Validators.required, Validators.minLength(3)]],
       genero: ['NAOINFORMAR'],
       email: ['', [Validators.required, Validators.email]],
-      senha: ['', [Validators.required, Validators.minLength(8)]]
-    });
+      senha: ['', [Validators.required, Validators.minLength(8)]],
+      confirmPass: ['', Validators.required]
+    }
+    , { validator: MustMatch('senha', 'confirmPass') }
+    );
   }
+
+  get form() { return this.formulario.controls;  }
 
   cadastrar() {
     this.submitted = true;
@@ -71,6 +77,7 @@ export class InscrevaSeComponent implements OnInit {
     }
 
   }
+
 
   limparFormulario() {
     this.submitted = false;

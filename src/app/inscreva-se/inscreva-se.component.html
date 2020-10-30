@@ -143,15 +143,24 @@
         </div>
 
         <div class="form-group col-md-6">
-          <label for="inputSenha2">Confirmar Senha</label>
+          <label for="confirmPass">Confirmar Senha</label>
           <input
             type="password" 
             class="form-control" 
-            id="inputSenha2" 
+            name="confirmPass"
+            id="confirmPass" 
+            formControlName="confirmPass"
+            [class]="(submitted && formulario.get('confirmPass').errors) ||
+                     (formulario.get('confirmPass').errors && formulario.get('confirmPass').dirty) ? 'is-invalid' :
+                     formulario.get('confirmPass').dirty ? 'is-valid' : '' "
           />
-          <!-- <div *ngIf="formulario.get('senha').errors?.required" class="invalid-feedback">
-            Por favor, confirme sua senha.
-          </div> -->
+          <div 
+            *ngIf="formulario.get('confirmPass').errors?.required" 
+            class="invalid-feedback"
+          >Por favor, confirme sua senha.</div>
+          <div *ngIf="form.confirmPass.errors?.mustMatch" class="invalid-feedback">
+            As senhas não conferem.
+          </div>
         </div>
 
       </div>
