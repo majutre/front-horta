@@ -4,11 +4,23 @@ import { Routes, RouterModule } from '@angular/router';
 import { AreaClienteComponent } from './../area-cliente/area-cliente.component';
 import { NaoAutorizadoComponent } from './nao-autorizado.component';
 import { LoginComponent } from './../login/login.component';
+import { DashboardComponent } from '../dashboard/dashboard.component';
 import { AuthGuard } from './auth.guard';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
-  { path: 'area-cliente', component: AreaClienteComponent, canActivate: [AuthGuard] },
+  {
+    path: 'area-cliente', 
+    component: AreaClienteComponent, 
+    canActivate: [AuthGuard],
+    data: { roles: ['DH01'] }  
+  },
+    { 
+    path: 'dashboard', 
+    component: DashboardComponent, 
+    canActivate: [AuthGuard],
+    data: { roles: ['DH01'] }   
+  },
   { path: 'nao-autorizado', component: NaoAutorizadoComponent },
 ];
 

@@ -32,7 +32,6 @@ const routes: Routes = [
   { path: 'termos', component: TermosComponent},
   { path: 'privacidade', component: PrivacidadeComponent},
   { path: 'perfil-da-planta', component: PerfilDaPlantaComponent },
-  { path: 'dashboard', component: DashboardComponent },
   { path: 'plantas', component: PlantasComponent} ,
   { path: 'plantadetalhes/:id', component: PlantaDetalhesComponent },
   { path: 'not-found', component: PageNotFoundComponent},
