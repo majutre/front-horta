@@ -3,10 +3,17 @@
 
   <div class="container-fluid cont">
     <div class="container">
+
       <div *ngIf="isLoading">
         <app-spinner></app-spinner>
       </div>
-      <form [formGroup]="formulario" (ngSubmit)="onLogin()" *ngIf="!isLoading">
+
+      <form 
+        [formGroup]="formulario" 
+        (ngSubmit)="onLogin()" 
+        (keyup.enter)="onLogin()" 
+        *ngIf="!isLoading"
+      >
 
         <div class="form-group">
           <label for="user">E-mail</label>

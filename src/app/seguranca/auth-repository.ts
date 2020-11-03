@@ -15,7 +15,7 @@ export class AuthRepository {
         const body = `username=${usuario}&password=${senha}&grant_type=password`;
         const headers = new HttpHeaders({
             'Content-Type': 'application/x-www-form-urlencoded',
-            'Authorization': 'Basic ZnJvbnRlbmQtY2xpZW50OnNlbmhhLWRvLWZyb250'
+            'Authorization': 'Basic ZnJvbnRlbmQtY2xpZW50OjEyMw=='
         });
 
         return this.http
@@ -34,7 +34,7 @@ export class AuthRepository {
         const body = 'grant_type=refresh_token';
         const headers = new HttpHeaders({
             'Content-Type': 'application/x-www-form-urlencoded',
-            'Authorization': 'Basic ZnJvbnRlbmQtY2xpZW50OnNlbmhhLWRvLWZyb250'
+            'Authorization': 'Basic ZnJvbnRlbmQtY2xpZW50OjEyMw=='
         });
         return this.http
             .post(

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 import { MustMatch } from './validator-senha/must-match.validator';
 import { ClienteModel } from '../Clientes/model/cliente-model';
@@ -20,7 +21,8 @@ export class InscrevaSeComponent implements OnInit {
 
   constructor(
     private repository: ClienteRepository,
-    private fb: FormBuilder) { }
+    private fb: FormBuilder,
+    private router: Router) { }
 
   ngOnInit(): void {
     this.iniciarFormulario(); 
@@ -51,6 +53,7 @@ export class InscrevaSeComponent implements OnInit {
     }
 
     this.salvar();
+    this.router.navigate(['/login']);
   };
 
   salvar() {

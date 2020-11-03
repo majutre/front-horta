@@ -1,6 +1,6 @@
+import { Mapper } from './../../../app/base/mapper';
 import { ClienteModel } from './../model/cliente-model';
 import { ClienteEntity } from './../entity/cliente-entity';
-import { Mapper } from './../../../app/base/mapper';
 
 
 export class ClienteMapper extends Mapper<ClienteEntity, ClienteModel> {
@@ -8,7 +8,7 @@ export class ClienteMapper extends Mapper<ClienteEntity, ClienteModel> {
     mapFrom(entity: ClienteEntity): ClienteModel {
         return {
             id: entity.id,
-            nome: entity.nome ? entity.nome : 'Não informado',
+            nome: entity.nome,
             sobrenome: entity.sobrenome,
             genero: entity.genero,
             email: entity.email,
