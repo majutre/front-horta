@@ -2,8 +2,6 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map, mergeMap } from 'rxjs/operators';
 
-// import { CidadeMapper } from './../mapper/cidade-mapper';
-// import { EstadoMapper } from './../mapper/estado-mapper';
 import { BaseHttpService } from '../../services/http/base-http.service';
 import { environment } from './../../../environments/environment';
 import { ClienteMapper } from './../mapper/cliente-mapper';
@@ -17,8 +15,7 @@ import { ClienteModel } from './../model/cliente-model';
 export class ClienteRepository {
 
     mapper = new ClienteMapper();
-    // mapperEstado = new EstadoMapper();
-    // mapperCidade = new CidadeMapper();
+
 
     constructor(public http: BaseHttpService) { }
 
