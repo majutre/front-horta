@@ -1,0 +1,56 @@
+/* UsuarioLoginComponent's private CSS styles */
+
+form {
+    position: relative;
+    margin: auto;
+    width: 80%;
+}
+
+label {
+    color: var(--main-txt-color);
+    font-family: var(--secondary-font-family);
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.btn-type-a {
+    background-color: var(--footer-bg-color);
+    border-radius: 6px;
+    border: none;
+    padding: 10px 20px;
+    float: right;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--main-txt-color);
+}
+  
+.btn-type-a:hover {
+    background-color: var(--first-accent-color);
+    color: var(--main-bg-color);
+    text-decoration: none;
+}
+  
+.btn-type-b {
+    background-color: var(--main-txt-color);
+    border-radius: 6px;
+    padding: 16px;
+    font-family: var(--secondary-font-family);
+    font-size: 16px;
+    color: var(--main-bg-color);
+}
+  
+.btn-type-b:hover {
+    color: var(--second-accent-color);
+    text-decoration: none;
+}
+
+.content-wrapper {
+    position: relative;
+    height: fit-content;
+    min-width: 400px;
+    padding-bottom: 40px;
+    box-shadow: 6px 6px 10px #282b38, 
+                -6px -6px 10px #464b62;  
+    border-radius: 12px;
+    background-color: var(--main-bg-color);
+  }

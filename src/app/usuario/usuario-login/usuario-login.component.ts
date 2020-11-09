@@ -1,13 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
-import { AuthService } from '../seguranca/auth.service';
+import { AuthService } from '../../seguranca/auth.service';
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css', '../../assets/css/forms.css']
+  selector: 'usuario-login',
+  templateUrl: './usuario-login.component.html',
+  styleUrls: [
+    './usuario-login.component.css',
+     '../../../assets/css/forms.css'
+    ]
 })
-export class LoginComponent implements OnInit {
+export class UsuarioLoginComponent implements OnInit {
 
   public formulario: FormGroup;
   isLoading = false;
