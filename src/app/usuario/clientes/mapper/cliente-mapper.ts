@@ -1,4 +1,4 @@
-import { Mapper } from './../../../app/base/mapper';
+import { Mapper } from '../../../base/mapper';
 import { ClienteModel } from './../model/cliente-model';
 import { ClienteEntity } from './../entity/cliente-entity';
 

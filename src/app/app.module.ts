@@ -14,8 +14,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 
 import { PlantasModule } from './plantas/plantas.module';
 import { UsuarioModule } from './usuario/usuario.module';
-import { SegurancaModule } from './seguranca/seguranca.module';
 import { InfoModule } from './info/info.module';
+import { SegurancaModule } from './seguranca/seguranca.module';
 
 @NgModule({
   imports: [

@@ -2,8 +2,8 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map, mergeMap } from 'rxjs/operators';
 
-import { BaseHttpService } from '../../services/http/base-http.service';
-import { environment } from './../../../environments/environment';
+import { BaseHttpService } from '../../../services/http/base-http.service';
+import { environment } from '../../../../environments/environment';
 import { ClienteMapper } from './../mapper/cliente-mapper';
 import { ClienteEntity } from './../entity/cliente-entity';
 import { ClienteModel } from './../model/cliente-model';
