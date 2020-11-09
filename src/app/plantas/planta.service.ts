@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 
 import { Planta } from './plantas.model';
-import { PLANTAS } from '../data/mock-plantas';
+import { PLANTAS } from './mock-plantas';
 import { MessageService } from '../messages/message.service';
 
 @Injectable({
