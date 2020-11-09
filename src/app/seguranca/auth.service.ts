@@ -32,7 +32,7 @@ export class AuthService {
           this.armazenarToken(json['access_token']);
           
           console.log('Novo access token criado!' + JSON.stringify(this.jwtPayload));
-          this.router.navigate(['/area-cliente']); //aqui vem a página pós login
+          this.router.navigate(['/usuario-dashboard/usuario-plantas']); //aqui vem a página pós login
          
         },
         (e) => {
