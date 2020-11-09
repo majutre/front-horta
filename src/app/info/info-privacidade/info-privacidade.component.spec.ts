@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PorqueusarComponent } from './porqueusar.component';
+import { InfoPrivacidadeComponent } from './info-privacidade.component';
 
-describe('PorqueusarComponent', () => {
-  let component: PorqueusarComponent;
-  let fixture: ComponentFixture<PorqueusarComponent>;
+describe('PrivacidadeComponent', () => {
+  let component: InfoPrivacidadeComponent;
+  let fixture: ComponentFixture<InfoPrivacidadeComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PorqueusarComponent ]
+      declarations: [ InfoPrivacidadeComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PorqueusarComponent);
+    fixture = TestBed.createComponent(InfoPrivacidadeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
