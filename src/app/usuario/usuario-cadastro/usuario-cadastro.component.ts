@@ -3,8 +3,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 import { MustMatch } from './validator-senha/must-match.validator';
-import { ClienteModel } from '../Clientes/model/cliente-model';
-import { ClienteRepository } from '../Clientes/repository/cliente-repository';
+import { ClienteModel } from '../../Clientes/model/cliente-model';
+import { ClienteRepository } from '../../Clientes/repository/cliente-repository';
 
 @Component({
   selector: 'usuario-cadastro',

@@ -25,16 +25,16 @@
       <a routerLink="/pragas" class="nav-itemlink ">Pragas</a>
     </li>
     <li *ngIf="!authService.temPermissao('DH01')">
-      <a routerLink="/inscreva-se" class="nav-itemlink">Inscreva-se</a>
+      <a routerLink="/usuario-cadastro" class="nav-itemlink">Inscreva-se</a>
     </li>
     <li *ngIf="!authService.temPermissao('DH01')">
-      <a routerLink="/login" class="nav-btn">login</a>
+      <a routerLink="/usuario-login" class="nav-btn">login</a>
     </li>
     <li *ngIf="authService.temPermissao('DH01')">
       <a class="nav-btn" (click)="onLogout()" style="cursor: pointer;">logout</a>
     </li>
     <li>
-      <a routerLink="/dashboard" class="nav-itemlink" *ngIf="authService.temPermissao('DH01')">Dashboard</a>
+      <a routerLink="/usuario-dashboard" class="nav-itemlink" *ngIf="authService.temPermissao('DH01')">Dashboard</a>
     </li>
   </ul>
 

@@ -1,0 +1,88 @@
+/* FooterComponent's private CSS styles */
+footer {
+    background: var(--footer-bg-color);
+    width: 100%;
+    position: relative;
+    top: auto;
+  }
+  
+  .footer-title {
+    font-family: var(--main-font-family);
+    font-size: 16px;
+    color: var(--main-bg-color);
+  }
+  
+  .footer-links {
+    font-family: var(--secondary-font-family);
+    font-size: 14px;
+    color: var(--main-bg-color);
+  }
+  
+  .footer-brand_name {
+    font-family: var(--main-font-family);
+    font-size: 20px;
+    color: var(--main-bg-color);
+  }
+  
+  .footer-social_media {
+    width: 30px;
+  }
+  
+  .footer-logo {
+    width: 5%;
+  }
+  
+  .footer-end::before {
+    content: '';
+    background: var(--first-accent-color);
+    width: 96%;
+    height: 4px;
+    margin: auto;
+    display: block;
+  }
+  
+  footer a:hover {
+    color: var(--first-accent-color) !important;
+  }
+  
+  /* ----------| MEDIA QUERIES |---------- */
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    .footer-social_media {
+      width: 30px;
+    }
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    /* ----------| FOOTER |---------- */
+  
+    .footer-title {
+      font-size: 24px;
+    }
+  
+    .footer-links {
+      font-size: 16px;
+    }
+  
+    .footer-brand_name {
+      font-size: 30px;
+    }
+  
+    .footer-social_media {
+      width: 50px;
+    }
+  
+    .footer-logo {
+      width: 3%;
+    }
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+  }
+  

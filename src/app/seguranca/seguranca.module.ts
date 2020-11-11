@@ -4,14 +4,15 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { SegurancaRoutingModule } from './seguranca-routing.module';
-import { LoginComponent } from './../login/login.component';
 import { AuthService } from './auth.service';
 import { AuthGuard } from './auth.guard';
 import { SpinnerComponent } from './../template/spinner/spinner.component';
 
 
 @NgModule({
-  declarations: [LoginComponent, SpinnerComponent],
+  declarations: [
+    SpinnerComponent,
+  ],
   imports: [
     CommonModule,
     SegurancaRoutingModule,

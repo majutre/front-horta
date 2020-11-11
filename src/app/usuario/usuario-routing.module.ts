@@ -16,8 +16,8 @@ const usuarioRoutes: Routes = [
   { 
     path: 'usuario-dashboard', 
     component: UsuarioDashboardComponent,
-    canActivate: [AuthGuard],
-    data: { roles: ['DH01'] },
+    /*canActivate: [AuthGuard],
+    data: { roles: ['DH01'] } ,*/
     children: [
       {
         path: 'usuario-plantas',
