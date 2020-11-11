@@ -1,0 +1,200 @@
+<div *ngIf="planta">
+  <div class="container content-wrapper">
+    <h1>{{planta.nome}}</h1>
+    <div class="row">
+      <div class="col-md-4 card-pic">
+        <img src="../assets/images/plantas/{{planta.imagem}}.jpg" alt="">
+      </div>
+      <div class="col-md-8 plant-details">
+        <h3 class="sec">{{planta.nomec}}</h3>
+        <p>{{planta.descricao}}</p>
+        <div class="plant-info">
+          <table>
+            <tr>
+              <th>Estação</th>
+              <th colspan="3">Primavera</th>
+              <th colspan="3">Verão</th>
+              <th colspan="3">Outono</th>
+              <th colspan="3">Inverno</th>
+            </tr>
+            <tr>
+              <td>Semear</td>
+              <td>●</td>
+              <td>●</td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Transplantar</td>
+              <td> </td>
+              <td> </td>
+              <td>●</td>
+              <td>●</td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Colher</td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td>●</td>
+              <td>●</td>
+              <td>●</td>
+              <td>●</td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+            </tr>
+          </table>
+        </div>
+        <br />
+      </div>
+    </div>
+  </div>
+
+  <div class="container content-wrapper p-5 my-5">
+    <div class="row">
+      <div class="info-section col-md-6 d-flex py-3">
+        <div class="icon">
+          <img src="../../assets/images/icons/estacao.svg" alt="">
+        </div>
+        <div class="info">
+          <h6>Plantio</h6>
+          <p>{{planta.epoca}}</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 d-flex py-3">
+        <div class="icon">
+          <img src="../../assets/images/icons/temperature.svg" alt="">
+        </div>
+        <div class="info">
+          <h6>Temperatura</h6>
+          <p>{{planta.temperatura}}</p>
+        </div>
+      </div>
+    </div>
+    <!-- Fim Primeira Linha -->
+
+    <div class="row">
+      <div class="col-md-6 d-flex py-3">
+        <div class="icon">
+          <img src="../../assets/images/icons/water-drops.svg" alt="">
+        </div>
+        <div class="info">
+          <h6>Rega</h6>
+          <p>{{planta.irrigacao}}</p>
+        </div>
+      </div>
+      <div class="col-md-6 d-flex py-3">
+        <div class="icon">
+          <img src="../../assets/images/icons/shovel-and-rake.svg" alt="">
+        </div>
+        <div class="info">
+          <h6>Adubação</h6>
+          <p>{{planta.solo}}</p>
+        </div>
+      </div>
+    </div>
+    <!-- Fim Segunda Linha -->
+
+    <div class="row">
+      <div class="col-md-6 d-flex py-3">
+        <div class="icon">
+          <img src="../../assets/images/icons/sun.svg" alt="">
+        </div>
+        <div class="info">
+          <h6>Sol</h6>
+          <p>{{planta.luz}}</p>
+        </div>
+      </div>
+      <div class="col-md-6 d-flex py-3">
+        <div class="icon">
+          <img src="../../assets/images/icons/praga.svg" alt="">
+        </div>
+        <div class="info">
+          <h6>Pragas</h6>
+          <p>{{planta.pestes}}</p>
+        </div>
+      </div>
+    </div>
+    <!-- Fim Terceira Linha -->
+    <a class="btn-type-a" href="">Adicionar</a>
+
+  </div>
+
+  <!-- Avisos do Cultivo - Regar -->
+  <div class="container content-wrapper my-5">
+    <div class="row reminder">
+      <h3>Regar</h3>
+      <div class="reminder-content">
+        <div class="col-10">
+          Terça-feira - Quinta-feira
+          <br />
+          9:00 hrs
+        </div>
+        <div class="col-2">
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Aviso de Cultivo - Adubar -->
+  <div class="container content-wrapper my-5">
+    <div class="row reminder">
+      <h3>Adubar</h3>
+      <div class="reminder-content">
+        <div class="col-10">
+          12 de dezembro
+          <br />
+          9:00 hrs
+        </div>
+        <div class="col-2">
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Aviso de Cultivo - Podar -->
+  <div class="container content-wrapper my-5">
+    <div class="row reminder">
+      <h3>Podar</h3>
+      <div class="reminder-content">
+        <div class="col-10">
+          09 de março
+          <br />
+          9:00 hrs
+        </div>
+        <div class="col-2">
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

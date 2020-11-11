@@ -1,0 +1,25 @@
+<div class="container content-wrapper">
+  <h1>Plantas</h1>
+  <form>
+    <div class="search">
+      <input type="text" class="search-box">
+      <a class="btn-type-a" href="#">Pesquisar</a>
+    </div>
+  </form>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div *ngFor="let planta of plantas" class="col-md-4">
+      <div class="card">
+        <img src="../../assets/images/plantas/{{planta.imagem}}.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{planta.nome}}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{planta.nomec}}</h6>
+          <a routerLink="/plantadetalhes/{{planta.id}}" class="card-link">VER MAIS</a>
+          <a href="#" class="card-link">ADICIONAR</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

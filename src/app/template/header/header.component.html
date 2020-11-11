@@ -1,0 +1,41 @@
+<nav>
+
+  <input type="checkbox" id="hamburger">
+  <div class="nav-logo">
+    <img src="./assets/images/logo-horta.svg" alt="Logotipo">
+    <div class="nav-name">HORTA</div>
+  </div>
+  
+  <div class="burger">
+    <label for="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+
+  <ul class="navbar-dark">
+    <li>
+      <a routerLink="/" class="nav-itemlink">Home</a>
+    </li>
+    <li>
+      <a routerLink="/plantas" class="nav-itemlink ">Plantas</a>
+    </li>
+    <li>
+      <a routerLink="/pragas" class="nav-itemlink ">Pragas</a>
+    </li>
+    <li *ngIf="!authService.temPermissao('DH01')">
+      <a routerLink="/inscreva-se" class="nav-itemlink">Inscreva-se</a>
+    </li>
+    <li *ngIf="!authService.temPermissao('DH01')">
+      <a routerLink="/login" class="nav-btn">login</a>
+    </li>
+    <li *ngIf="authService.temPermissao('DH01')">
+      <a class="nav-btn" (click)="onLogout()" style="cursor: pointer;">logout</a>
+    </li>
+    <li>
+      <a routerLink="/dashboard" class="nav-itemlink" *ngIf="authService.temPermissao('DH01')">Dashboard</a>
+    </li>
+  </ul>
+
+</nav>
