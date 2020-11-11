@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-pragas',
-  templateUrl: '../paginas.html',
+  templateUrl: './pragas.component.html',
   styleUrls: ['./pragas.component.css']
 })
 export class PragasComponent implements OnInit {
