@@ -1,0 +1,116 @@
+/* UsuarioDashboardComponent's private CSS styles */
+
+.container {
+    min-height: 90vh;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  ul, li {
+    list-style: none;
+  }
+  
+  *, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  /*
+  .sidebar a {
+    color: var(--main-txt-color);
+    font-family: var(--secondary-font-family);
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .sidebar ul {
+    margin-top: 32px;
+  }
+  
+  .sidebar li {
+    height: 8vh;
+    margin-left: 24px;
+  }
+  
+  .sidebar {
+    position: fixed;
+    width: 200px;
+    height: 80vh;
+    margin-left: 1.5%;
+    margin-top: 2%;
+    box-shadow: 6px 6px 10px #282b38, 
+                 -6px -6px 10px #464b62;  
+    border-radius: 12px;
+  }
+  
+  .dashboard {
+    margin-left: 300px;
+    margin-top: 2%;
+    width: 100%;
+  }
+  
+  .msg {
+    color: var(--main-txt-color);
+  }
+  
+  .tab {
+    padding: 10px 20px;
+    color: var(--main-txt-color);
+    font-family: var(--secondary-font-family);
+  }
+  
+  .tab:hover {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .activetab {
+    border-bottom: 3px solid var(--first-accent-color);
+  }
+  
+  .tabs {
+    margin: 1em;
+  }
+  */
+  
+  h2 {
+    color: var(--main-txt-color);
+    font-family: var(--main-font-family);
+    margin: 60px 0px 40px;
+  
+  }
+  
+  .dashtab a {
+    color: var(--main-txt-color);
+    font-family: var(--secondary-font-family);
+    text-align: center;
+    letter-spacing: 1px;
+    min-height: 8vh;
+    text-decoration: none;
+    border-bottom: var(--first-accent-color) 0.125em solid;
+  }
+  
+  .dashtab a:hover {
+    border-bottom: var(--footer-bg-color) 0.125em solid;
+  }
+  
+  .dashtab a:active {
+    border-bottom: var(--main-bg-color) 0.125em solid;
+  }
+  
+  li {
+    display: inline;
+    padding-right: 1.5em;
+  }
+  ul {
+    list-style: none;
+    border-bottom: var(--first-accent-color) 0.125em solid;
+  }
+  
+  
+  
+  
