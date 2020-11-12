@@ -1,17 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+/* Application-wide Styles */
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
-/* ----------| ALL |---------- */
 :root {
-   --main-bg-color: #373B4D;
+  --main-bg-color: #373B4D;
   --second-bg-color: #FCF5EE;
-  --main-txt-color:  #FCF5EE;
-  --second-txt-color:  #373B4D;
+  --main-txt-color: #FCF5EE;
+  --second-txt-color: #373B4D;
   --first-accent-color: #E5F77D;
   --second-accent-color: #F4935C;
   --footer-bg-color: #C9AF97;
   --main-font-family: 'Anton', sans-serif;
   --secondary-font-family: 'Heebo', sans-serif;
+}
+
+body {
+  background-color: var(--main-bg-color) !important;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  font-family: var(--secondary-font-family);
 }
 
 *,
@@ -20,23 +32,6 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-}
-
-body,
-html {
-  background-color: var(--main-bg-color);
-  font-family: var(--secondary-font-family);
-}
-
-.content-wraper {
-  position: relative;
-  margin: 36px auto 60px auto;
-  width: 80%;
-  min-height: 80vh;
-  height: fit-content;
-  box-shadow: 6px 6px 10px #282b38, 
-             -6px -6px 10px #464b62;  
-  border-radius: 12px;
 }
 
 h1 {
@@ -54,181 +49,3 @@ h1::after {
   margin: auto;
   display: block;
 }
-
-
-/* ----------| FORM |---------- */
-
-form {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-}
-
-label {
-  color: var(--main-txt-color);
-  font-family: var(--secondary-font-family);
-  font-size: 14px;
-  font-weight: lighter;
-}
-
-.small-tex {
-  font-size: 12px;
-  font-weight: lighter;
-}
-
-#form-inscreva-se {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-}
-
-.google-form {
-  position: absolute;
-}
-
-.google-form::before {
-  content: '';
-  background: var(--first-accent-color);
-  width: 100%;
-  height: 4px;
-  margin: auto;
-  display: block;
-}
-
-.minhaconta::after {
-  content: '';
-  background: transparent;
-  width: 100%;
-  height: 4px;
-  margin: auto;
-  display: block;
-}
-
-.cont-login::after {
-  content: '';
-  background: var(--first-accent-color);
-  width: 100%;
-  height: 4px;
-  margin: auto;
-  display: block;
-} /* ---| END FORM |--- */
-
-/* ----------| BUTTONS |---------- */
-.btn-type-a {
-  background-color: var(--first-accent-color);
-  border-radius: 30px;
-  padding: 10px 20px;
-  float: right;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: var(--second-accent-color) !important;
-}
-
-.btn-type-a:hover {
-  background-color: var(--footer-bg-color);
-  color: var(--first-accent-color) !important;
-  text-decoration: none;
-}
-
-.btn-type-b {
-  background-color: var(--main-txt-color);
-  border-radius: 12px;
-  padding: 12px;
-  font-family: var(--secondary-font-family);
-  font-size: 16px;
-  color: var(--main-bg-color);
-}
-
-.btn-type-b:hover {
-  color: var(--second-accent-color) !important;
-  text-decoration: none;
-} /* ---| END BUTTONS |--- */
-
-/* ----------| FOOTER |---------- */
-footer {
-  background: var(--footer-bg-color);
-  width: 100%;
-  position: relative;
-  top: auto;
-}
-
-.footer-title {
-  font-family: var(--main-font-family);
-  font-size: 16px;
-  color: var(--main-bg-color);
-}
-
-.footer-links {
-  font-family: var(--secondary-font-family);
-  font-size: 14px;
-  color: var(--main-bg-color);
-}
-
-.footer-brand_name {
-  font-family: var(--main-font-family);
-  font-size: 20px;
-  color: var(--main-bg-color);
-}
-
-.footer-social_media {
-  width: 30px;
-}
-
-.footer-logo {
-  width: 5%;
-}
-
-.footer-end::before {
-  content: '';
-  background: var(--first-accent-color);
-  width: 96%;
-  height: 4px;
-  margin: auto;
-  display: block;
-}
-
-footer a:hover {
-  color: var(--first-accent-color) !important;
-}
-
-/* ----------| MEDIA QUERIES |---------- */
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  .footer-social_media {
-    width: 30px;
-  }
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  /* ----------| FOOTER |---------- */
-
-  .footer-title {
-    font-size: 24px;
-  }
-
-  .footer-links {
-    font-size: 16px;
-  }
-
-  .footer-brand_name {
-    font-size: 30px;
-  }
-
-  .footer-social_media {
-    width: 50px;
-  }
-
-  .footer-logo {
-    width: 3%;
-  }
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-}
-
