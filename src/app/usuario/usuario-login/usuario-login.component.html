@@ -4,11 +4,8 @@
 
       <h1> Login </h1>
 
-      <div *ngIf="isLoading">
-        <app-spinner></app-spinner>
-      </div>
 
-      <form [formGroup]="formulario" (ngSubmit)="onLogin()" (keyup.enter)="onLogin()" *ngIf="!isLoading">
+      <form [formGroup]="formulario" (ngSubmit)="onLogin()" (keyup.enter)="onLogin()">
 
         <div class="form-group">
           <label for="user">E-mail</label>
