@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../../seguranca/auth.service'
 
 @Component({
   selector: 'usuario-dashboard',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UsuarioDashboardComponent implements OnInit {
 
-  constructor() { }
+  usuario: string = '';
+
+  constructor(public service: AuthService) {
+    this.usuario = service.jwtPayload.nome_completo;
+  }
 
   ngOnInit(): void {
   }

@@ -33,11 +33,12 @@ export class UsuarioLoginComponent implements OnInit {
 
   onLogin() {
 
+    this.isLoading = true;
+
     if (this.formulario.invalid) {
       return;
     }
 
-    this.isLoading = true;
     //fazer a chamada
     const login = this.formulario.value.login;
     const senha = this.formulario.value.senha;

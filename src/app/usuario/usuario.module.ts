@@ -11,9 +11,7 @@ import { UsuarioPlantasComponent } from './usuario-plantas/usuario-plantas.compo
 import { UsuarioAlarmesComponent } from './usuario-alarmes/usuario-alarmes.component';
 import { UsuarioEditarCadastroComponent } from './usuario-editar-cadastro/usuario-editar-cadastro.component';
 import { UsuarioLoginComponent } from './usuario-login/usuario-login.component';
-
-import { AuthGuard } from '../seguranca/auth.guard';
-
+import { SpinnerComponent } from './../template/spinner/spinner.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +21,7 @@ import { AuthGuard } from '../seguranca/auth.guard';
     UsuarioAlarmesComponent,
     UsuarioEditarCadastroComponent,
     UsuarioLoginComponent,
+    SpinnerComponent
   ],
   imports: [
     CommonModule,
