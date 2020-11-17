@@ -1,20 +1,20 @@
 <div class="container">
     <div class="row">
-        <p *ngIf="plants.length === 0" class="msg">
+        <p *ngIf="isEmpty" class="msg">
             Olá! <br />
             Você ainda não possui plantas na horta :( <br />
             Adicione algumas na seção plantas!<br />
         </p>
     </div>
     <div class="row">
-        <div *ngFor="let plant of plants" class="col-md-3">
+        <div *ngFor="let planta of plantas; let i = index" class="col-md-3">
             <div class="card">
-                <img src="../../assets/images/plantas/{{plant.imagem}}.jpg" class="card-img-top" alt="...">
+                <img src="../../assets/images/plantas/{{planta.imagem}}.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">{{plant.nome}}</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">{{plant.nomec}}</h6>
-                    <a routerLink="/planta/{{plant.id}}" class="card-link">VER MAIS</a>
-                    <a class="card-link">REMOVER</a>
+                    <h5 class="card-title">{{planta.nome}}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{planta.nomec}}</h6>
+                    <a routerLink="/planta/{{planta.id}}" class="card-link">VER MAIS</a>
+                    <a class="card-link" style="cursor: pointer" (click)="onDeletePlanta(i)">REMOVER</a>
                 </div>
             </div>
         </div>

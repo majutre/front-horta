@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
 
 import { Planta } from '../../plantas/plantas.model';
+import { MinhasPlantasService } from '../../plantas/minhas-plantas/minhas-plantas.service';
 import { UsuarioPlantaService } from './usuario-planta.service';
 
 @Component({
@@ -10,13 +12,27 @@ import { UsuarioPlantaService } from './usuario-planta.service';
 })
 export class UsuarioPlantasComponent implements OnInit {
 
-  plants: Planta[];
+  plantas: Planta[] = [];
+  private subscription: Subscription;
+  isEmpty: boolean = false;
 
-  constructor(
-    private usuarioPlantaService: UsuarioPlantaService 
-  ) { }
+  constructor(private minhasPlantasService: MinhasPlantasService) { }
 
   ngOnInit() {
-    this.plants = this.usuarioPlantaService.getPlant();
+    this.plantas = this.minhasPlantasService.getMinhasPlantas();
+    this.subscription = this.minhasPlantasService.minhasPlantasChanged
+      .subscribe(
+        (plantas: Planta[]) => {
+          this.plantas = plantas;
+        }
+      );
+  }
+
+  onDeletePlanta(index: number) {
+    this.minhasPlantasService.deleteMinhaPlanta(index);
+  }
+
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
   }
 }
