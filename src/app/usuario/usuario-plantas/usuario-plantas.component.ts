@@ -31,11 +31,11 @@ export class UsuarioPlantasComponent implements OnInit {
         }
       );
 
-    if (this.plantas = []) {
-      this.isEmpty = true;
-    }
+    // if (this.plantas = []) {
+    //   this.isEmpty = true;
+    // }
 
-    this.dataService.fetchPlantas();
+    // this.dataService.fetchPlantas();
   }
 
   onDeletePlanta(index: number) {

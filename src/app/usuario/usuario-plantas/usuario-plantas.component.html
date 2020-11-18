@@ -1,12 +1,12 @@
 <div class="container">
-    <div class="row">
-        <p *ngIf="isEmpty" class="msg">
+    <div class="row" *ngIf="isEmpty">
+        <p class="msg">
             Olá! <br />
             Você ainda não possui plantas na horta :( <br />
             Adicione algumas na seção plantas!<br />
         </p>
     </div>
-    <div class="row">
+    <div class="row" *ngIf="!isEmpty">
         <div *ngFor="let planta of plantas; let i = index" class="col-md-3">
             <div class="card">
                 <img src="../../assets/images/plantas/{{planta.imagem}}.jpg" class="card-img-top" alt="...">
