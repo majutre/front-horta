@@ -12,7 +12,7 @@ export class MinhasPlantasService {
   private minhasPlantas: Planta[] = [];
 
   getMinhasPlantas(){
-    return this.minhasPlantas;
+    return this.minhasPlantas.slice();
   }
 
   getMinhaPlanta(index: number){
@@ -33,6 +33,11 @@ export class MinhasPlantasService {
   //   this.minhasPlantas[index] = newPlanta;
   //   this.minhasPlantasChanged.next(this.minhasPlantas.slice());
   // }
+
+  setPlantas(plantas: Planta[]) {
+    this.minhasPlantas = plantas;
+    this.minhasPlantasChanged.next(this.minhasPlantas.slice());
+  }
 
   deleteMinhaPlanta(index: number){
     this.minhasPlantas.splice(index, 1);

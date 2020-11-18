@@ -1,3 +1,4 @@
+import { DataStorageService } from './../../base/data-storage.service';
 import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 
@@ -16,7 +17,10 @@ export class UsuarioPlantasComponent implements OnInit {
   private subscription: Subscription;
   isEmpty: boolean = false;
 
-  constructor(private minhasPlantasService: MinhasPlantasService) { }
+  constructor(
+    private minhasPlantasService: MinhasPlantasService,
+    private dataService: DataStorageService
+    ) { }
 
   ngOnInit() {
     this.plantas = this.minhasPlantasService.getMinhasPlantas();
@@ -26,6 +30,12 @@ export class UsuarioPlantasComponent implements OnInit {
           this.plantas = plantas;
         }
       );
+
+    if (this.plantas = []) {
+      this.isEmpty = true;
+    }
+
+    this.dataService.fetchPlantas();
   }
 
   onDeletePlanta(index: number) {

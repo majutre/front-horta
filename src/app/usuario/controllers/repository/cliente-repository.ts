@@ -2,8 +2,8 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map, mergeMap } from 'rxjs/operators';
 
-import { BaseHttpService } from '../../services/http/base-http.service';
-import { environment } from './../../../environments/environment';
+import { BaseHttpService } from '../../../services/http/base-http.service';
+import { environment } from '../../../../environments/environment';
 import { ClienteMapper } from './../mapper/cliente-mapper';
 import { ClienteEntity } from './../entity/cliente-entity';
 import { ClienteModel } from './../model/cliente-model';
@@ -15,7 +15,6 @@ import { ClienteModel } from './../model/cliente-model';
 export class ClienteRepository {
 
     mapper = new ClienteMapper();
-
 
     constructor(public http: BaseHttpService) { }
 
@@ -31,20 +30,6 @@ export class ClienteRepository {
             .pipe(mergeMap((x) => x.data))
             .pipe(map((x) => this.mapper.mapFrom(x)));
     }
-
-    // getAllEstados(): Observable<EstadoModel> {
-    //     return this.http
-    //         .getAll<EstadoEntity[]>(`${environment.URLSERVIDOR}estado`)
-    //         .pipe(mergeMap((x) => x.data))
-    //         .pipe(map((x) => this.mapperEstado.mapFrom(x)));
-    // }
-
-    // getAllCidadesByEstado(id: number): Observable<CidadeModel> {
-    //     return this.http
-    //         .getAll<CidadeEntity[]>(`${environment.URLSERVIDOR}estado/${id}/cidades`)
-    //         .pipe(mergeMap((x) => x.data))
-    //         .pipe(map((x) => this.mapperCidade.mapFrom(x)));
-    // }
 
     postCliente(param: ClienteModel) {
         return this.http

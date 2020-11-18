@@ -32,19 +32,6 @@ export class ClienteRepository {
             .pipe(map((x) => this.mapper.mapFrom(x)));
     }
 
-    // getAllEstados(): Observable<EstadoModel> {
-    //     return this.http
-    //         .getAll<EstadoEntity[]>(`${environment.URLSERVIDOR}estado`)
-    //         .pipe(mergeMap((x) => x.data))
-    //         .pipe(map((x) => this.mapperEstado.mapFrom(x)));
-    // }
-
-    // getAllCidadesByEstado(id: number): Observable<CidadeModel> {
-    //     return this.http
-    //         .getAll<CidadeEntity[]>(`${environment.URLSERVIDOR}estado/${id}/cidades`)
-    //         .pipe(mergeMap((x) => x.data))
-    //         .pipe(map((x) => this.mapperCidade.mapFrom(x)));
-    // }
 
     postCliente(param: ClienteModel) {
         return this.http

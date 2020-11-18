@@ -26,6 +26,7 @@ export class MinhasPlantasComponent implements OnInit, OnDestroy {
         }
       );
   }
+  
 
   onDeletePlanta(index: number){
     this.minhasPlantasService.deleteMinhaPlanta(index);
