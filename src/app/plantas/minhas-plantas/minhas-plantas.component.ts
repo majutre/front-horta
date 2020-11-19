@@ -2,7 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
 
 import { Planta } from './../plantas.model';
-import { MinhasPlantasService } from './minhas-plantas.service';
+import { PlantaService } from './../planta.service';
 
 @Component({
   selector: 'app-minhas-plantas',
@@ -15,11 +15,11 @@ export class MinhasPlantasComponent implements OnInit, OnDestroy {
   plantas: Planta[];
   private subscription: Subscription;
 
-  constructor(private minhasPlantasService: MinhasPlantasService) { }
+  constructor(private plantaService: PlantaService) { }
 
   ngOnInit() {
-    this.plantas = this.minhasPlantasService.getMinhasPlantas();
-    this.subscription = this.minhasPlantasService.minhasPlantasChanged
+    this.plantas = this.plantaService.getMinhasPlantas();
+    this.subscription = this.plantaService.minhasPlantasChanged
       .subscribe(
         (plantas: Planta[]) => {
           this.plantas = plantas;
@@ -29,7 +29,7 @@ export class MinhasPlantasComponent implements OnInit, OnDestroy {
   
 
   onDeletePlanta(index: number){
-    this.minhasPlantasService.deleteMinhaPlanta(index);
+    this.plantaService.deleteMinhaPlanta(index);
   }
 
   ngOnDestroy() {

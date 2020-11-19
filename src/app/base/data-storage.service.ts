@@ -1,23 +1,23 @@
-import { Planta } from './../plantas/plantas.model';
 import { Injectable } from '@angular/core';
 import { HttpClient} from '@angular/common/http';
 import {  map, tap } from 'rxjs/operators';
 
 import { AuthService } from './../seguranca/auth.service';
-import { MinhasPlantasService } from './../plantas/minhas-plantas/minhas-plantas.service';
 import { environment } from './../../environments/environment';
 
+import { Planta } from './../plantas/plantas.model';
+import { PlantaService } from './../plantas/planta.service';
 @Injectable({ providedIn: 'root' })
 export class DataStorageService {
   
   constructor(
     private http: HttpClient, 
-    private minhasPlantasService: MinhasPlantasService, 
+    private plantaService: PlantaService, 
     private authService: AuthService
   ) { }
 
   storePlantas() {
-    const plantas = this.minhasPlantasService.getMinhasPlantas();
+    const plantas = this.plantaService.getMinhasPlantas();
     this.http
       .put(
         `${environment.URLSERVIDOR}usuario`,
@@ -44,7 +44,7 @@ export class DataStorageService {
           });
         }),
         tap(plantas => {
-          this.minhasPlantasService.setPlantas(plantas);
+          this.plantaService.setPlantas(plantas);
         })
       );
       

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { Planta } from '../plantas.model';
 import { PlantaService } from '../planta.service';
-import { MinhasPlantasService } from '../minhas-plantas/minhas-plantas.service';
+
 
 @Component({
   selector: 'app-plantas-lista',
@@ -16,7 +16,7 @@ export class PlantasListaComponent implements OnInit {
 
   constructor(
     private plantaService: PlantaService, 
-    private minhasPlantasService: MinhasPlantasService
+
   ) { }
   
   ngOnInit(): void {
@@ -29,6 +29,6 @@ export class PlantasListaComponent implements OnInit {
   }
 
   onAddPlanta(planta: Planta){
-    this.minhasPlantasService.addPlanta(planta);
+    this.plantaService.addPlanta(planta);
   }
 }

@@ -1,10 +1,9 @@
+import { PlantaService } from './../../plantas/planta.service';
 import { DataStorageService } from './../../base/data-storage.service';
 import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 
 import { Planta } from '../../plantas/plantas.model';
-import { MinhasPlantasService } from '../../plantas/minhas-plantas/minhas-plantas.service';
-import { UsuarioPlantaService } from './usuario-planta.service';
 
 @Component({
   selector: 'app-usuario-plantas',
@@ -18,13 +17,13 @@ export class UsuarioPlantasComponent implements OnInit {
   isEmpty: boolean = false;
 
   constructor(
-    private minhasPlantasService: MinhasPlantasService,
+    private plantaService: PlantaService,
     private dataService: DataStorageService
     ) { }
 
   ngOnInit() {
-    this.plantas = this.minhasPlantasService.getMinhasPlantas();
-    this.subscription = this.minhasPlantasService.minhasPlantasChanged
+    this.plantas = this.plantaService.getMinhasPlantas();
+    this.subscription = this.plantaService.minhasPlantasChanged
       .subscribe(
         (plantas: Planta[]) => {
           this.plantas = plantas;
@@ -39,7 +38,7 @@ export class UsuarioPlantasComponent implements OnInit {
   }
 
   onDeletePlanta(index: number) {
-    this.minhasPlantasService.deleteMinhaPlanta(index);
+    this.plantaService.deleteMinhaPlanta(index);
   }
 
   ngOnDestroy() {
