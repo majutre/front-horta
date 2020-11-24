@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Output } from '@angular/core';
 import { Router } from '@angular/router';
 import { Subject } from 'rxjs';
 
@@ -10,6 +10,7 @@ import { User } from './user.model';
 })
 export class AuthService {
 
+ // @Output() usuarioId: number;
   jwtPayload: any;
 
   constructor(
@@ -32,6 +33,7 @@ export class AuthService {
           this.armazenarToken(json['access_token']);
           
           console.log('Novo access token criado!' + JSON.stringify(this.jwtPayload));
+        //  this.usuarioId = this.jwtPayload.usuario_id;
           this.router.navigate(['/usuario-dashboard/usuario-plantas']); //pós login
          
         },

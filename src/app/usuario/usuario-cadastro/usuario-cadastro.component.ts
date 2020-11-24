@@ -3,8 +3,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 import { MustMatch } from './validator-senha/must-match.validator';
-import { ClienteModel } from '../../Clientes/model/cliente-model';
-import { ClienteRepository } from '../../Clientes/repository/cliente-repository';
+import { ClienteModel } from '../controllers/model/cliente-model';
+import { ClienteRepository } from '../controllers/repository/cliente-repository';
 
 @Component({
   selector: 'usuario-cadastro',
@@ -34,16 +34,18 @@ export class UsuarioCadastroComponent implements OnInit {
 
  public iniciarFormulario() {
 
-    this.formulario = this.fb.group({
-      id: [null],
-      nome: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(150)]],
-      sobrenome: ['', [Validators.required, Validators.minLength(3)]],
-      genero: ['NAOINFORMAR'],
-      email: ['', [Validators.required, Validators.email]],
-      senha: ['', [Validators.required, Validators.minLength(8)]],
-      confirmPass: ['', Validators.required]
-    }
-    , { validator: MustMatch('senha', 'confirmPass') }
+    this.formulario = this.fb.group(
+      {
+        id: [null],
+        nome: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(150)]],
+        sobrenome: ['', [Validators.required, Validators.minLength(3)]],
+        genero: ['NAOINFORMAR'],
+        email: ['', [Validators.required, Validators.email]],
+        senha: ['', [Validators.required, Validators.minLength(8)]],
+        confirmPass: ['', Validators.required]
+      }
+      , 
+      { validator: MustMatch('senha', 'confirmPass') }
     );
   }
 

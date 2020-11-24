@@ -1,80 +1,128 @@
-<div class="container">
-    <form>
+<div class="container content-wrapper">
+  <h1>{{title}}</h1>
+
+  <div class="container px-5">
+
+    <form [formGroup]="formulario" (ngSubmit)="cadastrar()">
       <div class="form-row lg-form">
         <div class="form-group col-md-6">
           <label for="inputNome">Nome</label>
-          <input type="text" class="form-control" id="inputNome" name="nome">
+          <input type="text" class="form-control" id="inputNome" name="nome" formControlName="nome" [class]="(submitted && formulario.get('nome').errors) ||
+                       (formulario.get('nome').errors && formulario.get('nome').dirty) ? 'is-invalid' :
+                       formulario.get('nome').dirty ? 'is-valid' : '' " />
+          <div *ngIf="formulario.get('nome').errors?.required" class="invalid-feedback">
+            O campo "Nome" é obrigatório.
+          </div>
+          <div *ngIf="formulario.get('nome').errors?.minlength" class="invalid-feedback">
+            O campo "Nome" deve ter mais que 3 caracteres.
+          </div>
         </div>
+
         <div class="form-group col-md-6">
           <label for="inputSobrenome">Sobrenome</label>
-          <input type="text" class="form-control" id="inputSobrenome" name="sobrenome">
+          <input type="text" class="form-control" id="inputSobrenome" name="sobrenome" formControlName="sobrenome"
+            [class]="(submitted && formulario.get('sobrenome').errors) ||
+                       (formulario.get('sobrenome').errors && formulario.get('sobrenome').dirty) ? 'is-invalid' :
+                       formulario.get('sobrenome').dirty ? 'is-valid' : '' " />
+          <div *ngIf="formulario.get('sobrenome').errors?.required" class="invalid-feedback">
+            O campo "Sobrenome" é obrigatório.
+          </div>
+          <div *ngIf="formulario.get('sobrenome').errors?.minlength" class="invalid-feedback">
+            O campo "Sobrenome" deve ter mais que 3 caracteres.
+          </div>
         </div>
+
       </div>
+
       <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="inputUsuario">Usuário</label>
-          <input type="text" class="form-control" id="inputUsuario" name="usuario">
-        </div>
+        <!-- <div class="form-group col-md-6">
+            <label for="inputUsuario">Usuário</label>
+            <input type="text" class="form-control" id="inputUsuario" name="usuario">
+          </div> -->
+
         <div class="form-group col-md-6">
           <label for="inputEmail">E-mail</label>
-          <input type="email" class="form-control" id="inputEmail" name="email">
+          <input type="email" class="form-control" id="inputEmail" name="email" formControlName="email" [class]="(submitted && formulario.get('email').errors) ||
+                       (formulario.get('email').errors && formulario.get('email').dirty) ? 'is-invalid' :
+                       formulario.get('email').dirty ? 'is-valid' : '' " />
+          <div *ngIf="formulario.get('email').errors?.required" class="invalid-feedback">
+            O campo "E-mail" é obrigatório.
+          </div>
+          <div *ngIf="formulario.get('email').errors?.email" class="invalid-feedback">
+            Preencha o e-mail corretamente.
+          </div>
+
+        </div>
+
+
+        <!-- <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputNasc">Data de Nascimento</label>
+            <input type="date" class="form-control" id="inputNasc" name="dataNasc">
+          </div> -->
+
+        <div class="col-md-6">
+
+          <div class="form-group">
+            <label for="genero">Gênero</label><br>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="inputGeneroF" name="genero" value="FEMININO"
+                formControlName="genero">
+              <label class="form-check-label" for="inputGeneroF">Feminino</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="inputGeneroM" name="genero" value="MASCULINO"
+                formControlName="genero">
+              <label class="form-check-label" for="inputGeneroM">Masculino</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="inputGeneroO" name="genero" value="NAOINFORMAR"
+                formControlName="genero">
+              <label class="form-check-label" for="inputGeneroO">Não informar</label>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="inputNasc">Data de Nascimento</label>
-          <input type="date" class="form-control" id="inputNasc" name="dataNasc">
-        </div>
-        <div class="form-group float-right">
-          <label for="genero">Gênero</label><br>
-          <div class="form-check form-check-inline float-right">
-            <input class="form-check-input" type="radio" id="inputGeneroF" value="F">
-            <label class="form-check-label" for="inputGeneroF">Feminino</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" id="inputGeneroM" value="M">
-            <label class="form-check-label" for="inputGeneroM">Masculino</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" id="inputGeneroO" value="O">
-            <label class="form-check-label" for="inputGeneroO">Não informar</label>
-          </div>
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group col-md-4">
-          <label for="inputCity">Cidade</label>
-          <input type="text" class="form-control" id="inputCidade" name="cidade">
-        </div>
-        <div class="form-group col-md-4">
-          <label for="inputState">Estado</label>
-          <input type="text" class="form-control" id="inputEstado" name="estado">
-        </div>
-        <div class="form-group col-md-4">
-          <label for="inputState">País</label>
-          <input type="text" class="form-control" id="inputPais" name="pais">
-        </div>
-      </div>
+
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="inputSenha1">Senha</label>
-          <input type="text" class="form-control" id="inputSenha1" name="senha">
+          <input type="password" class="form-control" id="inputSenha1" name="senha" formControlName="senha" [class]="(submitted && formulario.get('senha').errors) ||
+                       (formulario.get('senha').errors && formulario.get('senha').dirty) ? 'is-invalid' :
+                       formulario.get('senha').dirty ? 'is-valid' : '' " />
+          <div *ngIf="formulario.get('senha').errors?.required" class="invalid-feedback">
+            O campo "Senha" é obrigatório.
+          </div>
+          <div *ngIf="formulario.get('senha').errors?.minlength" class="invalid-feedback">
+            O campo "Senha" deve ter mais que 8 caracteres.
+          </div>
         </div>
+
         <div class="form-group col-md-6">
-          <label for="inputSenha2">Confirmar Senha</label>
-          <input type="email" class="form-control" id="inputSenha2">
+          <label for="confirmPass">Confirmar Senha</label>
+          <input type="password" class="form-control" name="confirmPass" id="confirmPass" formControlName="confirmPass"
+            [class]="(submitted && formulario.get('confirmPass').errors) ||
+                       (formulario.get('confirmPass').errors && formulario.get('confirmPass').dirty) ? 'is-invalid' :
+                       formulario.get('confirmPass').dirty ? 'is-valid' : '' " />
+          <div *ngIf="formulario.get('confirmPass').errors?.required" class="invalid-feedback">Por favor, confirme sua
+            senha.</div>
+          <div *ngIf="form.confirmPass.errors?.mustMatch" class="invalid-feedback">
+            As senhas não conferem.
+          </div>
         </div>
+
       </div>
+
       <div class="form-check">
         <input class="form-check-input" type="checkbox" id="gridCheck">
         <label class="form-check-label" for="gridCheck">
           Desejo receber notícias da Horta
         </label>
       </div>
-      <div class="float-right">
-        <button type="submit" class="btn btn-success navbar-btn-enter">Salvar</button>
-        <button type="submit" class="btn btn-danger ml-2 navbar-btn-enter float-right">Deletar</button>
-      </div>
+
+      <button type="submit" class="btn-type-a">
+        Cadastrar
+      </button>
     </form>
   </div>
-  
+</div>

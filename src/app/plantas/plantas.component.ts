@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Planta } from './plantas.model';
 import { PlantaService } from './planta.service';
+import { PlantaRepository } from './controllers/repository/planta-repository';
+import { PlantaModel } from './controllers/model/planta-model';
 @Component({
   selector: 'app-plantas',
   templateUrl: './plantas.component.html',
@@ -9,16 +10,20 @@ import { PlantaService } from './planta.service';
 })
 export class PlantasComponent implements OnInit {
 
-  plantas: Planta[];
+  plantas: PlantaModel[];
 
-  constructor(private plantaService: PlantaService) { }
+  constructor(
+    private plantaService: PlantaService, 
+    private plantaRepository: PlantaRepository
+  ) { }
 
   ngOnInit(): void {
-    this.getPlants();
+    this.getPlantas();
   }
 
-  getPlants(): void {
-    this.plantaService.getPlants()
-      .subscribe(plantas => this.plantas = plantas);
+  getPlantas(): void {
+    this.plantaRepository
+      .getAllPlantas()
+      .then(plants => this.plantas = plants);
   }
 }

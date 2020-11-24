@@ -8,37 +8,33 @@ export class PlantaMapper extends Mapper<PlantaEntity, PlantaModel> {
     mapFrom(entity: PlantaEntity): PlantaModel {
         return {
             id: entity.id,
-            nomeci: entity.nomeci,
-            nomepo: entity.nomepo,
+            nome: entity.nomepo,
+            nomec: entity.nomeci,
             descricao: entity.descricao,
-            tipo: entity.tipo,
             luz: entity.luz,
             temperatura: entity.temperatura,
             epoca: entity.epoca,
             tempo: entity.tempo,
             solo: entity.solo,
             irrigacao: entity.irrigacao,
-            pestes: entity.pestes,
-            propagacao: entity.propagacao,
-            imagem: entity.imagem
+            pragas: entity.pragas,
+            foto: entity.foto
         };
     }
-    mapTo(param: PlantaModel): PlantaEntity {
+    mapTo(model: PlantaModel): PlantaEntity {
         return {
-            id: param.id,
-            nomeci: param.nomeci,
-            nomepo: param.nomepo,
-            descricao: param.descricao,
-            tipo: param.tipo,
-            luz: param.luz,
-            temperatura: param.temperatura,
-            epoca: param.epoca,
-            tempo: param.tempo,
-            solo: param.solo,
-            irrigacao: param.irrigacao,
-            pestes: param.pestes,
-            propagacao: param.propagacao,
-            imagem: param.imagem
+            id: model.id,
+            nomepo: model.nome,
+            nomeci: model.nomec,
+            descricao: model.descricao,
+            luz: model.luz,
+            temperatura: model.temperatura,
+            epoca: model.epoca,
+            tempo: model.tempo,
+            solo: model.solo,
+            irrigacao: model.irrigacao,
+            pragas: model.pragas,
+            foto: model.foto
         };
     }
 }

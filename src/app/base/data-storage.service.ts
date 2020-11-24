@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
 import { HttpClient} from '@angular/common/http';
-import {  map, tap } from 'rxjs/operators';
+import { map, tap } from 'rxjs/operators';
 
 import { AuthService } from './../seguranca/auth.service';
 import { environment } from './../../environments/environment';
-
-import { Planta } from './../plantas/plantas.model';
+import { PlantaModel } from './../plantas/controllers/model/planta-model';
 import { PlantaService } from './../plantas/planta.service';
+
 @Injectable({ providedIn: 'root' })
 export class DataStorageService {
   
@@ -29,9 +29,8 @@ export class DataStorageService {
   }
 
   fetchPlantas() {
-
     return this.http
-      .get<Planta[]>(
+      .get<PlantaModel[]>(
         `${environment.URLSERVIDOR}usuario`
       )
       .pipe(

@@ -20,35 +20,40 @@ export class ClienteRepository {
 
     getClienteById(id: number): Observable<ClienteModel> {
         return this.http
-            .getAll<ClienteModel>(`${environment.URLSERVIDOR}usuario/${id}`)
+            .getAll<ClienteModel>(`${environment.URLSERVIDOR}cliente/${id}`)
             .pipe(map((x) => this.mapper.mapFrom(x.data)));
     }
 
-    getAllClientes(): Observable<ClienteModel> {
+    getAllClientes(): Promise<ClienteModel[]> {
         return this.http
-            .getAll<ClienteEntity[]>(`${environment.URLSERVIDOR}usuario`)
-            .pipe(mergeMap((x) => x.data))
-            .pipe(map((x) => this.mapper.mapFrom(x)));
+            .getAll<ClienteEntity[]>(`${environment.URLSERVIDOR}cliente`)
+            .toPromise().then(x => {
+                return x.data.map(this.mapper.mapFrom);
+            })
     }
 
     postCliente(param: ClienteModel) {
+
         return this.http
-            .post<ClienteEntity>(`${environment.URLSERVIDOR}usuario`, this.mapper.mapTo(param))
+            .post<ClienteEntity>(`${environment.URLSERVIDOR}cliente`, this.mapper.mapTo(param))
             .pipe(map((x) => this.mapper.mapFrom(x.data)));
     }
 
     putCliente(param: ClienteModel) {
+
         return this.http
             .put<void>(
-                `${environment.URLSERVIDOR}usuario/${param.id}`,
+                `${environment.URLSERVIDOR}cliente/${param.id}`,
                 this.mapper.mapTo(param)
             )
             .pipe(map((x) => x.data));
     }
 
     deleteCliente(id: number): Observable<void> {
+
         return this.http
-            .delete<void>(`${environment.URLSERVIDOR}usuario/${id}`, id)
+            .delete<void>(`${environment.URLSERVIDOR}cliente/${id}`, id)
             .pipe(map((x) => x.data));
     }
 }
+

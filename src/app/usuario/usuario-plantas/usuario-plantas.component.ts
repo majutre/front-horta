@@ -1,10 +1,11 @@
-import { PlantaService } from './../../plantas/planta.service';
-import { DataStorageService } from './../../base/data-storage.service';
+import { AuthService } from './../../seguranca/auth.service';
 import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 
-import { Planta } from '../../plantas/plantas.model';
+import { DataStorageService } from './../../base/data-storage.service';
 
+import { PlantaModel } from './../../plantas/controllers/model/planta-model';
+import { PlantaService } from './../../plantas/planta.service';
 @Component({
   selector: 'app-usuario-plantas',
   templateUrl: './usuario-plantas.component.html',
@@ -12,20 +13,22 @@ import { Planta } from '../../plantas/plantas.model';
 })
 export class UsuarioPlantasComponent implements OnInit {
 
-  plantas: Planta[] = [];
+  plantas: PlantaModel[] = [];
   private subscription: Subscription;
   isEmpty: boolean = false;
+  usuarioId: number;
 
   constructor(
     private plantaService: PlantaService,
-    private dataService: DataStorageService
-    ) { }
+    private dataService: DataStorageService,
+    public authService: AuthService
+  ) { }
 
   ngOnInit() {
     this.plantas = this.plantaService.getMinhasPlantas();
     this.subscription = this.plantaService.minhasPlantasChanged
       .subscribe(
-        (plantas: Planta[]) => {
+        (plantas: PlantaModel[]) => {
           this.plantas = plantas;
         }
       );
@@ -33,12 +36,12 @@ export class UsuarioPlantasComponent implements OnInit {
     // if (this.plantas = []) {
     //   this.isEmpty = true;
     // }
-
-    // this.dataService.fetchPlantas();
+    const usuarioId = this.authService.jwtPayload.usuario_id;
+    this.dataService.fetchPlantas();
   }
 
   onDeletePlanta(index: number) {
-    this.plantaService.deleteMinhaPlanta(index);
+    this.plantaService.deleteMinhaPlanta(this.usuarioId, index);
   }
 
   ngOnDestroy() {

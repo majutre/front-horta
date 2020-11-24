@@ -1,16 +1,22 @@
 export interface PlantaEntity {
     id?: number;
-    nomeci?: string;
     nomepo?: string;
-    descricao?: any;
-    tipo?: string;
-    luz?: string;
+    nomeci?: string;
+    descricao?: string;
+    luz?: string,
     temperatura?: string,
     epoca?: string,
     tempo?: string,
     solo?: string,
     irrigacao?: string,
-    pestes?: string,
-    propagacao?: string,
-    imagem?: string
+    pragas?: any,
+    foto?: ImagemEntity
+}
+
+export interface ImagemEntity {
+    id?: number;
+    nomeArquivo?: string;
+    contentType?: string;
+    tamanho?: number;
+    url?: string;
 }

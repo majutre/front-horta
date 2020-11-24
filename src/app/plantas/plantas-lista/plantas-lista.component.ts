@@ -1,7 +1,13 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
-import { Planta } from '../plantas.model';
+
 import { PlantaService } from '../planta.service';
+import { AuthService } from './../../seguranca/auth.service';
+import { PlantaRepository } from './../controllers/repository/planta-repository';
+import { ClienteModel } from './../../usuario/controllers/model/cliente-model';
+import { environment } from './../../../environments/environment';
+import { PlantaModel } from './../controllers/model/planta-model';
 
 
 @Component({
@@ -12,23 +18,38 @@ import { PlantaService } from '../planta.service';
 
 export class PlantasListaComponent implements OnInit {
 
-  plantas: Planta[];
+  plantas: PlantaModel[];
+  usuario: ClienteModel;
+  usuarioId: number;
+  
 
   constructor(
-    private plantaService: PlantaService, 
+    private plantaService: PlantaService,
+    private plantaRepository: PlantaRepository,
+    private http: HttpClient,
+    public authService: AuthService
+  ) {
+   
+  }
 
-  ) { }
-  
   ngOnInit(): void {
-    this.getPlants();
+    this.getPlantas();
+    const usuarioId = this.authService.jwtPayload.usuario_id;
   }
 
-  getPlants(): void {
-    this.plantaService.getPlants()
-    .subscribe(plantas => this.plantas = plantas);
+ 
+  getPlantas(): void {
+    this.plantaRepository
+      .getAllPlantas()
+      .then(plants => this.plantas = plants);
   }
 
-  onAddPlanta(planta: Planta){
-    this.plantaService.addPlanta(planta);
+  onAddPlanta(planta: PlantaModel) {
+    this.plantaService.addPlanta(this.usuarioId, planta);
+
   }
+
+  
+
 }
+

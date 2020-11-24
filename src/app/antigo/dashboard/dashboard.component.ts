@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { PlantaService } from './../../plantas/planta.service';
+import { Planta } from './../../plantas/plantas.model';
 
-import { Planta } from '../plantas/plantas.model';
-import { PlantaService } from '../plantas/planta.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -19,7 +19,7 @@ export class DashboardComponent implements OnInit {
   }
 
   getPlants(): void {
-    this.plantaService.getPlants()
-      .subscribe(plantas => this.plantas = plantas.slice(1, 5));
+    // this.plantaService.getPlants()
+    //   .subscribe(plantas => this.plantas = plantas.slice(1, 5));
   }
 }

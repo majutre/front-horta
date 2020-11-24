@@ -12,7 +12,7 @@
     <div class="row">
         <div *ngFor="let planta of plantas; let i = index" class=" col-md-3">
             <div class="card">
-                <img src="../../assets/images/plantas/{{planta.imagem}}.jpg" class="card-img-top" alt="..."
+                <img src="{{planta.foto.url}}" class="card-img-top" alt="..."
                   style="cursor: pointer" routerLink="/planta/{{planta.id}}">
                 <div class="card-body">
                     <h5 class="card-title" style="cursor: pointer" routerLink="/planta/{{planta.id}}">{{planta.nome}}</h5>

@@ -5,4 +5,5 @@ export interface ClienteEntity {
     genero?: any;
     email?: string;
     senha?: string;
+    plantas?: any[];
 }

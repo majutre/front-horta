@@ -1,40 +1,42 @@
-import { Injectable } from '@angular/core';
+import { ClienteRepository } from './../usuario/controllers/repository/cliente-repository';
+import { Injectable, OnInit } from '@angular/core';
 import { Observable, of, Subject } from 'rxjs';
 
-import { Planta } from './plantas.model';
-import { PLANTAS } from './mock-plantas';
+import { ClienteModel } from './../usuario/controllers/model/cliente-model';
+import { PlantaRepository } from './controllers/repository/planta-repository';
+import { PlantaModel } from './controllers/model/planta-model';
+import { AuthService } from './../seguranca/auth.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PlantaService {
 
-  minhasPlantasChanged = new Subject<Planta[]>();
-  private minhasPlantas: Planta[] = [];
+  minhasPlantasChanged = new Subject<PlantaModel[]>();
+  private minhasPlantas: PlantaModel[] = [];
+  usuario: ClienteModel;
+  usuarioId: number;
 
-  constructor( ) { }
+  constructor(
+    private plantaRepository: PlantaRepository, 
+    private clienteRepository: ClienteRepository, 
+    private authService: AuthService 
+  ) { }
 
-  getPlants(): Observable<Planta[]> {
-    return of(PLANTAS);
-  }
-
-  getPlant(id: number): Observable<Planta> {
-    return of(PLANTAS.find(planta => planta.id === id));
-  }
-
-  /** MINHAS PLANTAS - INÍCIO **/
 
   getMinhasPlantas() {
-    return this.minhasPlantas.slice();
+   return this.minhasPlantas.slice(); 
+    // return this.clienteRepository.getClienteById(this.usuarioId).plantas;
   }
 
   getMinhaPlanta(index: number) {
     return this.minhasPlantas[index];
   }
 
-  addPlanta(planta: Planta) {
+  addPlanta(idUsuario: number, planta: PlantaModel) {
     this.minhasPlantas.push(planta);
     this.minhasPlantasChanged.next(this.minhasPlantas.slice());
+    this.plantaRepository.adicionarPlanta(idUsuario, planta);
   }
 
   // addVariasPlantas(plantas: Planta[]) {
@@ -47,16 +49,16 @@ export class PlantaService {
   //   this.minhasPlantasChanged.next(this.minhasPlantas.slice());
   // }
 
-  setPlantas(plantas: Planta[]) {
+  setPlantas(plantas: PlantaModel[]) {
     this.minhasPlantas = plantas;
     this.minhasPlantasChanged.next(this.minhasPlantas.slice());
   }
 
-  deleteMinhaPlanta(index: number) {
+  deleteMinhaPlanta(usuarioId: number, index: number) {
     this.minhasPlantas.splice(index, 1);
     this.minhasPlantasChanged.next(this.minhasPlantas.slice());
+    this.plantaRepository.removerPlanta(usuarioId, index);
   }
 
-/** MINHAS PLANTAS - FIM **/
 
 }

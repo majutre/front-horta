@@ -13,7 +13,6 @@ import { AuthService } from '../../seguranca/auth.service';
 export class UsuarioLoginComponent implements OnInit {
 
   public formulario: FormGroup;
-  isLoading = false;
 
   constructor(
     private authService: AuthService,
@@ -33,7 +32,6 @@ export class UsuarioLoginComponent implements OnInit {
 
   onLogin() {
 
-    this.isLoading = true;
 
     if (this.formulario.invalid) {
       return;
@@ -46,6 +44,5 @@ export class UsuarioLoginComponent implements OnInit {
     this.authService.login(login, senha);
     this.formulario.reset();
 
-    this.isLoading = false;
   }
 }
