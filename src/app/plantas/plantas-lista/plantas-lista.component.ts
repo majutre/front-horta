@@ -41,7 +41,7 @@ export class PlantasListaComponent implements OnInit {
   getPlantas(): void {
     this.plantaRepository
       .getAllPlantas()
-      .then(plants => this.plantas = plants);
+      .then(plantas => this.plantas = plantas);
   }
 
   onAddPlanta(planta: PlantaModel) {

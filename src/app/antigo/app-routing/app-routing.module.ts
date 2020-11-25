@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { LoginComponent } from './../login/login.component';
-import { HomeComponent } from './../home/home.component';
-import { PragasComponent } from '../pragas/pragas.component';
-import { InscrevaSeComponent } from '../inscreva-se/inscreva-se.component';
-import { OqueehComponent } from '../oqueeh/oqueeh.component';
-import { PorqueusarComponent } from '../porqueusar/porqueusar.component';
+import { LoginComponent } from '../../login/login.component';
+import { HomeComponent } from '../../home/home.component';
+import { PragasComponent } from '../../pragas/pragas.component';
+import { InscrevaSeComponent } from '../../inscreva-se/inscreva-se.component';
+import { OqueehComponent } from '../../info/info-oqueeh/info-oqueeh.component';
+import { PorqueusarComponent } from '../../info/info-porqueusar/info-porqueusar.component';
 import { InspiracaoComponent } from '../inspiracao/inspiracao.component';
 import { SobreComponent } from '../sobre/sobre.component';
 import { MarcaComponent } from '../marca/marca.component';
@@ -14,7 +14,7 @@ import { TermosComponent } from '../termos/termos.component';
 import { PrivacidadeComponent } from '../privacidade/privacidade.component';
 import { PerfilDaPlantaComponent } from '../perfil-da-planta/perfil-da-planta.component';
 import { DashboardComponent } from '../dashboard/dashboard.component';
-import { PageNotFoundComponent } from '../page-not-found/page-not-found.component';
+import { PageNotFoundComponent } from '../../page-not-found/page-not-found.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},

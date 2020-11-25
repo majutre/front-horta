@@ -1,163 +1,534 @@
+
  {
-            "nomepo": "Yacon",
-            "nomeci": "Smallanthus sonchifolius",
-            "descricao": "O yacon, também conhecido como batata-yacon, é uma planta cujas raízes tuberosas são consumidas normalmente cruas ou na forma de suco. As raízes tuberosas do yacon são ricas em inulina (polissacarídeos de frutose), o que lhes proporciona um sabor adocicado. As folhas e as pontas dos ramos podem ser consumidas cozidas. Também é uma planta usada para fins medicinais, especialmente por suas folhas apresentarem propriedades anti-hiperglicêmicas.",
-            "umidade": "ALTA",
-            "iluminacao": "ALTA",
-            "foto_id": 1
-        }
-        ,
-        {
-            "nomepo": "Wasabi",
-            "nomeci": "Eutrema japonicum",
-            "descricao": "A wasabi, também conhecida como wasabia e raiz-forte-japonesa, é uma planta nativa do Japão, cultivada principalmente para uso de seu espesso caule subterrâneo (rizoma), mas que é frequentemente chamado incorretamente de raiz. Quando ralado, seu rizoma apresenta um sabor bastante picante, similar ao da raiz-forte, mas não idêntico. Suas folhas também podem ser consumidas e têm um sabor menos picante do que o rizoma.",
-            "iluminacao": "MÉDIA",
-            "umidade": "MÉDIA",
-            "foto_id": 2
-        },
-        {
+    "id": null,
+    "nomepo": "Sálvia",
+    "nomeci": "Salvia officinalis",
+    "descricao": "A sálvia é uma planta subarbustiva, de folhas muito aromáticas, nativa da região do mediterrâneo e conhecida desde a antiguidade por suas propriedades como planta condimentar, medicinal e ornamental. Apresenta hastes eretas, quadrangulares, ramificadas e recobertas por tricomas curtos. Elas são inicialmente herbáceas e se tornam lenhosas com o passar do tempo. Suas folhas são elípticas a oblongas, sésseis no ápice dos ramos e pecioladas na parte inferior, com a superfície rugosa, pilosa e de cor verde acinzentada na espécie típica. O aroma das folhas é pungente e percebido mesmo sem amassá-las.",
+    "luz": "Meia sombra, sol pleno",
+    "temperatura": "3°C a 29°C",
+    "epoca": "Final da primavera e verão",
+    "tempo": "90 a 120 dias",
+    "solo": "Bem drenado, leve, fértil e rico em nitrogênio. A planta é muito tolerante quanto ao tipo de solo e pH, mas é necessário que ele não retenha muita água, porque isso prejudica o seu crescimento.",
+    "irrigacao": "Manter o solo sempre úmido, sem ficar encharcado",
+    "imagem": "Salvia",
+}
+{
+    "id": null,
+    "nomepo": "Tomate cereja",
+    "nomeci": "Solanum lycopersicum var. cerasiforme",
+    "descricao": "O tomate-cereja é uma espécie de tomate bem menor e de sabor um pouco mais doce se comparado ao tomate comum. 
+                O diâmetro dele pode abranger de 3 a 10 cm, e a forma dele varia entre esfera e elipse. 
+                A origem provável do tomate-cereja é o Peru e Norte do Chile.",
+    "luz": "Sol pleno",
+    "temperatura": "10°C a 34°C",
+    "epoca": "Agosto",
+    "tempo": "6 a 8 semanas",
+    "solo": "Solo fértil, profundo, destorroado, drenável, enriquecido com matéria orgânica e irrigado regularmente.",
+    "irrigacao": "Manter o solo sempre úmido, sem deixar encharcado. Não regar as folhas, apenas o solo",
+    "imagem": "TomateCereja"
+}
+ {
+    "id": null,
+    "nomepo": "Orégano",
+    "nomeci": "Origanum vulgare",
+    "descricao": "O orégano é uma planta perene que atinge de 20 cm a 80 cm de altura, e o sabor de suas folhas e flores pode variar muito com as condições em que é cultivado.",
+    "luz": "Luz solar direta",
+    "temperatura": "20°C a 25°C",
+    "epoca": "Inverno",
+    "tempo": "100 dias",
+    "solo": "Solo drenado e fértil. Ph de 6 a 8.",
+    "irrigacao": "Manter o solo sempre úmido, sem deixar encharcado.",
+    "imagem": "Oregano"
+}
+ {
+    "id": null,
+    "nomepo": "Alho",
+    "nomeci": "Allium sativum",
+    "descricao": "O alho é uma planta cuja altura pode variar de 30 cm a 120 cm, e que forma um bulbo que contém vários segmentos, normalmente denominados 'dentes de alho', que podem ser consumidos crus, cozidos ou assados, sendo geralmente utilizados como tempero ou condimento. 
+                Embora menos utilizados, as folhas jovens, os escapos (caules das flores), as flores, os bulbilhos que surgem junto às flores e sementes também podem ser consumidos.
+                Estudos indicam que o consumo regular de alho oferece benefícios cardiovasculares, além de possuir outras propriedades medicinais benéficas.
+                O alho também pode ser utilizado como pesticida natural, sendo comum o uso de extratos ou macerados para combater algumas pragas em hortas e pequenas plantações.",
+     "luz": "Luz solar direta",
+    "temperatura": "0°C a 15°C",
+    "epoca": "Fevereiro a junho",
+    "tempo": "16 a 36 semanas",
+    "solo": "O alho não é muito exigente quanto ao solo, podendo ser plantado em solos menos férteis, com menor disponibilidade de nitrogênio. O ideal é um solo leve, bem drenado e rico em matéria orgânica. O pH do solo pode ser de 5,5 a 8,3 (pH ideal de 6,2 a 7).",
+    "irrigacao": "O alho deve ser irrigado com frequência para que o solo seja mantido sempre úmido durante a fase inicial de crescimento da planta.",
+    "imagem": "Alho",
+}
 
-            "nomepo": "Vinagreira",
-            "nomeci": "Hibiscus sabdariffa",
-            "descricao": "A vinagreira, também conhecida como rosela e quiabo-azedo entre outros nomes, é um arbusto vigoroso que pode chegar a atingir quase 5 m de altura em plantas cujos ramos são utilizados para a extração de fibras têxteis. As variedades cultivadas que são utilizadas como alimento são menores, atingindo até 2,5 m de altura. Destas podem ser consumidas como verdura as folhas jovens e as pontas dos ramos, cruas, refogadas ou cozidas. As folhas, dependendo da cultivar, podem ser verdes ou avermelhadas. Os caules e pecíolos (os talos das folhas) geralmente são vermelhos. Os cálices das flores são vermelhos e carnudos, sendo utilizados no feitio de refrescos, chás, geleias e doces. Tanto as folhas quando os cálices têm um agradável sabor ácido, vindo daí seu nome popular vinagreira. As flores (a corola da flor) e as sementes também podem ser consumidas, mas os cálices são mais apreciados e sua colheita impossibilita a colheita da corola da flor ou de suas sementes.",
-            "iluminacao": "ALTA",
-            "umidade": "ALTA",
-            "foto_id": 3
-        },
-        {
+{
+    "id": null,
+    "nomepo": "Tomilho",
+    "nomeci": "Thymus vulgaris",
+    "descricao": "Tomilho é uma erva perene conhecida há milhares de anos e utilizada das mais diversas formas. Além de seu valor como erva culinária, também é conhecido por usos tanto medicinais quanto ornamentais. É um membro da família da hortelã e um parente do orégano",
+    "luz": "Luz solar direta, alta luminosidade",
+    "temperatura": "4°C a 28°C",
+    "epoca": "Ano todo",
+    "tempo": "60 a 90 dias",
+    "solo": "O solo deve ser bem drenado, leve, e de preferência fértil, embora possa crescer mesmo em solos mais pobres. Estas plantas são bastante tolerantes quanto ao pH do solo, mas o ideal é que o pH seja levemente alcalino. É fácil cultivá-lo em solos arenosos ou pedregosos.",
+    "irrigacao": "O solo deve ser mantido levemente úmido.",
+    "imagem": "Tomilho",
+}
 
-            "nomepo": "Tupinambo",
-            "nomeci": "Helianthus tuberosus",
-            "descricao": "O tupinambo, também chamado de girassol-batateiro, é uma planta domesmo gênero do girassol. Nativo do leste da América do Norte, já era cultivado pelos povos nativos da região antes da chegada dos europeus. Seus tubérculos são ricos em inulina, um polissacarídeo da frutose, o que lhes proporciona um leve sabor adocicado. São normalmente consumidos cozidos, mas podem ser consumidos crus em saladas se cortados em fatias finas.",
-            "iluminacao": "ALTA",
-            "umidade": "ALTA",
-            "foto_id": 4
-        },
-        {
-            "id": 5,
-            "nomepo": "Repolho",
-            "nomeci": "Brassica olerace",
-            "descricao": "É uma planta bienal que forma uma espécie de roseta de folhas durante o primeiro ano de cultivo; as folhas dessa variedade são sempre carnudas e possuem proteínas capazes de fazê-las armazenar água e nutrientes. No segundo ano, as reservas de nutrientes formam uma inflorescência amarela de um a dois metros de altura.",
-            "tipo": "Erva",
-            "iluminacao": "Luz solar direta",
-            "temperatura": "10°C a 26°C",
-            "epoca": "Ano todo",
-            "tempo": "75 a 88 dias",
-            "solo": " Argila e areia com boa drenagem e fertilizante básico",
-            "irrigacao": "Regar regularmente, sem acúmulo de água",
-            "pestes": "Míldio, podridão macia, pulgões, lagartas de repolho",
-            "propagacao": "Plântula",
-            "foto_id": "repolho"
-        },
-        {
-            "id": 6,
-            "nomepo": "Beterraba",
-            "nomeci": "Beta vulgaris",
-            "descricao": "É uma planta herbácea anual ou perene, glabra ou hirsuta, ereta ou decumbente e com até 2m de altura. É ramificado e frondoso, de cor verde e violeta e possui raízes finas ou tuberosas ricas em açúcar.",
-            "tipo": "Erva",
-            "iluminacao": "Luz solar direta",
-            "temperatura": "20°C a 30°C",
-            "epoca": "Verão",
-            "tempo": "60 a 70 dias",
-            "solo": " Argila e areia com boa drenagem e fertilizante a cada 16 dias",
-            "irrigacao": "Regar regularmente, sem acúmulo de água",
-            "pestes": "-",
-            "propagacao": "Semeadura",
-            "foto_id": "beterraba"
-        },
-        {
-            "id": 7,
-            "nomepo": "Cenoura",
-            "nomeci": "Daucus carota",
-            "descricao": "É uma planta bienal que forma uma roseta de folhas na primavera e no verão, enquanto desenvolve a raiz napiforme espessa, que armazenará grandes quantidades de açúcar para a floração do ano seguinte. O caule da flor cresce cerca de 10 cm com um umbel de flores brancas no ápice.",
-            "tipo": "Erva",
-            "iluminacao": "Luz solar direta",
-            "temperatura": "20°C a 30°C",
-            "epoca": "Primavera até Outono",
-            "tempo": "120 dias",
-            "solo": " Areia, giz e solo argiloso, com boa drenagem e fertilizante de 2 a 3 vezes durante o crescimento",
-            "irrigacao": "Tolerante à seca, menos rega, água quando o solo está seco",
-            "pestes": "Oídio, podridão das raízes, doenças esclerotina, mosca raiz de cenoura e pulgões",
-            "propagacao": "Semeadura",
-            "foto_id": "cenoura"
-        },
-        {
-            "id": 8,
-            "nomepo": "Batata-Doce",
-            "nomeci": "Ipomoea batatas",
-            "descricao": "São plantas de escalada perenes; com hastes prostradas ou volúveis, um tanto suculentas, mas também finas e herbáceas, geralmente com raízes nos nós, glabras ou pubescentes. Folhas variáveis, inteiras ou dentadas até 5-7 lobadas, cordadas a ovar, com 5 a 10 cm de comprimento e largura, glabras ou pubescentes.",
-            "tipo": "Erva",
-            "iluminacao": "Luz solar direta",
-            "temperatura": "20°C a 30°C",
-            "epoca": "Primavera e Verão",
-            "tempo": "120 a 150 dias",
-            "solo": "Areia e argila, com fertilização durante o crescimento",
-            "irrigacao": "Mantenha úmido, mas sem acúmulo de água",
-            "pestes": "Oídio, infecção viral, moscas brancas, ácaros vermelhos",
-            "propagacao": "Estacas",
-            "foto_id": "batata-doce"
-        },
-        {
-            "id": 9,
-            "nomepo": "Nabo",
-            "nomeci": "Brassica rapa",
-            "descricao": "É uma planta amplamente cultivada e que produz oleaginosas. O óleo de canola é produzido a partir do nabo oleaginoso. Nabo atrai borboletas brancas que ganham nutrientes de suas flores.",
-            "tipo": "Erva",
-            "iluminacao": "Luz solar direta ou sombra parcial",
-            "temperatura": "20°C a 30°C",
-            "epoca": "Verão",
-            "tempo": "80 a 120 dias",
-            "solo": "Areia e argila, com fertilização básica",
-            "irrigacao": "Regar regularmente, sem acúmulo de água",
-            "pestes": "Mídio, podridão macia, pulgões, lagartas de repolho",
-            "propagacao": "Semeadura",
-            "foto_id": "nabo"
-        },
-        {
-            "id": 10,
-            "nomepo": "Cebola",
-            "nomeci": "Allium cepa",
-            "descricao": "Em relação à sua morfologia, a cebola possui um sistema radicular composto por inúmeras raízes rasas, esbranquiçadas e fasciculadas, que emergem de uma haste como um disco. Este disco-tronco possui numerosos nós e entrenós muitos cursos e, a partir disso, as folhas saem.",
-            "tipo": "Erva",
-            "iluminacao": "Luz solar direta",
-            "temperatura": "10°C a 25°C",
-            "epoca": "Inverno",
-            "tempo": "85 a 300 dias",
-            "solo": "Areia e argila, com fertilização regular",
-            "irrigacao": "Regar regularmente, sem acúmulo de água",
-            "pestes": "Podridão branca, ferrugem, míldio doença de ponta branca, mosca de cebola, mariposa de alho poró",
-            "propagacao": "Semeadura",
-            "foto_id": "cebola"
-        },
-        {
-            "id": 11,
-            "nomepo": "Ervilha Aspargo",
-            "nomeci": "Lotus tetragonolobus",
-            "descricao": "A planta possui um sistema vegetativo pouco desenvolvido, embora com uma raiz articulada que tende a ser profunda o suficiente. As folhas são compostas por pares de folhetos que terminam em gavinhas.As inflorescências estão agrupadas em grandes brácteas foliáceas que são inseridas nas flores.",
-            "tipo": "Erva, videira",
-            "iluminacao": "Luz solar direta",
-            "temperatura": "20°C a 30°C",
-            "epoca": "Primavera e Verão",
-            "tempo": "85 dias",
-            "solo": "Areia e argila, com fertilização uma vez por semana durante a floração",
-            "irrigacao": "Regar regularmente, sem acúmulo de água",
-            "pestes": "-",
-            "propagacao": "Semeadura e estacas",
-            "foto_id": "ervilha-aspargo"
-        },
-        {
-            "id": 12,
-            "nomepo": "Agrião da Terra",
-            "nomeci": "Barbarea verna",
-            "descricao": "O agrião-da-terra, também chamado de erva-de-santa-bárbara, é uma pequena planta cujas folhas lembram em forma e sabor as folhas do agrião-da-água. Quando floresce, esta planta atinge de 30 a 90 cm de altura, mas durante seu período útil de cultivo geralmente não ultrapassa os 15 cm de altura. Suas folhas têm um agradável sabor e podem ser consumidas cruas em saladas e sanduiches, ou podem ser utilizadas em sopas e outras receitas culinárias",
-            "tipo": "Erva",
-            "iluminacao": "Luz solar direta ou sombra parcial",
-            "temperatura": "20°C a 30°C",
-            "epoca": "Primavera, Verão e Outono",
-            "tempo": "85 dias",
-            "solo": "Areia e argila, com fertilização uma vez por semana durante a floração",
-            "irrigacao": "Regar regularmente, sem acúmulo de água",
-            "pestes": "Podridão branca, ferrugem, míldio doença de ponta branca, mosca de cebola, mariposa de alho poró",
-            "propagacao": "Semeadura, estacas",
-            "foto_id": "agriao-da-terra"
-        }
+
+{
+
+"nomepo": "Figueira-da-índia",
+"nomeci": "Opuntia ficus-indica",
+"descricao": "Figueira-da-índia é um cacto ramificado e de porte arbustivo, frutífero, amplamente cultivado nas regiões semi-áridas do mundo todo.".
+"luz": "Sol Pleno",
+"temperatura": "15 e 20ºC",
+"epoca": "Primavera e outono",
+"tempo": "110 a 150 dias",
+"solo": "Húmidos, bem drenados e profundos. A textura pode ser arenosa, franca, franco-arenosa, silico-argilosa, franco-argilosa. Os substratos vulcânicos são bons para o desenvolvimento da planta. Prefere pH entre 6 e 8.",
+"irrigacao": "Só precisa ser regada em períodos de muita seca",
+
+}
+
+{
+"id": 
+"nomepo": "Anoneira",
+"nomeci": "Anona cherimola",
+"descricao": "Annona cherimola é uma espécie arbórea de pequeno porte (até 7 m de altura) pertencente à família Annonaceae, originária das regiões andinas do Equador, da Bolívia e do Peru, mas na atualidade cultivada como fruteira nas regiões tropicais e subtropicais de todo o mundo",
+"luz": Sol pleno
+"temperatura": "18 a 20ºC",
+"epoca": "Primavera",
+"tempo": "100 a 120 dias",
+"solo": "Solos profundos e férteis, bem drenados.",
+"irrigacao":
+"imagem": "Anoneira"
+}
+
+
+{
+"id":
+"nomepo": "Fava",
+"nomeci": "Vicia faba",
+"descricao": "A fava (Vicia faba L.) é uma planta herbácea anual, é uma leguminosa, pertence à família botânica Fabaceae e constitui uma grande fonte proteína (a fava contém cerca de 20-25% de proteína). Do género Vicia, a fava é a única espécie que é cultivada como hortaliça.",
+"luz": "Necessita de alta luminosidade, com luz solar direta pelo menos algumas horas por dia.",
+"temperatura": "15 ºC",
+"epoca": "setembro a outubro",
+"tempo":  "85 a 240 dias",
+"solo":  "solos profundos, com boa capacidade de retenção de água e com boa drenagem",
+"irrigacao": "Irrigue de forma a manter o solo úmido, sem que fique encharcado.",
+"imagem": "Fava",
+}
+
+
+{
+
+"nomepo": "Abobrinha",
+"nomeci": "Cucurbita pepo",
+"descricao": "Abobrinha é o nome popular dado a algumas variedades ou cultivares de abóboras cujos frutos são colhidos e consumidos quando ainda estão imaturos. A grande maioria destas variedades são da espécie Cucurbita pepo, mas há exceções. Quase todas as cultivares de abobrinha formam moitas que não se alastram muito.",
+"luz": "Muita luz",
+"temperatura": "20 a 25 °C.",
+"epoca": "Abril a julho.",
+"tempo": "30 e 60 dias",
+"solo": "Adapta-se a muitos tipos de solo, mas preferem os de textura franca, franco-arenosa ou arenosa, profundos e bem drenados, ricos em matéria orgânica (2-4%). O pH ótimo deve ser 5,6-6,8.",
+"irrigacao": "Localizada por gota a gota, duas vezes por semana (em plena produção), dependendo do clima."
+}
+
+
+{
+"id":
+"nomepo": "Alho francês",
+"nomeci": "Allium ampeloprasum",
+"descricao":
+"luz": "necessita de luz solar direta",
+"temperatura": "15 a 35 graus",
+"epoca": "fevereiro a maio ou setembro a outubro"
+"tempo": "4 a 5 meses",
+"solo": "Solos profundos, frescos, bem drenados com pH neutro ou ligeiramente ácido (6,5-7)",
+"irrigacao": "Deve ser regado com moderação assim que as plantas se estabeleçam e pode ser regado regularmente com chorume de urtiga diluído.",
+"imagem": "Alho frances",
+}
+
+{
+
+"nomepo": "Brócoli",
+"nomeci": "Brassica oleracea var. italica",
+"descricao": "É uma plana herbácea, bienal e perene. Suas folhas possuem limbo lobado na base e bordas onduladas e suas flores são imperfeitas, com formato semelhante à de um sino, todas reunidas em uma inflorescência do tipo capítulo. O tamanho dos botões florais é variável e possuem colorações encontradas do verde-escuro ao verde-arroxeado.  Tanto as folhas, as flores e os pedúnculos florais dos brócolis podem ser consumidos e destacam-se como sendo poderosas fontes de nutrientes. Quando colhidos, não deve ser demorado o seu consumo, pois os brócolis têm uma curta vida pós-colheita e várias alterações em seu sabor, aroma e coloração ocorrem.",
+"luz": "luz solar direta por, pelo menos, algumas horas por dia",
+"temperatura": "10 ºC a 15 ºC",
+"epoca": "junho a janeiro",
+"tempo":  "75 a 100 dias",
+"solo": "solos ácidos, bem drenados e de texturas ligeiras, ricos em matéria orgânica, boa capacidade de retenção de água e com pH de 6,5",
+"irrigacao": "A rega deve ser abundante e regular durante a fase de crescimento da inflorescência, pois a falta de água pode causar uma floração precoce"
+}
+
+
+{
+
+"nomepo": "Alface",
+"nomeci": "Latuca sativa",
+"descricao": "A alface é uma das hortaliças mais conhecidas e mais cultivadas no mundo, e que tem um grande número de cultivares, que variam principalmente na forma, cor e textura das folhas, havendo inclusive alfaces que são cultivadas para o consumo dos seus compridos e grossos caules (alface-aspargo). Exemplos comuns de grupos de cultivares são as alfaces-manteiga, alfaces-americanas ou alfaces-iceberg, alfaces-de-folhas-soltas e alfaces-romanas.",
+"luz": "Boa luminosidade, preferencialmente com luz solar direta, mas é tolerante a sombra parcial",
+"temperatura": "10°C e 24°C",
+"epoca": "fevereiro a julho",
+"tempo": "55 a 130 dias"
+"solo": "solos francos ou argilosos, bem drenados e ricos em matéria orgânica",
+"irrigacao": "A alface deve ser irrigada com frequência para manter o solo úmido, mas sem que o solo permaneça encharcado."
+}
+
+
+{
+
+"nomepo": "Berinjela",
+"nomeci": "Solanum melongena",
+"descricao": "A berinjela é uma planta cuja origem é disputada, tendo sido cultivada na Índia e no sul da China por pelo menos dois mil anos. Há um grande número de cultivares, com plantas que podem atingir de 40 cm a mais de dois metros de altura, e seus frutos podem ter diversos tamanhos, formatos e cores, embora os mais cultivados sejam roxo-escuros. O fruto é a única parte comestível da planta, pois suas folhas e flores contêm o alcaloide tóxico solanina.",
+"luz": "Esta planta necessita de alta luminosidade, com pelo menos algumas horas de sol direto diariamente.",
+"temperatura": "25 a 35°C",
+"epoca": "fevereiro a março",
+"tempo": "90 a 110 dias",
+"solo": "Adapta-se a diferentes tipos de solo, desde que profundos e bem drenados,
+no entanto prefere solos de textura média, com pH 5,5 a 6,5",
+"irrigacao": "Irrigue com frequência para que o solo seja mantido úmido, porém sem que permaneça encharcado."
+}
+
+{
+
+"nomepo": "Lulo",
+"nomeci": "Solanum quitoense",
+"descricao": "Um fruto de sabor agridoce e cítrico, rico em vitamina C, vários minerais e com poucas calorias.
+Oriundo do Equador e da Colômbia, mas também de algumas zonas de outros países vizinhos, o lulo ou naranjilla (Solanum quitoense) é um fruto que desperta cada vez mais o interesse por parte dos entusiastas da jardinagem pelo seu sabor exótico.
+É comum encontrar-se o fruto à venda nos seus países de origem e também noutros países da América do Sul e Central, mas não é das frutas que se conservam melhor, pelo que a sua venda se concentra nos pequenos mercados locais e regionais.
+Recentemente foi introduzido no Brasil, além de ser cultivado em coleções particulares ou jardins botânicos em várias regiões do mundo.",
+"luz": "Meio-sol ou sol-pleno",
+"temperatura":  "21 a 23,5 °C",
+"epoca": "Primavera",
+"tempo": "10 a 90 dias",
+"solo": "Solos profundos e férteis, bem drenados.",
+"irrigacao": "Irrigação sempre que o solo estiver seco"
+}
+
+{
+
+"nomepo": "Abóbora",
+"nomeci": "Cucúrbita moschata",
+"descricao":"Espécie originária do México e América Central, é a espécie mais cultivada em regiões tropicais, pois prefere condições de cultivo mais quentes e úmidas. É a espécie mais sensível a baixas temperaturas. Nesta espécie, o pedúnculo (o talo do fruto) é anguloso e duro, alargando no ápice (parte do talo que se conecta ao fruto). As folhas de plantas bem desenvolvidas têm manchas esbranquiçadas nas intersecções das nervuras, geralmente têm recortes suaves, com bordas angulares e são pubescentes (têm pelos). Os caules são moderadamente angulosos.",
+"luz": "Crescem melhor em locais ensolarados, mas podem ser cultivadas com sombra parcial, desde que haja uma alta luminosidade."
+"temperatura": "18°C a 27°C",
+"epoca": "Primavera",
+"tempo": "85 a 150 dias",
+"solo": "Bem drenado, fértil, rico em matéria orgânica e com boa disponibilidade de nitrogênio. O pH ideal do solo varia entre 5,5 e 6,8.",
+"irrigacao": "Manter o solo sempre úmido, sem que fique encharcado."
+}
+
+{
+"nomepo": "Açafrão",
+"nomeci": "Crocus sativus",
+"descricao": "O açafrão é uma planta cultivada para a coleta dos estigmas (a parte da flor que recebe o pólen), que quando secos e moídos são uma especiaria utilizada em diversos pratos culinários, incluindo pratos famosos como a paella espanhola e a bouillabaisse francesa. Também é usado para colorir, aromatizar e dar sabor a alimentos como queijos, manteiga, molhos e bebidas. A planta possui um cormo subterrâneo de onde surgem as folhas e flores, que podem atingir de 15 a 30 cm de altura. Cada planta produz anualmente uma ou mais flores (até 5 flores) de cor violeta, rosa, vermelha ou branca. A especiaria açafrão, muitas vezes chamada de açafrão verdadeiro para distingui-la de imitações, é aromática e de sabor forte, e sendo um corante natural, tinge de amarelo os alimentos preparados com ela. Em alguns lugares o açafrão também é usado para fins medicinais e em perfumaria.",
+"luz": "Deve receber luz solar direta pelo menos por algumas horas diariamente.",
+"temperatura":"20 e os 35ºC",
+"epoca": "Primavera",
+"tempo": " 45 e 90 dias",
+"solo": "Cultive preferencialmente em solo leve e bem drenado, moderadamente fértil e rico em matéria orgânica. O pH do solo pode ficar entre 5,5 e 7,5.",
+"irrigacao": "Manter o solo sempre úmido nos meses de primavera, mas durante o verão a disponibilidade de água deveria ser mínima."
+}
+
+{
+
+"nomepo": "Yacon", 
+"nomeci": "Smallanthus sonchifolius",
+"descricao": "O yacon, também conhecido como batata-yacon, é uma planta cujas raízes tuberosas são consumidas normalmente cruas ou na forma de suco. As raízes tuberosas do yacon são ricas em inulina (polissacarídeos de frutose), o que lhes proporciona um sabor adocicado. As folhas e as pontas dos ramos podem ser consumidas cozidas. Também é uma planta usada para fins medicinais, especialmente por suas folhas apresentarem propriedades anti-hiperglicêmicas.",
+"luz": "Necessita de boa luminosidade. Luz solar direta ou sombra parcial.",
+"temperatura": "10°C a 26°C",
+"epoca": "Primavera",
+"tempo": "6 a 12 meses após o plantio.",
+"solo": "Bem drenado, profundo, sem pedras e  detritos, fértil e rico em matéria orgânica. pH de 6 a 7,5.",
+"irrigacao": "Manter o solo sempre úmido, sem ficar encharcado."
+}
+
+{
+
+"nomepo": "Wasabi",
+"nomeci": "Eutrema japonicum",
+"descricao": "A wasabi, também conhecida como wasabia e raiz-forte-japonesa, é uma planta nativa do Japão, cultivada principalmente para uso de seu espesso caule subterrâneo (rizoma), mas que é frequentemente chamado incorretamente de raiz. Quando ralado, seu rizoma apresenta um sabor bastante picante, similar ao da raiz-forte, mas não idêntico. Suas folhas também podem ser consumidas e têm um sabor menos picante do que o rizoma.",
+"luz": "Sombra parcial",
+"temperatura": "8°C a 20°C",
+"epoca": "Ano todo",
+"tempo": "18 a 24 meses",
+"solo": "Solo úmido. pH entre 6 e 7.",
+"irrigacao": ""
+}
+
+{
+
+"nomepo": "Vinagreira",
+"nomeci": "Hibiscus sabdariffa",
+"descricao": "A vinagreira, também conhecida como rosela e quiabo-azedo entre outros nomes, é um arbusto vigoroso que pode chegar a atingir quase 5 m de altura em plantas cujos ramos são utilizados para a extração de fibras têxteis. As variedades cultivadas que são utilizadas como alimento são menores, atingindo até 2,5 m de altura. Destas podem ser consumidas como verdura as folhas jovens e as pontas dos ramos, cruas, refogadas ou cozidas. As folhas, dependendo da cultivar, podem ser verdes ou avermelhadas. Os caules e pecíolos (os talos das folhas) geralmente são vermelhos. Os cálices das flores são vermelhos e carnudos, sendo utilizados no feitio de refrescos, chás, geleias e doces. Tanto as folhas quando os cálices têm um agradável sabor ácido, vindo daí seu nome popular vinagreira. As flores (a corola da flor) e as sementes também podem ser consumidas, mas os cálices são mais apreciados e sua colheita impossibilita a colheita da corola da flor ou de suas sementes.",
+"luz": "Luz solar direta",
+"temperatura": "21°C a 35°C",
+"epoca": "Setembro a abril"
+"tempo": "60 a 90 dias",
+"solo": "Solos bem drenados, profundos, férteis e ricos em matéria orgânica",
+"irrigacao": "Solo sempre úmido"
+
+}
+
+{
+
+"nomepo": "Tupinambo",
+"nomeci": "Helianthus tuberosus",
+"descricao": "O tupinambo, também chamado de girassol-batateiro, é uma planta do mesmo gênero do girassol. Nativo do leste da América do Norte, já era cultivado pelos povos nativos da região antes da chegada dos europeus. Seus tubérculos são ricos em inulina, um polissacarídeo da frutose, o que lhes proporciona um leve sabor adocicado. São normalmente consumidos cozidos, mas podem ser consumidos crus em saladas se cortados em fatias finas.",
+"luz": "Luz solar direta diariamente",
+"temperatura": "10°C e 30°C",
+"epoca": "primavera",
+"tempo": "6 a 10 meses",
+"solo": "bem drenado, leve, sem pedras e outros detritos, fértil e rico em matéria orgânica.",
+"irrigacao": "Manter o solo úmido, mas sem que permaneça encharcado"
+}
+/////////////
+{
+"id": "",
+"nomepo":  "Repolho",
+"nomeci": "Brassica olerace",
+"descricao": "É uma planta bienal que forma uma espécie de roseta de folhas durante o primeiro ano de cultivo; as folhas dessa variedade são sempre carnudas e possuem proteínas capazes de fazê-las armazenar água e nutrientes. No segundo ano, as reservas de nutrientes formam uma inflorescência amarela de um a dois metros de altura.",
+"luz": "Luz solar direta",
+"temperatura": "primavera e verão",
+"epoca": "o ano todo",
+"tempo": "75 a 88 dias",
+"solo": "Argila, areia; Boa drenagem",
+"irrigacao": "Precisa de água média regularmente sem acúmulo.",
+"imagem": "Repolho",
+}
+
+{
+"id":
+"nomepo": "Beterraba",
+"nomeci": "Beta vulgaris",
+"descricao": "É uma planta herbácea anual ou perene, glabra ou hirsuta, ereta ou decumbente e com até 2m de altura. É ramificado e frondoso, de cor verde e violeta e possui raízes finas ou tuberosas ricas em açúcar.",
+"luz": "Luz solar direta",
+"temperatura": "16 e 20 °C",
+"epoca": "verão",
+"tempo": "60 a 70 dias",
+"solo": "Argila, areia; Boa drenagem",
+"irrigacao": "Precisa de água média regularmente sem acúmulo.",
+"imagem": "Beterraba",
+}
+
+{
+"id": "",
+"nomepo": "Cenoura",
+"nomeci": "Daucus carota",
+"descricao": "É uma planta bienal que forma uma roseta de folhas na primavera e no verão, enquanto desenvolve a raiz napiforme espessa, que armazenará grandes quantidades de açúcar para a floração do ano seguinte. O caule da flor cresce cerca de 10 cm com um umbel de flores brancas no ápice.",
+"luz": "Luz solar direta",
+"temperatura":
+"epoca": "Primavera e Outono",
+"tempo": "120 dias",
+"solo": "Areia, giz, solo argiloso, boa drenagem.",
+"irrigacao": "Tolerante à seca, menos rega, água quando o solo está seco",
+"imagem": "Cenoura",
+}
+
+{
+"id": "",
+"nomepo": "Batata-Doce",
+"nomeci": "Ipomoea batatas",
+"descricao": "São plantas de escalada perenes; com hastes prostradas ou volúveis, um tanto suculentas, mas também finas e herbáceas, geralmente com raízes nos nós, glabras ou pubescentes. Folhas variáveis, inteiras ou dentadas até 5-7 lobadas, cordadas a ovar, com 5 a 10 cm de comprimento e largura, glabras ou pubescentes.",
+"luz": "Luz solar direto",
+"temperatura": "24°C a 26°C",
+"epoca": "Primavera e Verão",
+"tempo": "120 e 150 dias",
+"solo": "Areia, solo argiloso, boa drenagem.",
+"irrigacao": "Mantenha úmido, mas sem acúmulo de água",
+"imagem": "Batata-Doce",
+}
+
+{
+"id": "",
+"nomepo": "Nabo",
+"nomeci": "Brassica rapa",
+"descricao": " É uma planta amplamente cultivada e que produz oleaginosas. O óleo de canola é produzido a partir do nabo oleaginoso. Nabo atrai borboletas brancas que ganham nutrientes de suas flores.",
+"luz": "Sol a sombra parcial",
+"temperatura": "15°C e 22°C",
+"epoca": "Primavera Verão",
+"tempo": "80 a 120 dias",
+"solo": "Areia, solo argiloso, areia, Boa drenagem",
+"irrigacao": "Precisa de água média, água regularmente, mas sem acúmulo de água.",
+"imagem":  "nabo",
+}
+
+{
+"id": "",
+"nomepo": "Coentro",
+"nomeci": "Coriandrum sativum",
+"descricao": "O coentro é uma erva aromática anual que pode chegar a quase 1 m de altura quando floresce. Seus frutos arredondados (esquizocarpos) são geralmente chamados de "sementes", mas são formados por dois frutículos ou carpelos, cada um contendo uma semente. Tanto as folhas quanto os frutos secos são utilizados na culinária como tempero. As folhas mais jovens têm um sabor mais suave que as folhas mais velhas, que normalmente têm um sabor bastante forte.",
+"luz": "Alta luminosidade",
+"temperatura": "27°C",
+"epoca": "Todo o ano",
+"tempo": "30 a 70 dias",
+"solo": "Solo bem drenado, moderadamente fértil, rico em matéria orgânica.",
+"irrigacao": "Manter o solo sempre úmido",
+"imagem": "Coentro",
+}
+
+{
+"id": "",
+"nomepo": "Cebola",
+"nomeci": "Allium cepa",
+"descricao": "Em relação à sua morfologia, a cebola possui um sistema radicular composto por inúmeras raízes rasas, esbranquiçadas e fasciculadas, que emergem de uma haste como um disco. Este disco-tronco possui numerosos nós e entrenós muitos cursos e, a partir disso, as folhas saem.",
+"luz": "Boa luminosidade",
+"temperatura": "20 a 25°C.",
+"epoca": "Setembro a outubro"
+"tempo": "85 a 300 dias",
+"solo": "Solo bem drenado, moderadamente fértil, rico em matéria orgânica",
+"irrigacao": "Precisa de água média, água regularmente, mas sem acúmulo de água",
+"imagem": "Cebola",
+}
+
+{
+"id": "",
+"nomepo": "Pera-Melão",
+"nomeci": "Solanum muricatum",
+"descricao": "A pera-melão, também conhecida como melão-andino, é um pequeno arbusto frutífero da família das Solanáceas, onde se inclui também o tomate, a beringela, a batata ou o tamarilho.
+Originária da zona dos Andes na América do Sul, é uma fruta já há muito tempo utilizada para alimentação naquelas paragens. É frequente nos mercados em países como Chile, Peru, Colômbia, Equador e Bolívia.
+É cada vez mais cultivada fora da sua zona de origem, seja na América Central, em África, na Europa ou Oceânia. Devido a ser de fácil cultivo, é uma planta recomendada para quem se inicia no cultivo de frutíferas exóticas e pode ser cultivada em espaços pequenos.",
+"luz": "Luz solar indireta",
+"temperatura": "10º a 30º",
+"epoca": "Primavera e  verão.",
+"tempo": "120 a 150 dias",
+"solo": "Requer pH acima dos 6, solos com boa drenagem e ricos em matéria orgãnica",
+"irrigacao": "A rega deve ser moderada",
+"imagem": "Pera-Melao",
+}
+
+{
+"id":
+"nomepo": "Avelã",
+"nomeci": "Corylus avellana", 
+"descricao": "Avelãs são um fruto seco muito saudável que ajuda à manutenção de músculos saudáveis e a diminuir o peso. Graças às suas gorduras saudáveis, contribui para a redução do mau colesterol.
+Aveleira, avelaneira ou avelãzeira (Corylus avellana) é um arbusto que cresce espontaneamente na Europa, Médio Oriente e também nalgumas partes da América do Norte.
+O seu fruto, de casca bastante rija, é muito agradável e, além de ser consumido pelos humanos, faz parte da alimentação de bastante fauna.
+Os principais produtores mundiais são a Turquia, a Itália e os EUA. É muito consumida durante a época do Natal e Ano Novo, tal como outros frutos secos.",
+"luz": "Boa exposição ao sol",
+"temperatura": "14ºC",
+"epoca": "Outono",
+"tempo": "3 a 5 anos",
+"solo": "Prefere solos permeáveis e férteis, com pH entre 6 e 7,5.",
+"irrigacao": "Irrigação regular com folhagem",
+"imagem": "Avela",
+}
+
+{
+"id":
+"nomepo":"Maracujá",
+"nomeci": "Passiflora edulis",
+"descricao": "O maracujá é uma fruta que faz parte das plantas do gênero Passiflora. Grande número de espécies de maracujá é conhecida e utilizada para diferentes finalidades, dividindo-se, basicamente, em comestíveis, medicinais ou de uso na indústria para a fabricação de produtos de beleza. O Brasil possui mais de 150 espécies silvestres de maracujá. Algumas são tipicamente brasileiras, como é o caso do maracujá pérola (Passiflora setacea De candolle), cuja casca lembra a de uma melancia. Mas existem cerca de 600 espécies de maracujás espalhadas na região tropical das Américas",
+"luz": "Necessitam de luz solar direta",
+"temperatura": "20ºC a 25ºC", 
+"epoca": "Julho a agosto",
+"tempo": "6 a 9 meses",
+"solo": "Uma boa drenagem é essencial, porque os maracujazeiros são muito sensíveis à podridão da raíz. Devemos colocar argila expandida no fundo dos vasos e misturar perlite ou vermiculite para arejar melhor o solo.",
+"irrigacao": "Irrigar uma a duas vezes ao dia",
+"imagem": "Maracuja",
+}
+
+{
+"id": "",
+"nomepo": "Pitanga",
+"nomeci": "Eugenia uniflora",
+"descricao": "A pitangueira é uma árvore ou arbusto frutífero e ornamental, nativo da mata atlântica e conhecido principalmente pelos frutos doces e perfumados que fazem parte da cultura dos brasileiros. O nome "pitanga" é de origem tupi e significa vermelho-rubro, uma alusão à cor dos frutos maduros. O porte pode ser arbustivo, entre 2 a 4 metros de altura, ou arbóreo, chegando nestes casos entre 6 e 12 metros. A copa é densa e arredondada. O florescimento é errático, e pode ocorrer duas ou mais vezes ao ano, dependendo na maioria das vezes do clima da região de plantio e da variedade da planta. As flores são pequenas, hermafroditas, brancas, perfumadas, com longos estames e muito melíferas, atraindo abelhas. As folhas são opostas, simples, ovais, acuminadas, glabras, avermelhadas quando jovens, e que gradativamente vão tomando a cor verde. Os frutos são bagas globosas, deprimidas nos polos, com sulcos longitudinais e quando maduros ficam de cor vermelha, vinho e até mesmo negra, de acordo com a variedade. A polpa é macia, suculenta e vermelha, recoberta por uma casca muito fina e delicada. Carrega entre 1 a 3 sementes grandes.",
+"luz": "Sol pleno", 
+"temperatura": "23 a 27ºC",
+"epoca": "Primavera",
+"tempo": "3 anos",
+"solo": "Solos profundos, férteis e com boa drenagem.",
+"irrigacao": "Duas a três vezes por semana",
+"imagem": "Pitanga",
+}
+
+
+{
+"id":
+"nomepo": "Morangueiro",
+"nomeci": "Fragaria spp",
+"descricao": "Planta herbácea permanente que tem uma 'coroa' central (caule aéreo), de onde nascem as folhas, raízes e os 'estolhos' (braços), caules especializados (de onde surgem novas plantas) e as inflorescências.
+As folhas são verdes-escuras e muitas caem no inverno para aparecerem novas na primavera.
+As raízes podem alcançar os 10-30 cm de profundidade e são fasciculadas, com grande número de raízes primárias (20-30), e podem viver 2-3 anos.",
+"luz": "Necessita de 8-14 horas de sol.",
+"temperatura": "18 a 25 ºC.",
+"epoca": "Outubro a Novembro",
+"tempo": "60 a 80 dias",
+"solo": "Leve ou textura média, arejado, com boa drenagem, rico em matéria orgânica e capacidade de reter água. O pH ideal situa-se nos 5,5-6,7.",
+"irrigacao": "Maior necessidade no período que vai desde a floração até à colheita. Fazer a irrigação por gotejamento em polietileno, do tipo "T-Tape". O consumo de água durante o ciclo varia entre 4000 e 8000 m3. Regar com intervalos de 3-6 dias",
+"imagem": "Morangueiro",
+}
+
+
+{
+"id":
+"nomepo": "Jabuticabeira",
+"nomeci": "Plinia",
+"descricao": "As jabuticabeiras são árvores de fruto originária da América do Sul que assumem a sua maior expressão no Brasil.
+Integrando o género Plinia, antigamente o género Myrciaria, as espécies
+mais conhecidas são a jabuticaba-branca (Plinia aureana), a jabuticaba-paulista (Plinia cauliflora) e a jabuticaba-sabará (Plinia jaboticaba).",
+"luz": "Sol pleno.",
+"temperatura": "20 a 30°C",
+"epoca": "Primavera",
+"tempo": "60 a 90 dias",
+"solo": "Solos férteis e bem drenados.",
+"irrigacao":"Irrigar diariamente",
+"imagem":"Jabuticabeira",
+}
+
+
+{
+"id":
+"nomepo": "Manga",
+"nomeci": "Mangifera indica"
+"descricao": "A mangueira (Mangifera indica) é uma árvore de folha perene que pode alcançar grande porte, originária do Sul e Sudeste da Ásia, nomeadamente da Índia, Bangladesh e Birmânia.",
+"luz": "Sol pleno.",
+"temperatura": "20 e 29ºC",
+"epoca": "Primavera",
+"tempo": "100 dias",
+"solo": "Solos areno-argilosos, férteis e bem drenados. pH entre 5,5 e 7,5.",
+"irrigacao": "Regas generosas.",
+"imagem": "Manga",
+}
+
+
+{
+"id":
+"nomepo": "Pêssego",
+"nomeci": "Prunus persica",
+"descricao": "O pessegueiro (Prunus persica) é uma árvore decídua, nativa da China e sul da Ásia, de folhas alternas e serreadas, flores roxas e drupas pubescentes, comestíveis e com propriedades aperitivas e digestivas. Possui inúmeras variedades hortícolas. A infusão das folhas e sementes é calmante e as flores são usualmente utilizadas como laxante suave.",
+"luz": "Sol, ou meia-sombra.",
+"temperatura": "-26 a -30 °C,",
+"epoca":"Inverno",
+"tempo": "110 a 120 dias",
+"solo": "Solos profundos, férteis e bem drenados com pH entre 6,5 e 7.",
+"irrigacao": "As regas devem efetuar-se nos meses mais secos do ano",
+"imagem": "Pessego",
+}
+
+
+{
+"id":
+"nomepo": "Banana",
+"nomeci": "Musa",
+"descricao": "As bananeiras, figueiras-de-adão, pacobeiras ou pacoveiras são plantas do gênero Musa, um dos três que compõem a família Musaceae, que inclui as plantas herbáceas vivazes, incluindo as bananeiras cultivadas para a produção de fibras (abacás) e para a produção de bananas.",
+"luz": "Alta luminosidade",
+"temperatura": "15°C a 35°C ",
+"epoca": "Todo o ano",
+"tempo": "11 a 13 meses",
+"solo": "Solos areno-argilosos, ricos em matéria orgânica, com boa profundidade, plano ou levemente inclinado, não sujeitos a inundação, vegetando bem em pH variando entre 4,5 e 7,0",
+"irrigacao": "Irrigar por gotejamento",
+"imagem": "Banana",
+}
+
+
+{
+"id":
+"nomepo": "Tangerina",
+"nomeci": "Citrus reticulata",
+"descricao": "A tangerina (Citrus reticulata), também conhecida como mexerica, laranja-mimosa, mandarina, fuxiqueira, poncã (ou ponkan), manjerica, laranja-cravo, mimosa e bergamota, é uma fruta cítrica de cor alaranjada e sabor adocicado.",
+"luz": "Sol, localizações abrigadas do vento",
+"temperatura": "20º a 30 ºC",
+"epoca": "Maio a Agosto",
+"tempo": "1 ano",
+"solo": "Solos profundos, férteis e bem drenados. Necessita de bastante humidade no solo.",
+"irrigacao": "Irrigação por gotejamento",
+"imagem":"Tangerina",
+}

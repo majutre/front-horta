@@ -13,6 +13,7 @@ import { AreaClienteComponent } from './area-cliente/area-cliente.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 import { PlantasModule } from './plantas/plantas.module';
+import { PragasModule } from './pragas/pragas.module'
 import { UsuarioModule } from './usuario/usuario.module';
 import { SegurancaModule } from './seguranca/seguranca.module';
 import { InfoModule } from './info/info.module';
@@ -24,6 +25,7 @@ import { InfoModule } from './info/info.module';
     HttpClientModule,
     ReactiveFormsModule,
     PlantasModule,
+    PragasModule,
     UsuarioModule,
     InfoModule,
     SegurancaModule,
@@ -32,10 +34,8 @@ import { InfoModule } from './info/info.module';
   declarations: [
     AppComponent,
     HomeComponent,
-    PragasComponent,
     HeaderComponent,
     FooterComponent,
-    AreaClienteComponent,
     PageNotFoundComponent,
   ],
   bootstrap: [ AppComponent ]

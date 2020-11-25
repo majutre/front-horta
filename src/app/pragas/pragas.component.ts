@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import { PragaRepository } from './controllers/repository/praga-repository';
+import { PragaModel } from './controllers/model/praga-model';
+
 @Component({
   selector: 'app-pragas',
   templateUrl: './pragas.component.html',
@@ -7,10 +10,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PragasComponent implements OnInit {
 
-  constructor() { }
+  pragas: PragaModel[];
+  title = 'Pragas';
+
+  constructor(
+    private pragaRepository: PragaRepository
+  ) { }
 
   ngOnInit(): void {
+    this.getPragas();
   }
 
-  title='Pragas'
+  getPragas(): void {
+    this.pragaRepository
+      .getAllPragas()
+      .then(pragas => this.pragas = pragas);
+  }
+  
 }

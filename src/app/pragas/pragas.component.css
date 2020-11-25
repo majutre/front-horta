@@ -1,0 +1,93 @@
+
+
+.search {
+  position: relative;
+  display: flex;
+  margin: auto;
+  width: 60%;
+}
+
+.search-box {
+  width: 100%;
+  height: 32px;
+
+  font-size: 18px;
+  padding: 2px 20px;
+
+  margin: auto;
+  border: none;
+  border-radius: 6px;
+  background: #ECE7DA;
+
+  background-image: url('/src/assets/images/icons/lupa.svg');
+  background-position: 10px 4px;
+  background-repeat: no-repeat;
+  padding-left: 50px;
+}
+
+.search a {
+  background: var(--second-bg-color);
+  font-family: var(--main-font-family);
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: var(--second-txt-color);
+  padding: 5px 20px;
+  margin-left: 20px;
+  box-shadow: 10px 10px 10px #2F3241, -10px -10px 10px #3F4459;
+  border-radius: 6px;
+}
+
+.search a:hover {
+  background-color: var(--first-accent-color);
+  color: var(--second-txt-color);
+  text-decoration: none;
+}
+
+
+.content-wrapper {
+  position: relative;
+  height: fit-content;
+  margin-top: 24px;
+  margin-bottom: 56px;
+  padding-bottom: 32px;
+  box-shadow: 6px 6px 10px #282b38,
+    -6px -6px 10px #464b62;
+  border-radius: 12px;
+  background-color: var(--main-bg-color);
+}
+
+/* PlantaCardComponent's private CSS styles */
+
+.card {
+  width: 240px;
+  margin: 10% auto 10% auto;
+  border-radius: 12px 12px 12px 12px;
+  border: none;
+  box-shadow: 6px 6px 10px #282b38,
+    -6px -6px 10px #464b62;
+  ;
+}
+
+.card-img-top {
+  border-radius: 12px 12px 0px 0px;
+}
+
+.card-body {
+  background-color: var(--main-bg-color);
+  border-radius: 0px 0px 12px 12px;
+}
+
+.card-title {
+  font-family: var(--main-font-family);
+  color: var(--main-txt-color);
+  letter-spacing: 1px;
+}
+
+.card-subtitle {
+  font-family: var(--secondary-font-family);
+}
+
+.card-link {
+  font-family: var(--second-font-family);
+  color: var(--main-txt-color);
+}

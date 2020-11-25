@@ -1,0 +1,63 @@
+<div>
+  <div *ngIf="praga" class="container content-wrapper">
+      <h1>{{praga.nome}}</h1>
+      <div class="row">
+        <div class="col-md-4 card-pic">
+            <img src="{{praga.foto.url}}" alt="">
+        </div>
+        <div class="col-md-8 plant-details">
+            <h3 class="sec">{{praga.nomec}}</h3>
+            <p>{{praga.descricao}}</p>
+        </div>
+      </div>
+  </div>
+
+  <div class="container content-wrapper p-5 my-5">
+      <div class="row">
+          <div class="info-section col-md-6 d-flex py-3">
+              <div class="icon">
+                  <img src="" alt="">
+              </div>
+              <div class="info">
+                  <h6>Dano</h6>
+                  <p>{{praga.dano}}</p>
+              </div>
+          </div>
+
+          <div class="col-md-6 d-flex py-3">
+              <div class="icon">
+                  <img src="" alt="">
+              </div>
+              <div class="info">
+                  <h6>Controle</h6>
+                  <p>{{praga.controle}}</p>
+              </div>
+          </div>
+      </div>
+      <!-- Fim Primeira Linha -->
+
+      <div class="row">
+          <div class="col-md-6 d-flex py-3">
+              <div class="icon">
+                  <img src="" alt="">
+              </div>
+              <div class="info">
+                  <h6>Tipo</h6>
+                  <p>{{praga.tipo}}</p>
+              </div>
+          </div>
+          <div class="col-md-6 d-flex py-3">
+              <div class="icon">
+                  <img src="" alt="">
+              </div>
+              <div class="info">
+                  <h6>Tratamento</h6>
+                  <p>{{praga.tratamento}}</p>
+              </div>
+          </div>
+      </div>
+      <!-- Fim Segunda Linha -->
+
+
+  </div>
+</div>
