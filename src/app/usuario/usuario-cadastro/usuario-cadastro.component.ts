@@ -22,6 +22,7 @@ export class UsuarioCadastroComponent implements OnInit {
   public formulario: FormGroup;
   public submitted: boolean = false;
   genero = ['MASCULINO', 'FEMININO', 'NAOINFORMAR'];
+  public privacidade: boolean = false;
 
   constructor(
     private repository: ClienteRepository,
@@ -42,7 +43,8 @@ export class UsuarioCadastroComponent implements OnInit {
         genero: ['NAOINFORMAR'],
         email: ['', [Validators.required, Validators.email]],
         senha: ['', [Validators.required, Validators.minLength(8)]],
-        confirmPass: ['', Validators.required]
+        confirmPass: ['', Validators.required],
+        privacidade: [false, Validators.requiredTrue]
       }
       , 
       { validator: MustMatch('senha', 'confirmPass') }

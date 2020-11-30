@@ -171,8 +171,18 @@
             Desejo receber notícias da Horta
           </label>
         </div>
+         <div class="form-check">
+           <input class="form-check-input" type="checkbox" id="gridCheck" formControlName="privacidade">
+           <label class="form-check-label" for="gridCheck">
+             Li e aceito a <a routerLink="/privacidade">Política de Privacidade</a>
+           </label>
+         </div>
   
-        <button type="submit" class="btn-type-a">
+        <button 
+          type="submit" 
+          [class]=" (!form.privacidade.valid)? 'btn-type-a-gray' :'btn-type-a'"
+          [disabled]="!form.privacidade.valid"
+        >
           Cadastrar
         </button>
       </form>
