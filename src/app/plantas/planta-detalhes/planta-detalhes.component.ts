@@ -1,3 +1,4 @@
+import { PragaModel } from './../../pragas/controllers/model/praga-model';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
@@ -17,6 +18,8 @@ export class PlantaDetalhesComponent implements OnInit {
 
   planta: PlantaModel;
   usuario: ClienteModel;
+  pragas: any[] = [];
+  
   usuarioId: number;
 
   constructor(
@@ -31,6 +34,7 @@ export class PlantaDetalhesComponent implements OnInit {
 
   ngOnInit(): void {
     this.getPlanta();
+    this.getPragas();
   }
 
   getPlanta(): void {
@@ -38,6 +42,13 @@ export class PlantaDetalhesComponent implements OnInit {
     this.plantaRepository
       .getPlantaById(id)
       .subscribe(planta => this.planta = planta);
+  }
+
+  getPragas(): void {
+    const id = +this.route.snapshot.paramMap.get('id');
+    this.plantaRepository
+      .getAllPragasByPlanta(id)
+      .subscribe(praga => this.pragas.push({ nome: praga.nome, id: praga.id }));
   }
 
   onAddPlanta(planta: PlantaModel) {

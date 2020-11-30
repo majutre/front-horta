@@ -1,3 +1,5 @@
+import { PragaModel } from './../../../pragas/controllers/model/praga-model';
+
 export interface PlantaModel {
     id?: number;
     nome?: string;
@@ -9,7 +11,7 @@ export interface PlantaModel {
     tempo?: string,
     solo?: string,
     irrigacao?: string,
-    pragas?: any,
+    pragas?: PragaModel,
     foto?: ImagemModel
 }
 

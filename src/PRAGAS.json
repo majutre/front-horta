@@ -2,9 +2,9 @@
 "id":
 "nomePopular": "Pedrado da Nespereira",
 "nomeCientifico": "Fusicladium eriobotryae",
-"tipo": "fungo",
+"tipo": "FUNGO",
 "planta": "Nespereira",
-"danos": "Ataca todas as partes aéreas da planta, ramos, folhas e frutos.
+"dano": "Ataca todas as partes aéreas da planta, ramos, folhas e frutos.
 O pedrado produz inicialmente manchas claras de cor verde-olivácea nas folhas que depois ficam escuras (castanhas-escuras ou pretas), de contorno sinuoso.
 A infeção desenvolve-se rapidamente, provocando desidratação do limbo e paragem de crescimento do fruto ou deformações no seu desenvolvimento e queda precoce.
 Nos jovens ramos, forma-se um cancro castanho-escuro, que provoca o dessecamento da zona superior à infeção. O pedrado ataca o fruto desde o vingamento até a colheita.
@@ -19,9 +19,9 @@ Começa a manifestar-se com as primeiras chuvas outonais e pode agravar-se com a
 "id":
 "nomePopular": "Lagarta-do-pinheiro",
 "nomeCientifico": "Thauetopoea pytiocamp Schiff",
-"tipo": "Praga",
+"tipo": "PRAGA",
 "planta": "Pinheiros e cedros",
-"danos": "Desfoliação das árvores (roem a margem das agulhas) com alguma voracidade desde agosto-inverno, levando ao enfraquecimento do vigor das árvores mais velhas e podendo matar as mais novas.
+"dano": "Desfoliação das árvores (roem a margem das agulhas) com alguma voracidade desde agosto-inverno, levando ao enfraquecimento do vigor das árvores mais velhas e podendo matar as mais novas.
 A construção dos ninhos nas extremidades dos ramos (pequenas teias de seda do tamanho de uma cabeça humana) pode fazê-los vergar e mesmo parti-los. Existe, pois, uma grande perda na produção lenhosa.
 As árvores ficam mais fracas e sujeitas a ataques de parasitas secundários. Em relação aos humanos, estes não devem tocar nas lagartas e respirar a poeira dos pelos urticantes que existe nos ninhos.
 Pode produzir graves inflamações nas vias respiratórias e provoca comichão e inchaços dolorosos ao toque.
@@ -36,9 +36,9 @@ Mede 9-30 mm de comprimento. A borboleta possui corpo comprido, amarelo, asas po
 "id":
 "nomePopular": "Traça-do-buxo",
 "nomeCientifico": "Cydalima perspectalis",
-"tipo": "Praga",
+"tipo": "PRAGA",
 "planta":  "Buxo",
-"danos": "Esta praga desfolhadora dizimou florestas naturais de buxo na Europa Central e simultaneamente destruiu estruturas de buxo de notáveis jardins centro-europeus, sendo os seus ataques tão severos que conduzem à morte das plantas.
+"dano": "Esta praga desfolhadora dizimou florestas naturais de buxo na Europa Central e simultaneamente destruiu estruturas de buxo de notáveis jardins centro-europeus, sendo os seus ataques tão severos que conduzem à morte das plantas.
 Regra geral verifica-se uma enorme perda do valor ornamental desta espécie ornamental de crescimento lento e com elevado valor histórico, quer seja em plantas isoladas ou quer em sebe, através da ocorrência de desfolhas precoces.
 Em termos fisiológicos há uma diminuição significativa da taxa fotossintética e consequente enfraquecimento generalizado das plantas, induzindo assim uma elevada taxa de mortalidade nestas estruturas vegetais.",
 "descricao": "A identificação desta praga passa por uma cuidada interpretação de um quadro sintomatológico relativamente complexo.
@@ -59,9 +59,9 @@ Para o controlo das lagartas, o recurso a pulverizações com o nemátodo entomo
 "id":
 "nomePopular": "Cochonilhas",
 "nomeCientifico": "Quadraspidiotus perniciosus",
-"tipo": "Praga",
+"tipo": "PRAGA",
 "planta": "Macieiras, pereiras, buxos, nogueiras, cerejeiras e loureiros",
-"danos": "Ocorrem cloroses e necroses nas folhas, originado uma diminuição da fotossíntese, e levando à depreciação e redução da produção dos frutos. Note-se que os danos mais significativos ocorrem em plantas jovens e/ou em folhas jovens.",
+"dano": "Ocorrem cloroses e necroses nas folhas, originado uma diminuição da fotossíntese, e levando à depreciação e redução da produção dos frutos. Note-se que os danos mais significativos ocorrem em plantas jovens e/ou em folhas jovens.",
 "descricao": "O grupo de pragas a que vulgarmente chamamos cochonilhas reúne na verdade uma quantidade de espécies bastante considerável e de aspeto bastante distinto.
 Contudo apresentam em comum o facto de atacarem através da sua atividade alimentar a jovem folhagem, a casca e mesmo os frutos de árvores e de arbustos, causando enormes prejuízos para as espécies hospedeiras.
 Entre as espécies de insetos em causa, identificam-se a título de exemplo nas macieiras, pereiras, buxos, nogueiras, cerejeiras, loureiros, entre outras, a cochonilha-de-são-josé (Quadraspidiotus perniciosus); e na oliveira, no damasqueiro, nos citrinos, nos loendros e mesmo na hera a cochonilha-negra (Saissetia oleae).",
@@ -69,13 +69,15 @@ Entre as espécies de insetos em causa, identificam-se a título de exemplo nas 
 Contudo as melhores épocas para a realização dos tratamentos verificam-se no final do inverno, quando a espécie retoma a sua atividade. Se se pretender efetuar tratamentos com as plantas em vegetação, dever-se-á realizá-los em maio ou junho, aquando do pico da primeira geração.",
 "imagem": "Cochonilhas",
 }
+//////////////////////////////////
+
 {
 "id":
 "nomePopular": "Podridão cinzenta",
 "nomeCientifico": "Botrytis cinerea",
-"tipo": "Doença",
+"tipo": "DOENCA",
 "planta": "Videira, morangueiro, framboesa e algumas ornamentais.",
-"danos": "Esta doença atinge as flores, frutos, caules e folhas. Os frutos infetados mantém-se na planta, "mumificam" e ficam cobertos com pó branco acinzentado.
+"dano": "Esta doença atinge as flores, frutos, caules e folhas. Os frutos infetados mantém-se na planta, 'mumificam' e ficam cobertos com pó branco acinzentado.
 Em algumas plantas, pode ver-se necroses nas folhas que inicialmente são pequenas e amarelas, tornando-se largas e acinzentadas ou castanhas escuras, com aspeto esponjoso ou encortiçadas.
 Nos caules o ataque pode causar um pequeno cancro ou necrose que rodeia o caule.",
 "descricao": "Doença causada por um fungo parasita, que se propaga com ocorrência de chuvas ou humidade perto dos 93-95% e temperaturas entre 15-25ºC.",
@@ -86,9 +88,9 @@ Nos caules o ataque pode causar um pequeno cancro ou necrose que rodeia o caule.
 "id":
 "nomePopular": "Vespa asiática",
 "nomeCientifico":  "Vespa velutina",
-"tipo": "Inseto",
+"tipo": "INSETO",
 "planta": 
-"danos": "As vespas atacam sobretudo individualmente as abelhas (e outros invertebrados) para a sua alimentação. É no verão que se regista maior taxa de predação da abelha-europeia, a qual se encontra associada ao crescimento dos ninhos e da colónia no verão e outono, sendo bastante significativa a redução das taxas de produção de mel.
+"dano": "As vespas atacam sobretudo individualmente as abelhas (e outros invertebrados) para a sua alimentação. É no verão que se regista maior taxa de predação da abelha-europeia, a qual se encontra associada ao crescimento dos ninhos e da colónia no verão e outono, sendo bastante significativa a redução das taxas de produção de mel.
 Adicionalmente, são de realçar ainda os efeitos consequentes da predação destes insetos polinizadores, que vendo reduzidas as suas populações, sofrem uma redução significativa da taxa de polinização com impactos na produção agrícola e na manutenção do equilíbrio dos ecossistemas.
 Do ponto de vista de saúde publica, esta vespa não é mais agressiva que a espécie europeia. Contudo, no caso de sentirem os seus ninhos ameaçados, reagem de modo bastante mais agressivo, incluindo perseguições até algumas centenas de metros.",
 "descricao":  "A vespa-asiática é uma vespa de dimensões consideráveis.
@@ -105,9 +107,9 @@ A vespa-europeia (Vespa crabro) é diferenciada através de diversas caracterís
 "id":
 "nomePopular": "Pulgão-branco",
 "nomeCientifico": "Icerya purchasi Maskell",
-"tipo": "Praga",
+"tipo": "PRAGA",
 "planta": "Citrinos, acácias, medronheiros, crisântemos, giesteiras, figueiras, heras, loureiros, palmeiras, pinheiros-de-alepo, pitósporos, roseiras, amoreira silvestre, tojos, videiras, mimosa, gerânios, sálvias, alecrim e muitas outras plantas ornamentais.",
-"danos": "Enfraquecimento da planta, devido à sucção da seiva, "envenenando" a planta com as suas toxinas salivares. A melada que segrega dá origem à fumagina, que cobre as folhas de negro, influenciando a realização da fotossíntese. As plantas ficam muito debilitadas, reduzindo a produção e podem até morrer.",
+"dano": "Enfraquecimento da planta, devido à sucção da seiva, "envenenando" a planta com as suas toxinas salivares. A melada que segrega dá origem à fumagina, que cobre as folhas de negro, influenciando a realização da fotossíntese. As plantas ficam muito debilitadas, reduzindo a produção e podem até morrer.",
 "descricao": "Esta praga foi assinalada em Portugal, entre 1845-1896, em exemplares de acácia importados, sendo depois alastrada para laranjais na zona de Lisboa, mas também pode ter vindo dos Açores através dos Estados Unidos.
 As fêmeas adultas apresentam uma forma oval, achatada na fase ventral e convexa na dorsal, tem cor roxa-alaranjada com diversas manchas escuras na fase dorsal.
 As larvas com 0,5-1 mm de comprimento são mais avermelhadas, com patas, antenas compridas e negras, mas com o ovissaco, a cochonilha mede cerca de 6-10 mm de comprimento.",
@@ -119,9 +121,9 @@ Realizar podas no sentido de favorecer a luz e a circulação de ar no interior 
 "id":
 "nomePopular": "Ácaro-branco das hortícolas",
 "nomeCientifico":  "Polyphagotarsonemus latus",
-"tipo": "Praga",
+"tipo": "PRAGA",
 "planta":  "Beringela, citrinos, feijão, ornamentais, pimentos, tomate, e outros.",
-"danos":  "Danos: Cloroses no fruto; pústulas no fruto; fissuras no fruto; queda do fruto; diminuição da produção.",
+"dano":  "Danos: Cloroses no fruto; pústulas no fruto; fissuras no fruto; queda do fruto; diminuição da produção.",
 "descricao":  "Adultos: Corpo oval, quatro pares de patas, coloração branca-amarelada translúcida, abdómen da fêmea oval e amarelo-pálido, cerca de 0,2 mm de comprimento. Macho mais pequeno, mas com as patas maiores.
 Ovos: Cor branca; possuem tubérculos hexagonais; forma oval; dimensão 0,10 mm x 0,075 mm; dispostos geralmente sobre os rebentos.
 Larvas: Possuem três pares de patas; têm pouca mobilidade; desenvolvem-se na página inferior e nos rebentos.
@@ -133,9 +135,9 @@ Alterações morfológicas: Nervuras e margens das folhas deformadas; queda dos 
 "id":
 "nomePopular": "Escaravelho-da-batateira",
 "nomeCientifico": "Leptinotarsa decemlineata Say",
-"tipo": "Inseto",
+"tipo": "INSETO",
 "planta": "Batata",
-"danos": "Perda da área foliar; diminuição de hidratos de carbono para os tubérculos; redução da produção final; redução da qualidade da batata produzida.",
+"dano": "Perda da área foliar; diminuição de hidratos de carbono para os tubérculos; redução da produção final; redução da qualidade da batata produzida.",
 "descricao":  "Adultos: Coleópteros; com a cabeça e o tórax de cor escura; corpo amarelo-alaranjado, apresentando linhas negras nos élitros.
 Ovos: Oval e de cor amarela.
 Larvas: Volumosas; cor vermelha-alaranjada; cabeça preta; manchas negras nos lados do abdómen.
@@ -144,14 +146,14 @@ Alterações morfológicas: Folhas roídas.",
 "controle":  "Evitar adubação rica em azoto; matar manualmente os primeiros insetos; uso de inseticidas homologados.",
 "imagem": "Escaravelho-da-batateira",
 }
-
+////////////////////////
 {
 "id":
 "nomePopular": "Miriápodes",
 "nomeCientifico": "Myriapoda",
 "tipo": "Animal",
 "planta": "Batata, couve, milho e outras",
-"danos": "Larvas jovens alimentam-se das folhas tenras; larvas maiores causam estragos no colo e originam a morte da planta; estragos mais importantes em plantas jovens; larvas mais desenvolvidas ocorrem ao nível do sistema radicular; redução da produção.",
+"dano": "Larvas jovens alimentam-se das folhas tenras; larvas maiores causam estragos no colo e originam a morte da planta; estragos mais importantes em plantas jovens; larvas mais desenvolvidas ocorrem ao nível do sistema radicular; redução da produção.",
 "descricao": "Adultos: Asas anteriores de coloração cinzenta a castanha, e posteriores brancas, de 3 a 6 cm.
 Ovos: Coloração cinzenta ou rosa, apresentam estrias longitudinais, de 0,5 mm de diâmetro.
 Larvas: Coloração cinzenta-mate, com pontos negros ao longo do corpo, cabeça pequena, o corpo é de superfície lisa e, marcado com linhas longitudinais, patas abdominais pouco desenvolvidas — 3 a 5 cm.
@@ -165,9 +167,9 @@ Alterações morfológicas: Folhagem, colos e raízes das plantas apresentam roe
 "id":
 "nomePopular": "Lagarta-do-tomate",
 "nomeCientifico":  "Helicoverpa armigera",
-"tipo": "Praga",
+"tipo": "PRAGA",
 "planta": "Tomateiro",
-"danos":  "Perda da área foliar; redução da produção final; redução da qualidade do tomate produzido.",
+"dano":  "Perda da área foliar; redução da produção final; redução da qualidade do tomate produzido.",
 "descricao": "Adultos: Cerca de 2 cm; corpo castanho claro nas fêmeas e esverdeado no caso dos machos; asas anteriores são castanhas-ocre.
 Ovos: Arredondados; cor esbranquiçada; cerca de 0,5 mm de diâmetro e com estrias meridionais.
 Larvas: Forma cilíndrica; coloração diversa, evoluindo para tons verdes- -acastanhados; chegam a medir 4 cm de comprimento;
@@ -178,27 +180,15 @@ Quando há condições de humidade e temperatura elevadas, estão reunidas as co
 "imagem": "Lagarta-do-tomate",
 }
 
-{
-"id":
-"nomePopular": "Rosca-negra",
-"nomeCientifico": "Agrotis ipsilon",
-"tipo":  "Inseto",
-"planta": " Alface, batata, couve, tomate, milho e outros",
-"danos": "Danos: Larvas alimentam-se das folhas tenras originando elevada perda da superfície foliar e de frutos reduzindo diretamente a produção; originam desgastes por vezes preocupantes.",
-"descricao":  "Adultos: Traça de cor ocre com asas anteriores de coloração pardo-escura com marcas claras e asas posteriores esbranquiçadas, com reflexos violeta e as margens de castanho mais escuro — 3 a 4,5 cm de envergadura.
-Larvas: Corpo cilíndrico de cor acinzentada ou preta com faixas dorsais laterais mais claras — 2 a 5 cm de comprimento.
-Alterações morfológicas: Folhagem e frutos das plantas apresentam roeduras efetuadas pelas larvas;",
-"controle": "Evitar estrume fresco; sachas frequentes antes da sementeira; soltar galinhas antes da sementeira; captura manual das lagartas a 10 cm de profundidade; fazer rotação de culturas; pulverização com inseticida homologado.",
-"imagem": "Rosca-negra",
-}
+
 
 {
 "id":
 "nomePopular": "Tripes-da-califórnia",
 "nomeCientifico": "Frankliniella occidentalis",
-"tipo": "Inseto",
+"tipo": "INSETO",
 "planta": "Alface, feijão, melão, morango, pimento, tomate e outros"
-"danos": "Sucção do conteúdo celular das folhas, redução da taxa fotossintética, queda prematura das folhas, lesões no fruto, queda prematura do fruto, morte da planta, diminuição da produção, vetor do vírus SWV.",
+"dano": "Sucção do conteúdo celular das folhas, redução da taxa fotossintética, queda prematura das folhas, lesões no fruto, queda prematura do fruto, morte da planta, diminuição da produção, vetor do vírus SWV.",
 "descricao": "Adultos: Tisanóptero com corpo alongado de coloração amarela-acastanhada; patas de coloração amarela-palha; cerca de 2 mm de comprimento.
 Larvas: Coloração amarela-clara, cerca de 1,5 a 2 mm de comprimento.
 Pupas: Coloração amarela-clara, cerca de 1,5 a 2 mm de comprimento.
@@ -212,9 +202,9 @@ Necroses: Pontos necrosados pelas posturas com halo, especialmente nas folhas e 
 "id":
 "nomePopular": "Mosca-da-fruta",
 "nomeCientifico": "Ceratitis capitata Wiedemann",
-"tipo":  "Inseto",
+"tipo":  "INSETO",
 "planta": "Pomóideas (pêssego, ameixa, etc.), prunóideas (peras, maçãs, etc.), citrinos (laranjeiras, tangerineiras, etc.), diospireiros, figueiras e figueiras-da-índia, nogueiras, videiras e kiwi.",
-"danos": "Ao colocar os ovos no fruto, aparece sempre uma pequena marca na casca, que nos citrinos origina manchas amareladas. As larvas alimentam-se da polpa das frutas, provocando a sua decomposição e queda. A entrada de fungos, pelo orifício das picadas, também acelera este processo.
+"dano": "Ao colocar os ovos no fruto, aparece sempre uma pequena marca na casca, que nos citrinos origina manchas amareladas. As larvas alimentam-se da polpa das frutas, provocando a sua decomposição e queda. A entrada de fungos, pelo orifício das picadas, também acelera este processo.
 Muitas vezes, torna-se difícil detetar os frutos picados no campo e a larva vai-se desenvolver durante o transporte ou armazenamento do fruto.",
 "descricao":  "Pequena mosca de 4-6 mm de comprimento de cor amarelada-acizentada. O ovo é branco, com 1,2 x 0,5 mm. As larvas são brancas-amareladas com 7-8 mm de comprimento.",
 "controle": "Colocar garrafas mosqueiras (tipo Mc Phail ou Tephritrap 1/3 árvores) com atrativo alimentar (cerveja, vinagre, água da cozedura de peixe, proteína hidrolisada, sulfato, fosfato biamónico) e sexual (Trimedlure) e pastilhas inseticida; armadilhas cromotropicas de cor amarela (1 por árvore) com ou sem atrativo alimentar.
@@ -223,12 +213,11 @@ Eliminar os frutos caídos ou atacados; submeter os frutos a baixas temperaturas
 }
 
 {
-"id":
 "nomePopular": "Pulgões",
 "nomeCientifico": "Aphis",
-"tipo": "Inseto",
+"tipo": "INSETO",
 "planta": "abetos, ameixoeiras, cerejeiras, ciprestes, citrinos, cotoneásteres, faias, folhados, larícios, macieiras, madressilva, pereiras, pessegueiros, pinheiros, roseiras, tulipas, tílias, entre outras.",
-"danos": "Ornamental: De entre os danos causados por estas pragas, destacam-se o facto de serem vetores de viroses; reduzirem a fotossíntese; deformarem rebentos e folhas originarem a queda prematura das folhas; atrasarem o crescimento de rebentos e gomos; diminuírem a floração; reduzirem o valor ornamental das plantas.
+"dano": "Ornamental: De entre os danos causados por estas pragas, destacam-se o facto de serem vetores de viroses; reduzirem a fotossíntese; deformarem rebentos e folhas originarem a queda prematura das folhas; atrasarem o crescimento de rebentos e gomos; diminuírem a floração; reduzirem o valor ornamental das plantas.
 Produção: Ao nível da produção em fruteiras, os pulgões, ao deformarem as folhas e originarem a sua queda prematura, têm influência sobretudo na taxa fotossintética e no equilíbrio energético das plantas, reduzindo desta forma a produção das mesmas. Note-se que os danos mais significativos ocorrem em plantas jovens e/ou em folhas jovens.",
 "descricao":  "Os ataques dos imagos ou insetos adultos caracterizam-se pela presença de colónias de insetos no tronco e/ou nos ramos, na página inferior das folhas ou nas agulhas em geral. A sua coloração assume diversos tons bem como as suas e formas. A queda prematura das folhas é um sintoma que pode ser observado na primavera, verão e outono.
 Secreções: A digestão destas pragas, ou seja, o processamento dos sucos plasmáticos das plantas ao nível do aparelho digestivo, faz com que ocorram as típicas secreções melosas (com fumagina associada) presentes durante a primavera, verão e outono. Estas meladas açucaradas são muito procuradas pelas formigas.
@@ -238,7 +227,21 @@ Na presença de ataques de pulgões, devem ser efetuadas pulverizações com det
 Estas intervenções deverão ser repetidas ao longo do período de ataque. Em contrapartida, em espécies ornamentais, é possível atualmente recorrer a aplicações anuais de inseticidas através de técnicas de microinjeção.
 As quais são bastante vantajosas, sobretudo a nível ambiental e em termos de toxicidade para o ser humano. Já que todo o inseticida aplicado fica retido no interior da planta e sem qualquer contacto com o exterior, sendo assim indiferente às condições climáticas.
 ",
-"imagem": "Pulgoes",
+"tratamento": ""
+}
+/////////////////////////////////////
+{
+"id":
+"nomePopular": "Rosca-negra",
+"nomeCientifico": "Agrotis ipsilon",
+"tipo":  "INSETO",
+"planta": " Alface, batata, couve, tomate, milho e outros",
+"dano": "Danos: Larvas alimentam-se das folhas tenras originando elevada perda da superfície foliar e de frutos reduzindo diretamente a produção; originam desgastes por vezes preocupantes.",
+"descricao":  "Adultos: Traça de cor ocre com asas anteriores de coloração pardo-escura com marcas claras e asas posteriores esbranquiçadas, com reflexos violeta e as margens de castanho mais escuro — 3 a 4,5 cm de envergadura.
+Larvas: Corpo cilíndrico de cor acinzentada ou preta com faixas dorsais laterais mais claras — 2 a 5 cm de comprimento.
+Alterações morfológicas: Folhagem e frutos das plantas apresentam roeduras efetuadas pelas larvas;",
+"controle": "Evitar estrume fresco; sachas frequentes antes da sementeira; soltar galinhas antes da sementeira; captura manual das lagartas a 10 cm de profundidade; fazer rotação de culturas; pulverização com inseticida homologado.",
+"imagem": "Rosca-negra",
 }
 
 {
@@ -247,7 +250,7 @@ As quais são bastante vantajosas, sobretudo a nível ambiental e em termos de t
 "nomeCientifico":  "Xylella fastidiosa",
 "tipo": "Bactéria",
 "planta": "Videira, laranjeira, oliveira, pessegueiro, amendoeira, carvalho, loendro, entre outras.",
-"danos": "Os sintomas são relativamente diversos consoante o hospedeiro infetado. Contudo, apontam-se como sintomas comuns a murchidão das folhas, seguida de necrose e desfolha. Inicia-se assim um processo de dieback nas plantas afetadas.
+"dano": "Os sintomas são relativamente diversos consoante o hospedeiro infetado. Contudo, apontam-se como sintomas comuns a murchidão das folhas, seguida de necrose e desfolha. Inicia-se assim um processo de dieback nas plantas afetadas.
 Em videira, surge a murchidão das folhas, com distribuição irregular e dieback, apresentando zonas verdes de tecido saudável, mas com a separação da folha do pecíolo.
 Em oliveiras, surgem queimaduras foliares e um declínio rápido das oliveiras mais velhas. Nos citrinos, evidencia-se o aparecimento de manchas amareladas de contornos irregulares, sendo que a superfície inferior das folhas surge ligeiramente levantada e acastanhada.
 Em loendros, é visível o amarelecimento das folhas, que é seguido pela característica queimadura e necrose da zona apical das mesmas.
@@ -265,7 +268,7 @@ A nível particular, aconselha-se a que as plantas afetadas por esta bactéria s
 "nomeCientifico": "Colomerus viti",
 "tipo": "Ácaro",
 "planta":  "Vive nas plantas do género Vitis (videira).",
-"danos": "As folhas ficam com ligeiras saliências na parte superior de 2-3 mm de diâmetro de cor avermelhada ou amarelada, tornando-se verdes à medida que as dimensões da folha crescem. Na parte inferior, notam-se depressões que apresentam abundante pilosidade de cor branca que depois tornam-se rosadas ou tom de ferrugem. Esta pilosidade, também pode ser vista nos pecíolos das folhas.
+"dano": "As folhas ficam com ligeiras saliências na parte superior de 2-3 mm de diâmetro de cor avermelhada ou amarelada, tornando-se verdes à medida que as dimensões da folha crescem. Na parte inferior, notam-se depressões que apresentam abundante pilosidade de cor branca que depois tornam-se rosadas ou tom de ferrugem. Esta pilosidade, também pode ser vista nos pecíolos das folhas.
 No geral há um lentíssimo desenvolvimento vegetativo, destruição folhear, aparecimento de formações vegetativas antecipadas (netas) e desavinho. Os estragos desta praga só são importantes nas plantações jovens, nos viveiros e em condições muito excecionais.",
 "descricao": "É um ácaro de cor amarelo claro, que mede 0,2 mm de comprimento e tem dois pares de patas quando adulto.
 Invernam em grupos numerosos no estado adulto, debaixo do córtex da madeira do ano anterior ou nas gemas. O ácaro começa a sua atividade quando a vinha está no estado fenologico D (primeiras folhas visíveis), quando o tempo está húmido e chuvoso e as temperaturas ficam compreendidas entre os 15-35ºC (ataque mais intenso na primavera).
@@ -281,9 +284,9 @@ Aplicar um inseticida contendo óleo (vegetal de parafina ou mineral) durante o
 "id":
 "nomePopular": "Manchas da folha",
 "nomeCientifico": "Cercospora beticola Sacc",
-"tipo": "Fungo",
+"tipo": "FUNGO",
 "planta": "Acelga, beterraba, beterraba sacarina.",
-"danos": "As infeções manifestam-se nas folhas e nos caules, onde se pode ver pequeníssimas auréolas (circulares ou oblongas) punctiformes. Nas quais os tecidos verdes ou vermelhos, começam por descorar e adquirem uma coloração pardacenta. Ao fim de 2-3 dias, os ataques evoluem para pequenas manchas arredondadas, com diâmetro de 2-3 mm, com zona central formada por tecidos necrosados de cor cinzenta-branca, circundada por um anel pardo-avermelhado. Estas manchas podem confluir, abrangendo então grandes porções do limbo foliar.",
+"dano": "As infeções manifestam-se nas folhas e nos caules, onde se pode ver pequeníssimas auréolas (circulares ou oblongas) punctiformes. Nas quais os tecidos verdes ou vermelhos, começam por descorar e adquirem uma coloração pardacenta. Ao fim de 2-3 dias, os ataques evoluem para pequenas manchas arredondadas, com diâmetro de 2-3 mm, com zona central formada por tecidos necrosados de cor cinzenta-branca, circundada por um anel pardo-avermelhado. Estas manchas podem confluir, abrangendo então grandes porções do limbo foliar.",
 "descricao": "Trata-se de uma doença causada por um fungo (deuteromicete), que tem alguma importância em Portugal. As perdas podem chegar aos 40% quer em folhas quer nas raízes.
 Os conídios que em condições de temperatura (25-35ºC, com temperaturas noturnas maiores que 16ºC) e humidade elevadas (> 90%), se diferenciam em cerca de 12-16 horas, com ajuda de água, ventos, insetos e pelo homem.
 Assim que contactam o hospedeiro (folhas, caules), germinam produzindo um tubo germinativo que, através do estômago, penetra na câmara subestomatica, onde aumenta de volume e estabelece relação com as células do hospedeiro. Desde a penetração até à manifestação dos sintomas, decorrem cerca de 7-14 dias (com temperaturas de 20-25ºC). O fungo (na fase de micélio) pode permanecer nos restos da cultura que estão infetados, ervas infestantes ou no solo, durante 2 anos e resiste as condições mais desfavoráveis do meio ambiente.", 
@@ -296,9 +299,9 @@ Regar com intervalos de 15-20 dias; Utilizar variedades mais resistentes; Remove
 "id":
 "nomePopular": "Formiga Negra",
 "nomeCientifico": "Tapinoma nigerrimum Nyl",
-"tipo": "Inseto",
+"tipo": "INSETO",
 "planta": "Citrinos (atacados por afídeos) e melões, entre muitas outras plantas.",
-"danos": "Na Primavera, quando sobem às árvores, podem tornar-se fitófaga. Geralmente procuram a melada das cochonilhas e afídeos, afastando os auxiliares e protegendo as pragas que lhe dão o seu alimento. Por vezes, chegam a levar as pragas para as plantas saudáveis.
+"dano": "Na Primavera, quando sobem às árvores, podem tornar-se fitófaga. Geralmente procuram a melada das cochonilhas e afídeos, afastando os auxiliares e protegendo as pragas que lhe dão o seu alimento. Por vezes, chegam a levar as pragas para as plantas saudáveis.
 As formigas também podem comer sementes, cortar folhas (para fazer colónias de fungos para a sua alimentação), insectos úteis e comida em nossas casas. Algumas formigas alojam-se nos troncos e fazem ali as suas colónias. Fazem galerias e enfraquecem mais as árvores, que na sua grande maioria já são velhas e fracas. Existem formigas que fazem buracos em alguns frutos como o melão e outras entram nas colmeias para se alimentarem do mel.
 No campo, por vezes, os formigueiros podem isolar as raízes do terreno e "descalçam" as plantas, podendo provocar a sua morte.",
 "descricao":  "Formigas de cor negra ou castanho escuro, de 2,5-12,6 mm de comprimento. Vivem em colónias com uma ou mais rainhas com a missão de reprodução. As outras fêmeas sem asas e assexuadas são obreiras e solados.
@@ -314,9 +317,9 @@ Luta biológica – Deixar as galinhas a passear nos terrenos com muitas formiga
 "id":
 "nomePopular": "Cárie dos citrinos",
 "nomeCientifico": "Polyporus sp",
-"tipo": "Fungo",
+"tipo": "FUNGO",
 "planta": "Todas as plantas pertencentes ao grupo das Rosáceas, família das Rutáceas (limoeiro, laranjeira, toranjeira, etc.), a oliveira e as Coníferas,", 
-"danos":  "Os sintomas mais característicos são o aparecimento de manchas pulvorolentas, de cor cinza-preto, no tronco e ramos das árvores (especialmente os mais velhos). Esta doença leva à destruição dos tecidos lenhosos e a redução progressiva do vigor da planta.",
+"dano":  "Os sintomas mais característicos são o aparecimento de manchas pulvorolentas, de cor cinza-preto, no tronco e ramos das árvores (especialmente os mais velhos). Esta doença leva à destruição dos tecidos lenhosos e a redução progressiva do vigor da planta.",
 "descricao": "Esta doença, causada por vários fungos, em como factores de desenvolvimento as podas mal efectuadas ou outros factores que provocam feridas na planta com alguma gravidade. A permanência demorada de humidade ou água nas feridas ou nos pontos de inserção das pernadas também pode provocar o desenvolvimento destes fungos;
 O patogéneo entra nas "feridas não cicatrizadas" existentes no tecido lenhoso. No entanto, muitos dos fungos que provocam a "carie", são parasitas secundários que "agridem preferencialmente as plantas débeis e em sofrimento. A difusão pode ser feita por transmissão intercelular, pelos tecidos infectados ou pelo modo sistémico. Neste último caso, através dos vasos e tecidos condutores, onde o micélio é transportado. Os insectos (alguns Leptidopteros e Coleópteros) podem ser transmissores desta doença e também podem enfraquecer a planta tornando-a mais susceptível. Os fungos, agentes da cárie, conservam-se no am	biente e no lenho, este último na fase micelar.", 
 "controle": "Destruir as plantas infectadas; utilizar variedades resistentes ou tolerantes; fazer podas sem deixar feridas e em tempo seco; drenar bem os solos, para mantê-los pouco húmidos; reforçar as pernadas frágeis para não quebrarem; manter sempre a planta sã, bem nutrida e bem regada; escolher plantas bem adaptadas ao ambiente local.
@@ -328,9 +331,9 @@ Tratamento biológico: Aplicar calda Bordalesa ou outros produtos ricos em cobre
 "id":
 "nomePopular": "Ferrugem branca da Couve",
 "nomeCientifico": "Albugo candida",
-"tipo": "Fungo",
+"tipo": "FUNGO",
 "planta": "Todas as couves e plantas do grupo das Crucíferas.",
-"danos": "Formam-se pequenas zonas brancas (vesículas de contorno arredondado) isoladas ou confluentes que ficam mais tarde com um aspecto pulverulento e cor esbranquiçada, em todas as zonas aéreas, verificando-se sobretudo nos órgãos florais. As sépalas, pétalas, estames pistilos, ovários e pedúnculos florais, apresentam-se deformados, curvos e muito alongados, prejudicando a possibilidade de existir fecundação. Existe também uma pigmentação anormal no resto dos tecidos infetados.",
+"dano": "Formam-se pequenas zonas brancas (vesículas de contorno arredondado) isoladas ou confluentes que ficam mais tarde com um aspecto pulverulento e cor esbranquiçada, em todas as zonas aéreas, verificando-se sobretudo nos órgãos florais. As sépalas, pétalas, estames pistilos, ovários e pedúnculos florais, apresentam-se deformados, curvos e muito alongados, prejudicando a possibilidade de existir fecundação. Existe também uma pigmentação anormal no resto dos tecidos infetados.",
 "descricao": "Esta doença, causada por um fungo, é de uma certa gravidade, sobretudo na couve-flor (causa um desenvolvimento anormal da flor) e nas plantas destinadas à produção de semente.
 Este patogéneo "hiberna" na forma sexuada nos tecidos das plantas hóspedes (plantas espontâneas). Os oosporos, maturam-se e germinam produzindo depois os zoosporos. Este tipo de infeção dá-se apenas nos meses de primavera, outono e fim do inverno, depois de algumas horas de precipitação os esporângios germinam e dá-se o processo da infeção.
 As condições ótimas para a germinação dos esporângios são de 10ºC, mas podem germinar desde os 0-25ºC", 
@@ -343,9 +346,9 @@ As condições ótimas para a germinação dos esporângios são de 10ºC, mas p
 "id":
 "nomePopular": "Ascoquita da ervilha",
 "nomeCientifico": "Ascochyta pisi",
-"tipo":  "Fungo",
+"tipo":  "FUNGO",
 "planta": "Ervilhas, grão-de-bico, lentilha, feijão e favas.", 
-"danos": "As lesões aparecem nos caules, folhas e vagens. As primeiras manchas que aparecem são pequenas (5 mm), de forma circular, oval ou alongadas e irregulares ligeiramente deprimidas. As manchas vão alargando (até 8 mm) e ficam de cor acastanhada-negra e formam pequenos anéis mais claros no seu interior, chegando aos pecíolos e caules, ficando ligeiramente azuladas. As sementes também podem ser afetadas, causando lesões no colo e nas raízes, levando a morte das plantas jovens.
+"dano": "As lesões aparecem nos caules, folhas e vagens. As primeiras manchas que aparecem são pequenas (5 mm), de forma circular, oval ou alongadas e irregulares ligeiramente deprimidas. As manchas vão alargando (até 8 mm) e ficam de cor acastanhada-negra e formam pequenos anéis mais claros no seu interior, chegando aos pecíolos e caules, ficando ligeiramente azuladas. As sementes também podem ser afetadas, causando lesões no colo e nas raízes, levando a morte das plantas jovens.
 A infeção floral, começa com lesões minúsculas nas pétalas que levam à senescência muito rapidamente e um desenvolvimento desigual das "veias". Os danos podem ser muito elevados, conforme o grau de infestação e o momento em que se dá a contaminação. As ervilhas podem não se formar ou perder peso e com isso reduzir drasticamente a produção.",
 "descricao":  "Doença causada por fungos (Ascomycete) que aparecem nas zonas temperadas.
 Este fungo consegue sobreviver nos resíduos deixados pelas ervilheiras do ano anterior e mantém-se no solo. Assim que as temperaturas estejam favoráveis (15-25ºC), os ascósporo libertam-se para o ar e a infeção dá-se em 2-4 dias (geralmente na primavera e no outono). É preciso que a folha esteja húmida (humidade relativa maior que 90%), pelo menos duas horas, para se dar a germinação do ascósporo.",
@@ -359,9 +362,9 @@ Os fungicidas com cobre, também podem combater este fungo.",
 "id":
 "nomePopular": "Gorgulho",
 "nomeCientifico": "Lixus algirus",
-"tipo": "Inseto",
+"tipo": "INSETO",
 "planta": "Favas, alcachofra, malvas, pessegueiros, damasqueiros, pereiras e marmeleiros.",
-"danos": "Os mais importantes ocorrem no caule das plantas, que ficam danificados pelas galerias feitas pelas larvas, especialmente nas favas e plantas da família das alcachofras e malvas. Nas outras plantas, verificam-se pequenas lesões nas folhas, provocadas pelo inseto no estado adulto.",
+"dano": "Os mais importantes ocorrem no caule das plantas, que ficam danificados pelas galerias feitas pelas larvas, especialmente nas favas e plantas da família das alcachofras e malvas. Nas outras plantas, verificam-se pequenas lesões nas folhas, provocadas pelo inseto no estado adulto.",
 "descricao":  "Insetos que no estado adulto, medem 1-1,8 cm. O corpo tem forma cilíndrica, de cor castanho-escuro, ou preta, coberto com uma camada de "pó" amarelo. A larva tem a cor branca.
 O gorgulho passa o inverno no estado de adulto. Na primavera, o adulto sai do solo e começa a sua atividade nutricional, alimentando-se das folhas e colocando os ovos (120) no interior dos caules. As larvas nascem passados 15 a 20 dias, alimentando-se das folhas e fazendo pequenas galerias. Ao fim de 10 a 17 dias, a larva transforma-se no estado adulto. Esta espécie só tem uma geração por ano.",
 "controle": "Eliminar as ervas espontâneas, especialmente as da família dos cardos; rotação de culturas, com um ciclo superior a 2 anos; efetuar uma lavoura superficial para trazer o inseto à superfície; reduzir ao máximo a adubação azotada; aplicação de cintas (cola sobre papel parafinado) nos troncos das árvores de fruto, desde o mês de março.
@@ -374,9 +377,9 @@ Luta biológica: O parasitóide Habrocytus lixi Sarra (pequenas vespas); Anaphes
 "id":
 "nomePopular": "Grilo dos arbustos",
 "nomeCientifico": "Leptophyes punctatissima",
-"tipo": "Inseto",
+"tipo": "INSETO",
 "planta": "Macieiras, pereiras, pessegueiros (nectarinas), ameixeiras, videiras, Pysalis (Lanterna chinesa), oliveiras, planta do tabaco e outras fruteiras e arbustos.", 
-"danos": "Come as folhas (grandes buracos nas folhas mais largas), flores e sementes das plantas. A alimentação é quase sempre feita durante a noite. Não se trata propriamente de uma praga, porque estes insetos vivem normalmente, solitários, não causando grandes prejuízos (existem poucos casos de grandes ataques).",
+"dano": "Come as folhas (grandes buracos nas folhas mais largas), flores e sementes das plantas. A alimentação é quase sempre feita durante a noite. Não se trata propriamente de uma praga, porque estes insetos vivem normalmente, solitários, não causando grandes prejuízos (existem poucos casos de grandes ataques).",
 "descricao": "Pode medir até cerca de 18 mm de comprimento, de cor verde, os olhos são amarelados com uma risca preta. As asas são vestigiais (15-16 mm) e as fêmeas têm um robusto ovipositor na parte de trás do abdómen. As Ninfas são idênticas aos adultos mas mais pequenas.
 Os ovos são colocados no outono, nos rebentos de várias plantas. Os ovos rebentam na primavera e no início do verão, as ninfas alimentam-se bem de folhas e chegam ao estado de adulto em 3 meses. Os adultos, são excelentes saltadores e permanecem neste estado de julho a novembro. Só existe uma geração por ano.",
 "controle":"Aplicação de produtos como o Neem (Azadirachta indica) e sabão azul, píretro no fim da noite.
@@ -388,9 +391,9 @@ Luta biológica: Algumas aranhas, escaravelhos, sapos, sardões e cobras são pr
 "id":
 "nomePopular": "Melga das raízes",
 "nomeCientifico": "Tipula",
-"tipo":  "Inseto",
+"tipo":  "INSETO",
 "planta": "Plantas dos prados, batateiras, espinafre, espargos, tabaco, cana de açúcar, lúpulo, morangueiro, framboesa e groselha.",
-"danos": "As larvas causam estragos nas raízes, caules e nas folhas mais próximas do solo.",
+"dano": "As larvas causam estragos nas raízes, caules e nas folhas mais próximas do solo.",
 "descricao": "Os adultos são castanhos com 23-25 mm de comprimento, não incluindo as patas que são muito frágeis (muitas vezes partem-se) e tem cinco vezes o comprimento do corpo (podendo chegar aos 2,5 cm). Este inseto não pica nos humanos, como os mosquitos. As larvas têm o nome de casacos de pele, devido ao seu tom acastanhado e consistência dura, servindo muitas vezes para isco de pesca.
 Encontram-se em casas, muros e zonas de sombra, especialmente no fim do verão, princípio de outono e só aparecem quando é dia. As fêmeas colocam os ovos (300-400) em solos húmidos, desde meados de agosto até fins de setembro, onde nascem as larvas (passados 14 dias), com cerca de 35-45 mm de comprimento e cor cinzenta-acastanhada. As larvas alimentam-se até ao inverno, durante a noite de matéria orgânica, alguns insectos, caules e raízes de algumas plantas, transformando-se depois em pupa. Só têm 1-2 gerações por ano.",
 "controle": "Os ataques são menores em solos bem drenados e em anos quentes; limpe a vegetação herbácea e não enriqueça em demasia o terreno em húmus; Lavre o solo de modo a que as larvas e pupas possam ficar à superfície, para serem destruídas ou comidas pelos seus predadores; utilize armadilhas amarelas autocolantes e luminosas.",
@@ -404,7 +407,7 @@ Encontram-se em casas, muros e zonas de sombra, especialmente no fim do verão, 
 "nomeCientifico":  "Talpa europaeia",
 "tipo": "Animal",
 "planta": "Relvados, prados e hortas.",
-"danos": "Os danos verificam-se especialmente em relvados, campos agrícolas e jardins, com o aparecimento de pequenos montes (entradas dos túneis) e das suas galerias que prejudicam muito os campos, podendo até destruir as raízes mais jovens de algumas plantas. Atenção, as toupeiras só são consideradas prejudiciais quando são numerosas, pois caso contrario até podem ser consideradas amigas do lavrador.",
+"dano": "Os danos verificam-se especialmente em relvados, campos agrícolas e jardins, com o aparecimento de pequenos montes (entradas dos túneis) e das suas galerias que prejudicam muito os campos, podendo até destruir as raízes mais jovens de algumas plantas. Atenção, as toupeiras só são consideradas prejudiciais quando são numerosas, pois caso contrario até podem ser consideradas amigas do lavrador.",
 "descricao": "Trata-se de animais que vivem no subsolo, enterrados em tocas e galerias e constroem grandes túneis (podem ter mais de 50 metros), que por vezes causam prejuízos. As toupeiras têm o corpo alongado (10-17 cm) e coberto de pelos de cor cinza ou preta, não têm orelhas externas e são totalmente cegas ou parcialmente cegas. A sua alimentação é a base de pequenos animais invertebrados que vivem no solo.
 As toupeiras movimentam-se durante todo o ano através dos túneis (são autênticas maquinas escavadoras) ou fora deles (durante a noite) à procura de alimentos, como as minhocas, larvas de insetos, ratinhos, musaranhos, rãs, e lagartos. Sendo quase cega, guia-se pelo olfacto muito apurado.
 Na época de acasalamento (entre fevereiro e junho), o macho e a fêmea cavam túneis juntos com muita ferocidade. A gestação dura cerca de 30 dias. Cada toupeira pode ter uma a duas ninhadas de 2-6 crias por ano. Ao fim de 4-5 semanas, as crias deixam de mamar e abandonam o ninho, tendo a sua maturidade sexual entre os 6 a 12 meses. Podem viver cerca de 6-7 anos, mas geralmente chegam apenas aos 3- 4 anos",
@@ -417,9 +420,9 @@ Luta biológica: Estimular os predadores naturais como algumas aves de rapina (f
 "id":
 "nomePopular": "Antracnose da ervilha", 
 "nomeCientifico":  "Mycosphaerella pinodes",
-"tipo": "Fungo",
+"tipo": "FUNGO",
 "planta":  "Ervilheira, ervilhaca, faveira e lentilha.",
-"danos": "No princípio verificam-se pequenas manchas (5 mm de diâmetro), castanhas escuras, depois as manchas crescem e ficam castanhas de forma irregular, castanho mais escuro no interior e nas bordaduras (diâmetro de 8 mm). Geralmente, a infeção estende-se aos pecíolos e caules, ficando estes ligeiramente azuis, podendo a planta murchar. Nas flores verificam-se lesões minúsculas (manchas punctiformes), as pétalas secam muito rapidamente. As sementes podem não mostrar sinais externos ou podem aparecer enrugadas com cor castanha. Quando a semente infetada germina, podem verificar-se infeções no colo e nas raízes, o que motiva a morte imediata das plantas mais novas.",
+"dano": "No princípio verificam-se pequenas manchas (5 mm de diâmetro), castanhas escuras, depois as manchas crescem e ficam castanhas de forma irregular, castanho mais escuro no interior e nas bordaduras (diâmetro de 8 mm). Geralmente, a infeção estende-se aos pecíolos e caules, ficando estes ligeiramente azuis, podendo a planta murchar. Nas flores verificam-se lesões minúsculas (manchas punctiformes), as pétalas secam muito rapidamente. As sementes podem não mostrar sinais externos ou podem aparecer enrugadas com cor castanha. Quando a semente infetada germina, podem verificar-se infeções no colo e nas raízes, o que motiva a morte imediata das plantas mais novas.",
 "descricao":  "Doença causada por um fungo, que pode ser transmitida pelas sementes, os resíduos das culturas ou a água das chuvas.
 As sementes são um dos modos de transmissão mais comuns, verifica-se um ataque profundo nos cotiledones. A transmissão pode ser feita por resíduos das culturas (ascosporos) que ficam no solo e são depois transmitidos através das raízes da ervilha, contaminando depois toda a planta. Os ascosporos são um meio eficaz de dispersão do patogéneo a curtas distâncias e o máximo de libertação tem lugar depois do meio-dia. A dispersão dos conidios por salpicos de chuva também é um modo de dispersão desta doença.
 Na forma de "Chlamydosporos" que se mantêm no solo e entrando na planta pela contaminação da semente ou raiz. as condições de 15-20ºC com humidades superiores a 85%, são as mais propícias para o desenvolvimento desta doença",
@@ -431,9 +434,9 @@ Na forma de "Chlamydosporos" que se mantêm no solo e entrando na planta pela co
 "id":
 "nomePopular": "Esclerotínia",
 "nomeCientifico": "Sclerotinia libertiana",
-"tipo": "Fungo",
+"tipo": "FUNGO",
 "planta": "Alface, chicória, escarola e endívias. Também se podem verificar infeções nos tomates, cenoura, aipo, girassol, pepino, melão e feijão.", 
-"danos":  "Murchidão das folhas que se pode observar em qualquer estado de desenvolvimento da planta, mas é um pouco antes da colheita, que se observam os ataques mais intensos. As folhas a partir das mais externas, amarelecem, murcham e secam. Nas raízes e colo, podemos observar uma infeção de cor branca (micélio) com massas globosas que inicialmente são cinzentas e moles, que se tornam negras e coriáceas (escleróticos até 1 cm de diâmetro).",
+"dano":  "Murchidão das folhas que se pode observar em qualquer estado de desenvolvimento da planta, mas é um pouco antes da colheita, que se observam os ataques mais intensos. As folhas a partir das mais externas, amarelecem, murcham e secam. Nas raízes e colo, podemos observar uma infeção de cor branca (micélio) com massas globosas que inicialmente são cinzentas e moles, que se tornam negras e coriáceas (escleróticos até 1 cm de diâmetro).",
 "descricao": "Doença provocada por um fungo que gosta de temperaturas entre os 15-20ºC, precipitações de 16-24 horas, humidades altas, terrenos ligeiros e ricos em matéria orgânica. Esta doença pode ser muito grave, não só no período de maturação comercial, mas também quando as condições de transporte não são as adequadas (falta de arejamento e temperaturas altas).
 Este fungo, pode sobreviver no solo ou em sementes durante vários anos (6-8), sob a forma de micélio, tendo uma vida saprófita activa. Em condições ambientais favoráveis e com plantas receptivas, volta a atacar e provocar estragos a partir dos ascósporos. O que pode acontecer é que as folhas mais velhas formam, em contacto com o solo, câmaras húmidas muito favoráveis a esta infecção, que se inicia na zona do colo ou na coroa radicular, que em poucos dias dá origem a decomposição mole dos tecidos.",
 "controle": "Se possível utilizar variedades mais tolerantes ou resistentes (ex: Great Lakes 54); métodos de condução arejados; Controlar os adubos azotados; Eliminar todas as plantas infectadas não deixando nenhum resto no terreno; Fazer uma rotação de 4 ou 5 anos; evitar plantar alfaces no outono e primavera (períodos mais críticos); aplicar a técnica da solarização; Aplicar a técnica da biofumigação, com matérias orgânicas (5 Kg m²) não decompostas e regar, deixar actuar durante duas semanas.",
@@ -444,9 +447,9 @@ Este fungo, pode sobreviver no solo ou em sementes durante vários anos (6-8), s
 "id":
 "nomePopular": "Gomose",
 "nomeCientifico": "Botryosphaeria dothidea",
-"tipo": "Fungo",
+"tipo": "FUNGO",
 "planta": "Pessegueiro, ameixeiras, damasqueiros, macieiras e pereiras.",
-"danos": "No princípio, aparecem bolhas pequenas na casca do tronco e em algumas pernadas, durante o outono e na primavera. Nas lesões formadas na casca da árvore, é exsudada uma resina (goma).
+"dano": "No princípio, aparecem bolhas pequenas na casca do tronco e em algumas pernadas, durante o outono e na primavera. Nas lesões formadas na casca da árvore, é exsudada uma resina (goma).
 As lesões com mais de 2 cm de diâmetro em madeira antiga do tronco, podem formar-se cancros, afetando o floema e o córtex, podendo chegar até ao xilema. Estas infeções aparecem em plantas com mais de 3 anos.",
 "descricao": "Doença causada por um fungo, que vai debilitando as plantas, até à morte. Este fungo cresce bem a temperaturas entre 20 e 36ºC.
 O fungo sobrevive durante o inverno na casca e em tecidos secos do tronco. A disseminação ocorre por meio das gotas de chuva que, ao caírem sobre os esporos (ascosporos e conidiosporos), espalham os mesmos para outros tecidos. Os ascooporos também são transmitidos pelo ar. As infeções ocorrem no outono e na primavera (abril-maio), penetrando os fungos pelas feridas existentes na árvore.", 
@@ -461,7 +464,7 @@ Em termos de agricultura biológica, não existem pesticida homologados para com
 "nomeCientifico": "Eriophyes sheldoni",
 "tipo": "Ácaro",
 "planta": "Citrinos, em especial nos limoeiros.",
-"danos": "Vive e alimenta-se dos gomos florais e foliares. Nos gomos terminais, interrompe o crescimento dos ramos, crescendo estes com formas em zig-zag. Verifica-se uma deformação das folhas, que ficam assimétricas, pequenas e distorcidas. O ataque nos gomos florais, causa uma distorção nos frutos. Em ataques severos, pode deformar 50% dos limões.",
+"dano": "Vive e alimenta-se dos gomos florais e foliares. Nos gomos terminais, interrompe o crescimento dos ramos, crescendo estes com formas em zig-zag. Verifica-se uma deformação das folhas, que ficam assimétricas, pequenas e distorcidas. O ataque nos gomos florais, causa uma distorção nos frutos. Em ataques severos, pode deformar 50% dos limões.",
 "descricao": "Os adultos são de cor amarelo-claro com corpo vermiforme, anelado, medindo (0,1-0,3 mm)
 Este ácaro, refugia-se nas gemas durante o inverno, reproduzindo-se durante todo o ano. No verão desenvolve uma geração em 15 dias e no inverno em 30, preferindo sempre humidades relativas altas (100%).",
 "controle": "Reduzir a fertilização azotada e pulverizar a planta com produtos contento estratos naturais de alho; arrancar as infestantes hospedeiras destes ácaros; comprar material vegetal isento desta praga.

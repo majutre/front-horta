@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { FormGroup, FormBuilder } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 
 
@@ -6,7 +6,6 @@ import { PlantaService } from '../planta.service';
 import { AuthService } from './../../seguranca/auth.service';
 import { PlantaRepository } from './../controllers/repository/planta-repository';
 import { ClienteModel } from './../../usuario/controllers/model/cliente-model';
-import { environment } from './../../../environments/environment';
 import { PlantaModel } from './../controllers/model/planta-model';
 
 
@@ -21,18 +20,20 @@ export class PlantasListaComponent implements OnInit {
   plantas: PlantaModel[];
   usuario: ClienteModel;
   usuarioId: number;
-  
+  public formulario: FormGroup;
+
 
   constructor(
     private plantaService: PlantaService,
     private plantaRepository: PlantaRepository,
-    private http: HttpClient,
-    public authService: AuthService
+    public authService: AuthService,
+    private fb: FormBuilder,
   ) {
    
   }
 
   ngOnInit(): void {
+    this.iniciarFormulario();
     this.getPlantas();
     const usuarioId = this.authService.jwtPayload.usuario_id;
   }
@@ -49,7 +50,27 @@ export class PlantasListaComponent implements OnInit {
 
   }
 
-  
+  public iniciarFormulario() {
+    this.formulario = this.fb.group(
+      { filtro: [null] }
+    );
+  }
 
+  pesquisar(){
+    const f = this.formulario.value.filtro;
+    this.getPlantasFiltro(f);
+ 
+  }
+
+  getPlantasFiltro(f: string): void {
+    this.plantaRepository
+      .getAllPlantas()
+      .then(plantas => {
+        this.plantas = plantas;
+        this.plantas = this.plantas.filter(
+          planta => planta.nome.toUpperCase() == f.toUpperCase()
+        );
+      });
+  }
 }
 

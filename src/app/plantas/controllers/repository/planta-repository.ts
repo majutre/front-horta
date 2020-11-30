@@ -1,4 +1,3 @@
-import { AuthService } from './../../../seguranca/auth.service';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map, mergeMap } from 'rxjs/operators';
@@ -9,6 +8,10 @@ import { PlantaMapper } from './../mapper/planta-mapper';
 import { PlantaEntity } from '../entity/planta-entity';
 import { PlantaModel } from './../model/planta-model';
 import { ClienteModel } from './../../../usuario/controllers/model/cliente-model';
+import { PragaMapper } from './../../../pragas/controllers/mapper/praga-mapper';
+import { PragaEntity } from './../../../pragas/controllers/entity/praga-entity';
+import { PragaModel } from './../../../pragas/controllers/model/praga-model';
+import { AuthService } from './../../../seguranca/auth.service';
 
 
 @Injectable({
@@ -17,6 +20,7 @@ import { ClienteModel } from './../../../usuario/controllers/model/cliente-model
 export class PlantaRepository {
 
     mapper = new PlantaMapper();
+    pragaMapper = new PragaMapper();
 
  
     constructor(public http: BaseHttpService, public authService: AuthService) {
@@ -90,6 +94,15 @@ export class PlantaRepository {
     //         })
     // }
 
+    //PRAGAS
+
+    getAllPragasByPlanta(id: number): Observable<PragaModel> {
+        
+        return this.http
+            .getAll<PragaEntity[]>(`${environment.URLSERVIDOR}planta/${id}/pragas`)
+            .pipe(mergeMap((x) => x.data))
+            .pipe(map((x) => this.pragaMapper.mapFrom(x)));
+    }
 
     //FILTROS
 

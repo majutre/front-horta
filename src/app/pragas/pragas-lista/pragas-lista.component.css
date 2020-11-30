@@ -91,3 +91,21 @@
     color: var(--main-txt-color);
   }
   
+  .btn-type-a {
+    background-color: var(--footer-bg-color);
+    border-radius: 6px;
+    border: none;
+    padding: 5px 10px;
+    float: right;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--main-txt-color);
+
+
+  }
+
+  .btn-type-a:hover {
+    background-color: var(--first-accent-color);
+    color: var(--main-bg-color);
+    text-decoration: none;
+  }

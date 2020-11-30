@@ -131,12 +131,25 @@
               </div>
               <div class="info">
                   <h6>Pragas</h6>
-                  <p>{{planta.pragas}}</p>
+                  <div *ngFor="let praga of pragas">
+                      <ul class="ml-2">
+                        <li>
+                            <a routerLink="/praga/{{praga.id}}">
+                                <p>{{praga.nome}}</p>
+                            </a>
+                        </li>
+                    </ul>
+                  </div>
               </div>
           </div>
       </div>
       <!-- Fim Terceira Linha -->
-      <a class="btn-type-a" style="cursor: pointer;" (click)="onAddPlanta(planta)">Adicionar</a>
+      <a 
+        *ngIf="authService.temPermissao('DH01')" 
+        class="btn-type-a" 
+        style="cursor: pointer;"
+        (click)="onAddPlanta(planta)"
+    >Adicionar</a>
 
   </div>
 </div>

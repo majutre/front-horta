@@ -1,9 +1,9 @@
 <div class="container content-wrapper">
     <h1>Plantas</h1>
-    <form>
+    <form (ngSubmit)="pesquisar()" [formGroup]="formulario">
         <div class="search">
-            <input type="text" class="search-box">
-            <a class="btn-type-a" href="#">Pesquisar</a>
+            <input type="text" class="search-box" formControlName="filtro">
+            <button class="btn-type-a ml-2" type="submit">Pesquisar</button>
         </div>
     </form>
 </div>
@@ -18,7 +18,11 @@
                     <h5 class="card-title" style="cursor: pointer" routerLink="/planta/{{planta.id}}">{{planta.nome}}</h5>
                     <h6 class="card-subtitle mb-2 text-muted">{{planta.nomec}}</h6>
                     <a routerLink="/planta/{{planta.id}}" class="card-link">VER MAIS</a>
-                    <a  class="card-link" style="cursor: pointer" (click)="onAddPlanta(planta)">ADICIONAR</a>
+                    <a 
+                        *ngIf="authService.temPermissao('DH01')"
+                        class="card-link" style="cursor: pointer"
+                        (click)="onAddPlanta(planta)"
+                    >ADICIONAR</a>
                 </div>
             </div>
         </div>

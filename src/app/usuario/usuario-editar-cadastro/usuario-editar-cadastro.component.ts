@@ -39,12 +39,12 @@ export class UsuarioEditarCadastroComponent implements OnInit {
     this.formulario = this.fb.group(
       {
         id: [null],
-        nome: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(150)]],
+        nome: ['', [Validators.minLength(3), Validators.maxLength(150)]],
         sobrenome: ['', [Validators.required, Validators.minLength(3)]],
         genero: [''],
-        email: ['', [Validators.required, Validators.email]],
-        senha: ['', [Validators.required, Validators.minLength(8)]],
-        confirmPass: ['', Validators.required]
+        email: ['', [Validators.email]],
+        senha: ['', [Validators.minLength(8)]],
+        confirmPass: ['']
       }
       , 
       { validator: MustMatch('senha', 'confirmPass') }

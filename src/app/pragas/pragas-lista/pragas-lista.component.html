@@ -1,22 +1,22 @@
 <div class="container content-wrapper">
   <h1>Pragas</h1>
-  <form>
+  <form (ngSubmit)="pesquisar()" [formGroup]="formulario">
     <div class="search">
-      <input type="text" class="search-box">
-      <a class="btn-type-a" href="#">Pesquisar</a>
+      <input type="text" class="search-box" formControlName="filtro">
+      <button class="btn-type-a ml-2" type="submit">Pesquisar</button>
     </div>
   </form>
 </div>
 
 <div class="container">
   <div class="row">
-    <div *ngFor="let praga of pragas" class="col-md-4">
+    <div *ngFor="let praga of pragas" class="col-md-3">
       <div class="card">
         <img src="{{praga.foto.url}}" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">{{praga.nome}}</h5>
           <h6 class="card-subtitle mb-2 text-muted">{{praga.nomec}}</h6>
-          <a routerLink="/pragadetalhes/{{praga.id}}" class="card-link">VER MAIS</a>
+          <a routerLink="/praga/{{praga.id}}" class="card-link">VER MAIS</a>
         </div>
       </div>
     </div>

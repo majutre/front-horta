@@ -1,3 +1,4 @@
+import { PragaEntity } from './../../../pragas/controllers/entity/praga-entity';
 export interface PlantaEntity {
     id?: number;
     nomepo?: string;
@@ -9,7 +10,7 @@ export interface PlantaEntity {
     tempo?: string,
     solo?: string,
     irrigacao?: string,
-    pragas?: any,
+    pragas?: PragaEntity,
     foto?: ImagemEntity
 }
 
